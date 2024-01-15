@@ -1,0 +1,15 @@
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\bin\Debug\net6.0\Samples.Debugging.Console.exe
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\bin\Debug\net6.0\Samples.Debugging.Console.deps.json
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\bin\Debug\net6.0\Samples.Debugging.Console.runtimeconfig.json
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\bin\Debug\net6.0\Samples.Debugging.Console.dll
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\bin\Debug\net6.0\Samples.Debugging.Console.pdb
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.csproj.AssemblyReference.cache
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.AssemblyInfoInputs.cache
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.AssemblyInfo.cs
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.csproj.CoreCompileInputs.cache
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.dll
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\refint\Samples.Debugging.Console.dll
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.pdb
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\Samples.Debugging.Console.genruntimeconfig.cache
+C:\Users\neilm\Source\Repos\Samples.Debugging.Console\Samples.Debugging.Console\obj\Debug\net6.0\ref\Samples.Debugging.Console.dll
