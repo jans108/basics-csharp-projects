@@ -1,2 +1,2 @@
 # basics-csharp-projects
-You can find here simple C# projects
+You can find here simple but elementary C# projects
