@@ -12,43 +12,122 @@ namespace SweetCookiePieShop.InventoryManagment
         private int id;
         private string name = string.Empty;
         private string? description;
-        private int? price;
+        
 
         private int maxItemsInStock = 0;
 
-        private UnitType unitType;
-        private int amountInStock = 0;
-        private bool isBelowStockTreshold = false;
+      
+
+        public int Id
+        {
+            get { return id; } 
+            set 
+            {
+                id = value; 
+            }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                name = value.Length > 50 ? value[..50] : value;
+            }
+        }
+
+        public string? Description
+        {
+            get { return description; }
+            set
+            {
+                if (value == null)
+                {
+                    description = string.Empty;
+                }
+                else
+                {
+                    description = value.Length > 250 ? value[..250] : value;
+                }
+            }
+        }
+   
+
+        public UnitType UnitType { get; set; }
+        public int AmountInStock { get; private set; }
+        public bool IsBelowStockTreshold { get; private set; }
+
+        public Product(int id) : this(id, string.Empty)
+        {
+        }
+
+        public Product(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
+        public Product(int id, string name, string? description, UnitType unitType, int maxAmountInStock)
+        {
+            Id = id;
+            Name = name; 
+            Description = description;
+            UnitType = unitType;
+
+            maxItemsInStock = maxAmountInStock;
+
+            UpdateLowStock();
+
+        }
+
+      
 
         public void UseProduct(int items)
         {
-            if (items <= amountInStock)
+            if (items <= AmountInStock)
             {
-                amountInStock -= items;
+                AmountInStock -= items;
 
                 UpdateLowStock();
 
-                Log($"Amount in stock updated. Now {amountInStock} items in stock.");
+                Log($"Amount in stock updated. Now {AmountInStock} items in stock.");
             }
             else
             {
-                Log($"Not enough items on stock for {CreateSimpleProductRepresentation()}. {amountInStock} available but {items} requested. ");
+                Log($"Not enough items on stock for {CreateSimpleProductRepresentation()}. {AmountInStock} available but {items} requested. ");
             }
         }
         public void IncreaseStock()
         {
-            amountInStock++;
+            AmountInStock++;
+        }
+
+        public void IncreaseStock(int amount)
+        {
+            int newStock = AmountInStock + amount;
+
+            if (newStock <= maxItemsInStock)
+            {
+                AmountInStock += amount;
+            }
+            else
+            {
+                AmountInStock = maxItemsInStock;
+                Log($"{CreateSimpleProductRepresentation} stock overflow. {newStock - AmountInStock} item(s) ordered that couldn't be stored.");
+            }
+
+            UpdateLowStock();
         }
 
         private void DecreaseStock(int items, string reason)
         {
-            if (items <= amountInStock)
+            if (items <= AmountInStock)
             {
-                amountInStock -= items;
+                AmountInStock -= items;
             }
             else
             {
-                amountInStock = 0;
+                AmountInStock = 0;
             }
 
             UpdateLowStock();
@@ -58,16 +137,23 @@ namespace SweetCookiePieShop.InventoryManagment
 
         public string DisplayDetailsShort()
         {
-            return $"{id}. {name} \n{amountInStock} items in stock";
+            return $"{id}. {name} \n{AmountInStock} items in stock";
         }
 
         public string DisplayDetailsFull()
         {
-            StringBuilder sb = new StringBuilder();
+            return DisplayDetailsFull("");
+        }
 
-            sb.Append($"{id} {name} \n{price}  \n{description}\n{amountInStock}  item(s) in stock");
+        public string DisplayDetailsFull(string extraDetails)
+        {
+            StringBuilder sb = new();
 
-            if ( isBelowStockTreshold )
+            sb.Append($"{Id} {Name}  \n{Description}\n{AmountInStock}  item(s) in stock");
+
+            sb.Append(extraDetails);
+
+            if (IsBelowStockTreshold)
             {
                 sb.Append("\n!!STOCK LOW!!");
             }
@@ -77,17 +163,21 @@ namespace SweetCookiePieShop.InventoryManagment
 
         private void UpdateLowStock()
         {
-            if (amountInStock < 10)
+            if (AmountInStock < 10)
             {
-                isBelowStockTreshold = true;
+                IsBelowStockTreshold = true;
+            }
+            else
+            {
+                IsBelowStockTreshold= false;
             }
         }
-        private void Log(string message)
+        private static void Log(string message)
         {
             //this could be written to a file
             Console.WriteLine(message);
         }
-        private string CreateSimplePorductRepresentation()
+        private string CreateSimpleProductRepresentation()
         {
             return $"Product {id} ({name})";
         }
