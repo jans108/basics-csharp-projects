@@ -1,0 +1,14 @@
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\bin\Debug\net8.0\SweetCookiePieShop.InventoryManagment.exe
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\bin\Debug\net8.0\SweetCookiePieShop.InventoryManagment.deps.json
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\bin\Debug\net8.0\SweetCookiePieShop.InventoryManagment.runtimeconfig.json
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\bin\Debug\net8.0\SweetCookiePieShop.InventoryManagment.dll
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\bin\Debug\net8.0\SweetCookiePieShop.InventoryManagment.pdb
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.AssemblyInfoInputs.cache
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.AssemblyInfo.cs
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.csproj.CoreCompileInputs.cache
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.dll
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\refint\SweetCookiePieShop.InventoryManagment.dll
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.pdb
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\SweetCookiePieShop.InventoryManagment.genruntimeconfig.cache
+D:\VS Projects\source\SweetCookiePieShop.InventoryManagment\SweetCookiePieShop.InventoryManagment\obj\Debug\net8.0\ref\SweetCookiePieShop.InventoryManagment.dll
