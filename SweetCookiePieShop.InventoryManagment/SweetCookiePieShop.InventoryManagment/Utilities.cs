@@ -81,5 +81,82 @@ namespace SweetCookiePieShop.InventoryManagment
                 }
             } while (string.IsNullOrEmpty(userSelectionString) || !int.TryParse(userSelectionString, out userSelection));
         }
+
+
+        private static void ShowInventoryManagmmentMenu()
+        {
+            string? userSelection;
+
+            do
+            {
+                Console.ResetColor();
+                Console.Clear();
+                Console.WriteLine("***********************");
+                Console.WriteLine("* Inventory managment *");
+                Console.WriteLine("***********************");
+
+                ShowAllProductsOverview();
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("What do you want to do?");
+                Console.ResetColor();
+
+                Console.WriteLine("1. View details of product");
+                Console.WriteLine("2: Add new product");
+                Console.WriteLine("3: Clone product");
+                Console.WriteLine("4: View products with low stock");
+                Console.WriteLine("0: Back to main menu");
+
+                Console.Write("Your selection: ");
+
+                userSelection = Console.ReadLine();
+
+                switch (userSelection)
+                {
+                    case "1":
+                        ShowDetailsAndUseProduct();
+                        break;
+                    case "2":
+                        //ShowCreateNewProduct();
+                        break;
+                    case "3":
+                        //ShowCloneExistingProduct();
+                        break;
+                    case "4":
+                        ShowProductsLowOnStock();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid selection. Please try again.");
+                        break;
+                }
+
+            } while (userSelection != "0");
+            ShowMainMenu();
+
+        }
+
+        private static void ShowAllProductsOverview()
+        {
+            foreach (var product in inventory)
+            {
+                Console.WriteLine(product.DisplayDetailsShort);
+                Console.WriteLine();
+            }
+        }
+
+        private static void ShowDetailsAndUseProduct() 
+        {
+            string? userSelection = string.Empty;
+
+            Console.Write("Enter the ID of product: ");
+            string? selectedProductId= Console.ReadLine();
+
+            if (selectedProductId != null) 
+            {
+                Product? selectedProduct = inventory.Where(p => p.Id == int.Parse(selectedProductId)).FirstOrDefault();
+            }
+
+
+        }
     }
 }
