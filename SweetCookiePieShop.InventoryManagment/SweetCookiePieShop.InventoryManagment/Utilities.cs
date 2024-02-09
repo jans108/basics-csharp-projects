@@ -4,6 +4,7 @@ using SweetCookiePieShop.InventoryManagment.Domain.ProductManagment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -144,18 +145,127 @@ namespace SweetCookiePieShop.InventoryManagment
             }
         }
 
-        private static void ShowDetailsAndUseProduct() 
+        private static void ShowDetailsAndUseProduct()
         {
             string? userSelection = string.Empty;
 
             Console.Write("Enter the ID of product: ");
-            string? selectedProductId= Console.ReadLine();
+            string? selectedProductId = Console.ReadLine();
 
-            if (selectedProductId != null) 
+            if (selectedProductId != null)
             {
                 Product? selectedProduct = inventory.Where(p => p.Id == int.Parse(selectedProductId)).FirstOrDefault();
+
+                if (selectedProduct != null)
+                {
+                    Console.WriteLine(selectedProduct.DisplayDetailsFull());
+
+                    Console.WriteLine("\n What do you want to do?");
+                    Console.WriteLine("1: Use product");
+                    Console.WriteLine("2: Back to inventory overview");
+
+                    Console.Write("Your selection: ");
+                    userSelection = Console.ReadLine();
+
+                    if (userSelection == "1")
+                    {
+                        Console.WriteLine("How many products do you want to use?");
+                        int amount = int.Parse(Console.ReadLine() ?? "0");
+
+                        selectedProduct.UseProduct(amount);
+
+                        Console.ReadLine();
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Non-existing product selected. Please try again.");
+            }
+        }
+
+            private static void ShowProductsLowOnStock()
+            {
+                List<Product> lowOnStockProducts = inventory.Where(p => p.IsBelowStockTreshold).ToList();
+
+                if(lowOnStockProducts.Count > 0)
+                {
+                    Console.WriteLine("The following items are low on stock, order more soon!");
+
+                    foreach(var product in lowOnStockProducts)
+                    {
+                        Console.WriteLine(product.DisplayDetailsShort());
+                        Console.WriteLine();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No items are currently low on stock!");
+                }
+                Console.ReadLine() ;
             }
 
+            private static void ShowOrderManagmentMenu()
+            {
+                string? userSelection = string.Empty;
+
+                do
+                {
+                    Console.ResetColor();
+                    Console.Clear();
+                    Console.WriteLine("*******************");
+                    Console.WriteLine("* Select an action*");
+                    Console.WriteLine("*******************");
+
+                    Console.WriteLine("1: Open order overview");
+                    Console.WriteLine("2: Add new order");
+                    Console.WriteLine("0: Back to main menu");
+
+                    Console.Write("Your selection: ");
+
+                    userSelection = Console.ReadLine();
+
+                    switch (userSelection)
+                    {
+                        case "1":
+                            ShowOpenOrderOverview();
+                            break;
+                        case "2":
+                            ShowAddNewOrder();
+                            break;
+                        default:
+                            Console.WriteLine("Ivalid selection. Please try again.");
+                    }
+
+                }
+                while (userSelection != "0");
+                ShowMainMenu();
+            }
+        
+        private static void ShowOpenOrderOverview() 
+        {
+            ShowFulfilledOrders();
+
+            if (orders.Count > 0)
+            {
+                Console.WriteLine("Open orders:");
+
+                foreach (var order in orders)
+                {
+                    Console.WriteLine(order.ShowOrderDetails());
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("There are no open orders");
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void ShowFulfilledOrders()
+        {
 
         }
     }
