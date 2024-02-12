@@ -84,7 +84,7 @@ namespace SweetCookiePieShop.InventoryManagment
         }
 
 
-        private static void ShowInventoryManagmmentMenu()
+        private static void ShowInventoryManagementMenu()
         {
             string? userSelection;
 
@@ -205,7 +205,7 @@ namespace SweetCookiePieShop.InventoryManagment
                 Console.ReadLine() ;
             }
 
-            private static void ShowOrderManagmentMenu()
+            private static void ShowOrderManagementMenu()
             {
                 string? userSelection = string.Empty;
 
@@ -235,6 +235,7 @@ namespace SweetCookiePieShop.InventoryManagment
                             break;
                         default:
                             Console.WriteLine("Ivalid selection. Please try again.");
+                            break;
                     }
 
                 }
@@ -266,7 +267,72 @@ namespace SweetCookiePieShop.InventoryManagment
 
         private static void ShowFulfilledOrders()
         {
+            Console.WriteLine("Checking fulfilled orders.");
+            foreach (var order in orders)
+            {
+                if (!order.Fulfielld && order.OrderFulfilmentDate < DateTime.Now)
+                {
+                    foreach (var orderItem in order.OrderItems)
+                    {
+                        Product? selectedProduct = inventory.Where(p => p.Id == orderItem.ProductId).FirstOrDefault();
+                        if (selectedProduct != null)
+                            selectedProduct.IncreaseStock(orderItem.AmountOrdered);
+                    }
+                    order.Fulfielld = true;
+                }
+            }
 
+            orders.RemoveAll(o => o.Fulfielld);
+
+            Console.WriteLine("Fulfilled orders checked");
+        }
+
+        private static void ShowAddNewOrder()
+        {
+            Order newOrder = new Order();
+            string? selectedProductId = string.Empty;
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Creating new order");
+            Console.ResetColor();
+
+            do
+            {
+                ShowAllProductsOverview();
+
+                Console.WriteLine("Which product do you want to order?  (enter 0 to stop adding new products to the order)");
+
+                Console.Write("Enter the ID of product: ");
+                selectedProductId = Console.ReadLine();
+
+                if ( selectedProductId != "0")
+                {
+                    Product? selectedProduct = inventory.Where(p => p.Id == int.Parse(selectedProductId)).FirstOrDefault();
+
+                    if ( selectedProduct != null )
+                    {
+                        Console.Write("How many do you want to order?: ");
+                        int amountOrdered = int.Parse(Console.ReadLine() ?? "0");
+
+                        OrderItem orderItem = new OrderItem
+                        {
+                            ProductId = selectedProduct.Id,
+                            ProductName = selectedProduct.Name,
+                            AmountOrdered = amountOrdered,
+                        };
+
+                        newOrder.OrderItems.Add(orderItem);
+                    }
+                }
+            }
+            while (selectedProductId != "0");
+
+            Console.WriteLine("Creating order...");
+
+            orders.Add(newOrder);
+
+            Console.WriteLine("Order now created.");
+            Console.ReadLine();
         }
     }
 }
