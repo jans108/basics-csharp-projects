@@ -140,7 +140,7 @@ namespace SweetCookiePieShop.InventoryManagment
         {
             foreach (var product in inventory)
             {
-                Console.WriteLine(product.DisplayDetailsShort);
+                Console.WriteLine(product.DisplayDetailsShort());
                 Console.WriteLine();
             }
         }
@@ -332,6 +332,57 @@ namespace SweetCookiePieShop.InventoryManagment
             orders.Add(newOrder);
 
             Console.WriteLine("Order now created.");
+            Console.ReadLine();
+        }
+
+        private static void ShowSettingsMenu()
+        {
+            string? userSelection;
+
+            do
+            {
+                Console.ResetColor();
+                Console.Clear();
+                Console.WriteLine("************");
+                Console.WriteLine("* Settings *");
+                Console.WriteLine("************");
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("What do you want to do?");
+                Console.ResetColor();
+
+                Console.WriteLine("1: Change stock threshold");
+                Console.WriteLine("0: Back to main menu");
+
+                userSelection = Console.ReadLine();
+
+                switch (userSelection)
+                {
+                    case "1":
+                        ShowChangeStockThreshold();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid selection. Please try again.");
+                        break;
+                }
+            }
+            while (userSelection != "0");
+            ShowMainMenu();
+        }
+
+        private static void ShowChangeStockThreshold()
+        {
+            Console.WriteLine($"Enter the new stock thresold (current value: {Product.StockThreshold}). This applies to all products!");
+            Console.Write("New value: ");
+            int newValue = int.Parse( Console.ReadLine() ?? "0");
+            Product.StockThreshold = newValue;
+            Console.WriteLine($"New stock threshold set to {Product.StockThreshold}");
+
+            foreach (var product in inventory)
+            {
+                product.UpdateLowStock();
+            }
+
             Console.ReadLine();
         }
     }
