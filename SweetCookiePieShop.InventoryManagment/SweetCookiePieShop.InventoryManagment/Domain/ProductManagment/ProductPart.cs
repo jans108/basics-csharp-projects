@@ -28,12 +28,12 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
                 IsBelowStockTreshold = false;
             }
         }
-        private static void Log(string message)
+        protected static void Log(string message)
         {
             //this could be written to a file
             Console.WriteLine(message);
         }
-        private string CreateSimpleProductRepresentation()
+        protected string CreateSimpleProductRepresentation()
         {
             return $"Product {id} ({name})";
         }

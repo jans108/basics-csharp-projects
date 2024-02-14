@@ -15,7 +15,7 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
         private string? description;
 
 
-        private int maxItemsInStock = 0;
+        protected int maxItemsInStock = 0;
 
 
 
@@ -55,8 +55,8 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 
 
         public UnitType UnitType { get; set; }
-        public int AmountInStock { get; private set; }
-        public bool IsBelowStockTreshold { get; private set; }
+        public int AmountInStock { get; protected set; }
+        public bool IsBelowStockTreshold { get; protected set; }
         public Price? Price { get; set; }
 
         public Product(int id) : this(id, string.Empty)
@@ -85,7 +85,7 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 
 
 
-        public void UseProduct(int items)
+        public virtual void UseProduct(int items)
         {
             if (items <= AmountInStock)
             {
@@ -100,12 +100,12 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
                 Log($"Not enough items on stock for {CreateSimpleProductRepresentation()}. {AmountInStock} available but {items} requested. ");
             }
         }
-        public void IncreaseStock()
+        public virtual void IncreaseStock()
         {
             AmountInStock++;
         }
 
-        public void IncreaseStock(int amount)
+        public virtual void IncreaseStock(int amount)
         {
             int newStock = AmountInStock + amount;
 
@@ -122,7 +122,7 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
             UpdateLowStock();
         }
 
-        private void DecreaseStock(int items, string reason)
+        protected virtual void DecreaseStock(int items, string reason)
         {
             if (items <= AmountInStock)
             {
@@ -138,17 +138,18 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
             Log(reason);
         }
 
-        public string DisplayDetailsShort()
+
+        public virtual string DisplayDetailsShort()
         {
             return $"{id}. {name} \n{AmountInStock} items in stock";
         }
 
-        public string DisplayDetailsFull()
+        public virtual string DisplayDetailsFull()
         {
             return DisplayDetailsFull("");
         }
 
-        public string DisplayDetailsFull(string extraDetails)
+        public virtual string DisplayDetailsFull(string extraDetails)
         {
             StringBuilder sb = new();
 
