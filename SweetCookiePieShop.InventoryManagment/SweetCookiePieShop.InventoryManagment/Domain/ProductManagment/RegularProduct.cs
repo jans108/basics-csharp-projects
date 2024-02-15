@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 {
-    public class BulkProduct : Product
+    public class RegularProduct : Product
     {
-        public BulkProduct(int id, string name, string? description, Price price, int maxAmountInStock) : base(id, name, description, price, UnitType.PerKg, maxAmountInStock)
+        public RegularProduct(int id, string name, string? description, Price price, UnitType unitType, int maxAmountInStock) : base(id, name, description, price, unitType, maxAmountInStock)
         {
         }
 
@@ -18,6 +18,4 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
             AmountInStock++;
         }
     }
-
-
 }

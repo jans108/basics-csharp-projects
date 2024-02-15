@@ -9,7 +9,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void UseProduct_Reduces_AmountInStock()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             product.IncreaseStock(100);
 
@@ -25,7 +25,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void UseProduct_ItemsHigherThanStock_NoChangetoStock()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             product.IncreaseStock(10);
 
@@ -41,7 +41,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void UseProduct_Reduces_AmountInStock_StockBelowThreshold()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             int increaseValue = 100;
             product.IncreaseStock(increaseValue);
@@ -58,7 +58,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void IncreaseStock_AddsOne()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             //Act
             product.IncreaseStock();
@@ -72,7 +72,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void IncreaseStock_AddsPassedInValue_BelowMaxAmount()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             //Act
             product.IncreaseStock(20);
@@ -86,7 +86,7 @@ namespace SweetCookiePieShop.InventoryManagment.Tests
         public void IncreaseStock_AddsPassedInValue_AboveMaxAmount()
         {
             //Arrange
-            Product product = new Product(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product product = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
 
             //Act
             product.IncreaseStock(300);

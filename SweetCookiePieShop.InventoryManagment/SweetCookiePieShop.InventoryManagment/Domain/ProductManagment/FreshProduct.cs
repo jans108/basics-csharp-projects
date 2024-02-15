@@ -15,6 +15,11 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
         {
         }
 
+        public override void IncreaseStock()
+        {
+            AmountInStock++;
+        }
+
         public override string DisplayDetailsFull()
         {
             {

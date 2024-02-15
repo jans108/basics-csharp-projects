@@ -97,7 +97,7 @@ namespace SweetCookiePieShop.InventoryManagment
                             product = new BulkProduct(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency }, maxItemsInStock);
                             break;
                         case "4":
-                            product = new Product(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency}, unitType, maxItemsInStock);
+                            product = new RegularProduct(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency}, unitType, maxItemsInStock);
                             break;
                     }
 

@@ -22,9 +22,9 @@ namespace SweetCookiePieShop.InventoryManagment
             bp.IncreaseStock(100);
             bp.UseProduct(10);
 
-            Product p1 = new(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
-            Product p2 = new(2, "Cake decorations", "Looks nice", new Price() { ItemPrice = 8, Currency = Currency.Euro }, UnitType.PerItem, 100);
-            Product p3 = new(3, "Strawberry", "I love them", new Price() { ItemPrice = 3, Currency = Currency.Euro }, UnitType.PerBox, 10);
+            Product p1 = new RegularProduct(1, "Sugar", "Very sweet", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerKg, 100);
+            Product p2 = new RegularProduct(2, "Cake decorations", "Looks nice", new Price() { ItemPrice = 8, Currency = Currency.Euro }, UnitType.PerItem, 100);
+            Product p3 = new RegularProduct(3, "Strawberry", "I love them", new Price() { ItemPrice = 3, Currency = Currency.Euro }, UnitType.PerBox, 10);
             inventory.Add(p1);
             inventory.Add(p2);
             inventory.Add(p3);
@@ -185,7 +185,7 @@ namespace SweetCookiePieShop.InventoryManagment
             switch (productType)
             {
                 case "1":
-                    newProduct = new Product(newId, name, description, new Price() { ItemPrice = price, Currency = currency }, unitType, maxInStock);
+                    newProduct = new RegularProduct(newId, name, description, new Price() { ItemPrice = price, Currency = currency }, unitType, maxInStock);
                     break;
                 case "2":
                     newProduct = new BulkProduct(newId++, name, description, new Price() { ItemPrice = price, Currency = currency }, maxInStock);

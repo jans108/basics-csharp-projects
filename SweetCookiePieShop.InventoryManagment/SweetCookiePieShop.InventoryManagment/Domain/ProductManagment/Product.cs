@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 {
-    public partial class Product
+    public abstract partial class Product
     {
         private int id;
         private string name = string.Empty;
@@ -100,11 +100,8 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
                 Log($"Not enough items on stock for {CreateSimpleProductRepresentation()}. {AmountInStock} available but {items} requested. ");
             }
         }
-        public virtual void IncreaseStock()
-        {
-            AmountInStock++;
-        }
-
+        public abstract void IncreaseStock();
+        
         public virtual void IncreaseStock(int amount)
         {
             int newStock = AmountInStock + amount;
