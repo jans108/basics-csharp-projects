@@ -190,10 +190,19 @@ namespace SweetCookiePieShop.InventoryManagment
                 case "2":
                     newProduct = new BulkProduct(newId++, name, description, new Price() { ItemPrice = price, Currency = currency }, maxInStock);
                     break;
-                    case "3":
-                newProduct = new FreshProduct(newId++, name, description, new Price() { ItemPrice = price, Currency = currency }, unitType, maxInStock);
+                case "3":
+                    newProduct = new FreshProduct(newId++, name, description, new Price() { ItemPrice = price, Currency = currency }, unitType, maxInStock);
+                    break;
+                case "4":
+                    Console.Write("Enter the number of items per box: ");
+                    int numberInBox = int.Parse(Console.ReadLine() ?? "0");
+
+                    newProduct = new BoxedProduct(newId++, name, description, new Price() { ItemPrice = price, Currency = currency }, maxInStock, numberInBox);
                     break;
             }
+
+            if (newProduct != null)
+                inventory.Add(newProduct);
         }
 
         private static void ShowAllUnitTypes()

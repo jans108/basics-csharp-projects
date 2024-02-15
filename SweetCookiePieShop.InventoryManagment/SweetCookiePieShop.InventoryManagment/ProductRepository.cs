@@ -2,6 +2,7 @@
 using SweetCookiePieShop.InventoryManagment.Domain.ProductManagment;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,7 +75,31 @@ namespace SweetCookiePieShop.InventoryManagment
                         unitType = UnitType.PerItem; //default value
                     }
 
-                    Product product = new Product(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency }, unitType, maxItemsInStock);
+                    string productType = productSplits[7];
+
+                    Product product = null;
+
+                    switch (productType)
+                    {
+                        case "1":
+                            success = int.TryParse(productSplits[8], out int amountPerBox);
+                            if (!success)
+                            {
+                                amountPerBox = 1;
+                            }
+
+                            product = new BoxedProduct(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency }, maxItemsInStock, amountPerBox);
+                            break;
+                        case "2":
+                            product = new FreshProduct(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency }, unitType, maxItemsInStock);
+                            break;
+                        case "3":
+                            product = new BulkProduct(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency }, maxItemsInStock);
+                            break;
+                        case "4":
+                            product = new Product(productId, name, description, new Price() { ItemPrice = itemPrice, Currency = currency}, unitType, maxItemsInStock);
+                            break;
+                    }
 
                     products.Add(product);
                 }
