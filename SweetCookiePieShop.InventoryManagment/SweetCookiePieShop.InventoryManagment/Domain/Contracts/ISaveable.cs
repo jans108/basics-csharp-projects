@@ -8,7 +8,6 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.Contracts
 {
     public interface ISaveable
     {
-
         string ConvertToStringForSaving();
     }
 }

@@ -1,4 +1,5 @@
-﻿using SweetCookiePieShop.InventoryManagment.Domain.General;
+﻿using SweetCookiePieShop.InventoryManagment.Domain.Contracts;
+using SweetCookiePieShop.InventoryManagment.Domain.General;
 using SweetCookiePieShop.InventoryManagment.Domain.OrderManagment;
 using SweetCookiePieShop.InventoryManagment.Domain.ProductManagment;
 using System;
@@ -77,7 +78,7 @@ namespace SweetCookiePieShop.InventoryManagment
                             ShowSettingsMenu();
                             break;
                         case 4:
-                            // SaveAllData();
+                            SaveAllData();
                             break;
                         case 0:
                             break;
@@ -91,6 +92,26 @@ namespace SweetCookiePieShop.InventoryManagment
                     Console.WriteLine("Invalid input. Please enter a valid numeric selection.");
                 }
             } while (string.IsNullOrEmpty(userSelectionString) || !int.TryParse(userSelectionString, out userSelection));
+        }
+
+        private static void SaveAllData()
+        {
+            ProductRepository productRepository = new();
+
+            List<ISaveable> saveables = new List<ISaveable>();
+
+            foreach (var item in inventory)
+            {
+                if (item is ISaveable)
+                {
+                    saveables.Add(item as ISaveable);
+                }
+            }
+
+            productRepository.SaveToFile(saveables);
+
+            Console.ReadLine();
+            ShowMainMenu();
         }
 
 

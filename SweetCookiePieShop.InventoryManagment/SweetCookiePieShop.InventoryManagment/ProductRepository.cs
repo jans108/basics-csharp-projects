@@ -1,4 +1,5 @@
-﻿using SweetCookiePieShop.InventoryManagment.Domain.General;
+﻿using SweetCookiePieShop.InventoryManagment.Domain.Contracts;
+using SweetCookiePieShop.InventoryManagment.Domain.General;
 using SweetCookiePieShop.InventoryManagment.Domain.ProductManagment;
 using System;
 using System.Collections.Generic;
@@ -129,6 +130,24 @@ namespace SweetCookiePieShop.InventoryManagment
             }
 
             return products;
+        }
+
+        public void SaveToFile(List<ISaveable> saveables)
+        {
+            StringBuilder sb = new StringBuilder();
+            string path = $"{directory}{productsFileName}";
+
+            foreach (var item in saveables)
+            {
+                sb.Append(item.ConvertToStringForSaving());
+                sb.Append(Environment.NewLine);
+            }
+
+            File.WriteAllText(path, sb.ToString());
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Saved items successfully");
+            Console.ResetColor();
         }
     }
 }
