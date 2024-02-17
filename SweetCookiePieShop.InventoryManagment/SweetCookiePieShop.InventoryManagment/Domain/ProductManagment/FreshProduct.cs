@@ -46,6 +46,10 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
                 return sb.ToString();
             }
         }
+        public override object Clone()
+        {
+            return new FreshProduct(0, this.Name, this.Description, new Price() { ItemPrice = this.Price.ItemPrice, Currency = this.Price.Currency },this.UnitType, this.maxItemsInStock);
+        }
     }
 
     

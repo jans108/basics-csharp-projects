@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 {
-    public abstract partial class Product
+    public abstract partial class Product: ICloneable
     {
         private int id;
         private string name = string.Empty;
@@ -162,5 +162,7 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
             return sb.ToString();
         }
 
+        public abstract object Clone();
+       
     }
 }

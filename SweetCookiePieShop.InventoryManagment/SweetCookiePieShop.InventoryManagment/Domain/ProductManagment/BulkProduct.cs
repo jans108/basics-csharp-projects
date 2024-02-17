@@ -22,7 +22,13 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
         {
             return $"{Id};{Name};{Description};{maxItemsInStock};{Price.ItemPrice};{(int)Price.Currency};{(int)UnitType};3;";
         }
+
+            public override object Clone()
+        {
+            return new BulkProduct(0, this.Name, this.Description, new Price() { ItemPrice = this.Price.ItemPrice, Currency = this.Price.Currency }, this.maxItemsInStock);
+        }
     }
-
-
 }
+
+
+
