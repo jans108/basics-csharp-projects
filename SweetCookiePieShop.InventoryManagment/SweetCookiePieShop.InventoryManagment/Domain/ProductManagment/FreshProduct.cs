@@ -1,10 +1,11 @@
-﻿using SweetCookiePieShop.InventoryManagment.Domain.General;
+﻿using SweetCookiePieShop.InventoryManagment.Domain.Contracts;
+using SweetCookiePieShop.InventoryManagment.Domain.General;
 using System.Text;
 
 
 namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
 {
-    public class FreshProduct : Product
+    public class FreshProduct : Product, ISaveable
     {
         public DateTime ExpiryDateTime { get; set; }
 
@@ -18,6 +19,11 @@ namespace SweetCookiePieShop.InventoryManagment.Domain.ProductManagment
         public override void IncreaseStock()
         {
             AmountInStock++;
+        }
+
+        public string ConvertToStringForSaving()
+        {
+            return $"{Id};{Name};{Description};{maxItemsInStock};{Price.ItemPrice};{(int)Price.Currency};{(int)UnitType};2;";
         }
 
         public override string DisplayDetailsFull()
