@@ -17,6 +17,11 @@ namespace SweetCookiePieShop.InventoryManagment
 
         internal static void InitializeStock()
         {
+            RegularProduct rp = new RegularProduct(5, "Pie candles", "Lorem ipsum", new Price() { ItemPrice = 10, Currency = Currency.Euro }, UnitType.PerItem, 100);
+
+            double value = rp.ConvertProductPrice(Currency.Dollar);
+
+
             BoxedProduct bp = new(4, "Eggs", "From hen", new Price() { ItemPrice = 10, Currency = Currency.Euro }, 100, 6);
 
             bp.IncreaseStock(100);
