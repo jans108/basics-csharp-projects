@@ -9,6 +9,7 @@ To run this project in Visual Studio 2022, open the LINQSamples.sln
 
 SampleViewModel Samples
 --------------------------------------------------
-FilterRows() - Write Non-LINQ code to get a subset of products
-GetUniqueColors() - Find all of the distinct/unique colors in the product list
-GetMinimumPriceOfAllProducts() - Find the lowest price in all products
+GetAll() - Put all products into a collection using LINQ
+GetSingleColumn() - Select a single column
+GetSpecificColumns() - Select a few specific properties from products and create new Product objects
+AnonymousClass() - Create an anonymous class from selected product properties

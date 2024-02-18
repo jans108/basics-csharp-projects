@@ -30,13 +30,13 @@
   "libraries": {
     "LINQSamples.Common/1.0.0": {
       "type": "project",
-      "path": "../LINQSamples.Common/LINQSamples.Common.csproj",
-      "msbuildProject": "../LINQSamples.Common/LINQSamples.Common.csproj"
+      "path": "../../LINQSamples.Common/LINQSamples.Common.csproj",
+      "msbuildProject": "../../LINQSamples.Common/LINQSamples.Common.csproj"
     },
     "LINQSamples.DataLayer/1.0.0": {
       "type": "project",
-      "path": "../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
-      "msbuildProject": "../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
+      "path": "../../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj",
+      "msbuildProject": "../../LINQSamples.DataLayer/LINQSamples.DataLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\02-UnderstandingLINQ\\LINQSamples.csproj",
+      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\03-Select\\Start\\LINQSamples.csproj",
       "projectName": "LINQSamples",
-      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\02-UnderstandingLINQ\\LINQSamples.csproj",
+      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\03-Select\\Start\\LINQSamples.csproj",
       "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\02-UnderstandingLINQ\\obj\\",
+      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\LINQ fundamentals\\03-Select\\Start\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,10 +4,10 @@
       "path": "."
     },
     {
-      "path": "..\\LINQSamples.Common"
+      "path": "..\\..\\LINQSamples.Common"
     },
     {
-      "path": "..\\LINQSamples.DataLayer"
+      "path": "..\\..\\LINQSamples.DataLayer"
     }
   ],
   "settings": {}

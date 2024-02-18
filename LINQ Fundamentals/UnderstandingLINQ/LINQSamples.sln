@@ -4,9 +4,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQSamples", "LINQSamples.csproj", "{0B36191D-296A-48FC-8EEB-04ED5A740175}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQSamples.DataLayer", "..\LINQSamples.DataLayer\LINQSamples.DataLayer.csproj", "{1371E611-BAD1-402F-9273-4F197D6E98DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQSamples.DataLayer", "..\..\LINQSamples.DataLayer\LINQSamples.DataLayer.csproj", "{1371E611-BAD1-402F-9273-4F197D6E98DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQSamples.Common", "..\LINQSamples.Common\LINQSamples.Common.csproj", "{53315A59-FEE2-45CD-BBBA-7E6065557112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQSamples.Common", "..\..\LINQSamples.Common\LINQSamples.Common.csproj", "{53315A59-FEE2-45CD-BBBA-7E6065557112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
