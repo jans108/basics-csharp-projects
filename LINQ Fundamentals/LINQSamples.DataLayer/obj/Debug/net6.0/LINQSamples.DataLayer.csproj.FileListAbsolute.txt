@@ -1,0 +1,11 @@
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.deps.json
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\bin\Debug\net6.0\LINQSamples.DataLayer.pdb
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.AssemblyInfoInputs.cache
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.AssemblyInfo.cs
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\refint\LINQSamples.DataLayer.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\LINQSamples.DataLayer.pdb
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.DataLayer\obj\Debug\net6.0\ref\LINQSamples.DataLayer.dll

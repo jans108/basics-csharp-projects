@@ -1,0 +1,15 @@
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\bin\Debug\net6.0\LINQSamples.Common.deps.json
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\bin\Debug\net6.0\LINQSamples.Common.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\bin\Debug\net6.0\LINQSamples.Common.pdb
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\bin\Debug\net6.0\LINQSamples.DataLayer.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\bin\Debug\net6.0\LINQSamples.DataLayer.pdb
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.csproj.AssemblyReference.cache
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.AssemblyInfoInputs.cache
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.AssemblyInfo.cs
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.csproj.CoreCompileInputs.cache
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.csproj.CopyComplete
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\refint\LINQSamples.Common.dll
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\LINQSamples.Common.pdb
+C:\Users\Maciek\OneDrive\Pulpit\LINQ fundamentals\LINQSamples.Common\obj\Debug\net6.0\ref\LINQSamples.Common.dll
