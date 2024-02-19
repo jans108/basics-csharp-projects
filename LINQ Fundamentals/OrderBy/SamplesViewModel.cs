@@ -12,7 +12,9 @@
       List<Product> list = new();
 
       // Write Query Syntax Here
-      
+      list = (from p in products 
+              orderby p.Name
+              select p).ToList();
 
       return list;
     }
@@ -28,7 +30,7 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-     
+     list = products.OrderBy(p => p.Name).ToList();
 
       return list;
     }
@@ -43,10 +45,12 @@
       List<Product> products = GetProducts();
       List<Product> list = new();
 
-      // Write Query Syntax Here
-    
+            // Write Query Syntax Here
+            list = (from p in products
+                    orderby p.Name descending
+                    select p).ToList();
 
-      return list;
+            return list;
     }
     #endregion
 
@@ -59,10 +63,10 @@
       List<Product> products = GetProducts();
       List<Product> list = new();
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            list = products.OrderByDescending(p => p.Name).ToList();
 
-      return list;
+            return list;
     }
     #endregion
 
@@ -75,10 +79,12 @@
       List<Product> products = GetProducts();
       List<Product> list = new();
 
-      // Write Query Syntax Here
-     
+            // Write Query Syntax Here
+            list = (from p in products
+                    orderby p.Color descending, p.Name
+                    select p).ToList();
 
-      return list;
+            return list;
     }
     #endregion
 
@@ -92,7 +98,8 @@
       List<Product> list = new();
 
       // Write Method Syntax Here
-     
+     list = products.OrderByDescending(p => p.Color)
+                .ThenBy(p => p.Name).ToList();
 
       return list;
     }
@@ -107,10 +114,11 @@
       List<Product> products = GetProducts();
       List<Product> list = new();
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            list = products.OrderByDescending(p => p.Color)
+                  .ThenByDescending(p => p.Name).ToList();
 
-      return list;
+            return list;
     }
     #endregion
 
