@@ -11,10 +11,10 @@
       List<Product> products = GetProducts();
       bool value = false;
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from p in products select p).All(p => p.ListPrice > p.StandardCost);
 
-      return value;
+            return value;
     }
     #endregion
 
@@ -27,8 +27,8 @@
       List<Product> products = GetProducts();
       bool value = false;
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = products.All(p => p.ListPrice > p.StandardCost);
 
       return value;
     }
@@ -43,8 +43,8 @@
       List<SalesOrder> sales = GetSales();
       bool value = false;
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from s in sales select s).All(s => s.OrderQty >= 1);
 
       return value;
     }
@@ -60,7 +60,7 @@
       bool value = false;
 
       // Write Method Syntax Here
-      
+      value = sales.All(s => s.OrderQty >= 1);
 
       return value;
     }
@@ -76,7 +76,7 @@
       bool value = false;
 
       // Write Query Syntax Here
-      
+      value = (from s in sales select s).Any(sale => sale.LineTotal > 10000);
 
       return value;
     }
@@ -91,8 +91,8 @@
       List<SalesOrder> sales = GetSales();
       bool value = false;
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = sales.Any(s => s.LineTotal > 10000);
 
       return value;
     }
@@ -108,7 +108,7 @@
       bool value = false;
 
       // Write Query Syntax Here
-      
+      value = (from n in numbers select n).Contains(3);
 
       return value;
     }
@@ -124,7 +124,7 @@
       bool value = false;
 
       // Write Method Syntax Here
-      
+      value = numbers.Contains(3);
 
       return value;
     }
@@ -140,8 +140,8 @@
       ProductIdComparer pc = new();
       bool value = false;
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from p in products select p).Contains(new Product { ProductID = 744 }, pc);
 
       return value;
     }
@@ -158,8 +158,8 @@
       ProductIdComparer pc = new();
       bool value = false;
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = products.Contains(new Product { ProductID = 744 }, pc);
 
       return value;
     }
