@@ -16,7 +16,8 @@
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Query Syntax Here
-      
+      value = (from n in list1 select n)
+                .SequenceEqual(list2);
 
       return value;
     }
@@ -31,12 +32,12 @@
     {
       bool value = false;
       // Create a list of numbers
-      List<int> list1 = new() { 5, 2, 3, 4, 5 };
+      List<int> list1 = new() { 1, 2, 3, 4, 5 };
       // Create a list of numbers
       List<int> list2 = new() { 1, 2, 3, 4, 5 };
 
       // Write Method Syntax Here
-     
+     value = list1.SequenceEqual(list2);
 
       return value;
     }
@@ -62,13 +63,13 @@
         new Product { ProductID = 2, Name = "Product 2" },
       };
 
-      // Make Collections the Same
-      // list2 = list1;
+            list2 = list1;
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from p in list1 select p)
+                .SequenceEqual(list2);
 
-      return value;
+            return value;
     }
     #endregion
 
@@ -92,13 +93,13 @@
         new Product { ProductID = 2, Name = "Product 2" },
       };
 
-      // Make Collections the Same
-      // list2 = list1;
 
-      // Write Method Syntax Here
-      
+            list2 = list1;
 
-      return value;
+            // Write Method Syntax Here
+            value = list1.SequenceEqual(list2);
+
+            return value;
     }
     #endregion
 
@@ -115,12 +116,12 @@
       // Load all Product Data From Data Source 2
       List<Product> list2 = ProductRepository.GetAll();
 
-      // Remove an element from 'list1' to make the collections different
-      //list1.RemoveAt(0);
+            // Remove an element from 'list1' to make the collections different
+            list1.RemoveAt(0);
 
-      // Write Query Syntax Here
-      
-
+            // Write Query Syntax Here
+            value = (from p in list1 select p)
+                .SequenceEqual(list2, pc);
       return value;
     }
     #endregion
@@ -138,13 +139,13 @@
       // Load all Product Data From Data Source 2
       List<Product> list2 = ProductRepository.GetAll();
 
-      // Remove an element from 'list1' to make the collections different
-      //list1.RemoveAt(0);
+            // Remove an element from 'list1' to make the collections different
+            list1.RemoveAt(0);
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = list1.SequenceEqual(list2, pc);
 
-      return value;
+            return value;
     }
     #endregion
 
@@ -161,7 +162,8 @@
       List<int> list2 = new() { 3, 4, 5 };
 
       // Write Query Syntax Here
-      
+      list = (from n in list1 select n)
+                .Except(list2).ToList();
 
       return list;
     }
@@ -180,7 +182,7 @@
       List<int> list2 = new() { 3, 4, 5 };
 
       // Write Method Syntax Here
-      
+      list = list1.Except(list2).ToList();
 
       return list;
     }
@@ -197,7 +199,8 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from p in products select p.ProductID)
+                .Except(from s in sales select s.ProductID).ToList();
 
       return list;
     }
@@ -214,7 +217,8 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.Select(p => p.ProductID)
+                .Except(sales.Select(s => s.ProductID)).ToList();
 
       return list;
     }
@@ -238,7 +242,8 @@
       list2.RemoveAll(prod => prod.Color == "Black");
 
       // Write Query Syntax Here
-      
+      list = (from p in list1 select p)
+                .Except(list2, pc).ToList();
 
       return list;
     }
@@ -262,7 +267,7 @@
       list2.RemoveAll(prod => prod.Color == "Black");
 
       // Write Method Syntax Here
-      
+      list = list1.Except(list2, pc).ToList();
 
       return list;
     }
@@ -283,7 +288,8 @@
       List<string> colors = new() { "Red", "Black" };
 
       // Write Query Syntax Here
-      
+      list = (from p in products select p)
+                .ExceptBy(colors, p => p.Color).ToList();
 
       return list;
     }
@@ -303,8 +309,8 @@
       // The list of colors to exclude from the list
       List<string> colors = new() { "Red", "Black" };
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            list = products.ExceptBy(colors, p => p.Color).ToList(); 
 
       return list;
     }
@@ -322,7 +328,9 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from p in products select p)
+                .ExceptBy<Product, int>(
+                from s in sales select s.ProductID, p => p.ProductID).ToList();
 
       return list;
     }
@@ -340,7 +348,8 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.ExceptBy<Product, int>(
+          sales.Select(s => s.ProductID), p => p.ProductID).ToList();
 
       return list;
     }
@@ -359,7 +368,8 @@
       List<int> list2 = new() { 3, 4, 5 };
 
       // Write Query Syntax Here
-      
+      list = (from n in list1 select n)
+                .Intersect(list2).ToList();
 
       return list;
     }
@@ -378,7 +388,7 @@
       List<int> list2 = new() { 3, 4, 5 };
 
       // Write Method Syntax Here
-      
+      list = list1.Intersect(list2).ToList();
 
       return list;
     }
@@ -395,7 +405,8 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from p in products select p.ProductID)
+                .Intersect(from s in sales select s.ProductID).ToList();
 
       return list;
     }
@@ -412,7 +423,7 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.Select(p => p.ProductID).Intersect(sales.Select(s => s.ProductID)).ToList();
 
       return list;
     }
