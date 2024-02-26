@@ -16,7 +16,19 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-
+      list = (from p in products join s in sales on p.ProductID equals s.ProductID select new ProductOrder 
+      {
+          ProductID = p.ProductID,
+          Name = p.Name,
+          Color = p.Color,
+          StandardCost = p.StandardCost,
+          ListPrice = p.ListPrice,
+          Size = p.Size,
+          SalesOrderID = s.SalesOrderID,
+          OrderQty = s.OrderQty,
+          UnitPrice = s.UnitPrice,
+          LineTotal = s.LineTotal
+      }).OrderBy(p => p.Name).ToList();
 
       return list;
     }
@@ -36,7 +48,19 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-
+      list = products.Join(sales, p => p.ProductID, s => s.ProductID, (p, s) => new ProductOrder
+      {
+          ProductID = p.ProductID,
+          Name = p.Name,
+          Color = p.Color,
+          StandardCost = p.StandardCost,
+          ListPrice = p.ListPrice,
+          Size = p.Size,
+          SalesOrderID = s.SalesOrderID,
+          OrderQty = s.OrderQty,
+          UnitPrice = s.UnitPrice,
+          LineTotal = s.LineTotal
+      }).OrderBy(p =>p.Name).ToList();
 
       return list;
     }
@@ -55,7 +79,23 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-
+      list = (from p in products join s in sales on
+              new { p.ProductID, Qty = (short)6 }
+              equals
+              new { s.ProductID, Qty = s.OrderQty}
+              select new ProductOrder
+              {
+                  ProductID= p.ProductID,
+                  Name = p.Name,    
+                  Color = p.Color,
+                  StandardCost = p.StandardCost,
+                  ListPrice = p.ListPrice,
+                  Size = p.Size,
+                  SalesOrderID = s.SalesOrderID,
+                  OrderQty = s.OrderQty,
+                  UnitPrice = s.UnitPrice,
+                  LineTotal = s.LineTotal
+              }).OrderBy(p => p.Name).ToList();
 
       return list;
     }
@@ -73,8 +113,22 @@
       // Load all Sales Order Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-
+            // Write Method Syntax Here
+            list = products.Join(sales, p => new { p.ProductID, Qty = (short)6 },
+                   s => new { s.ProductID, Qty = s.OrderQty },
+                   (p, s) => new ProductOrder
+                   {
+                       ProductID = p.ProductID,
+                       Name = p.Name,
+                       Color = p.Color,
+                       StandardCost = p.StandardCost,
+                       ListPrice = p.ListPrice,
+                       Size = p.Size,
+                       SalesOrderID = s.SalesOrderID,
+                       OrderQty = s.OrderQty,
+                       UnitPrice = s.UnitPrice,
+                       LineTotal = s.LineTotal
+                   }).OrderBy(p => p.Name).ToList();
 
       return list;
     }
@@ -96,11 +150,20 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-
-
+      list = (from p in products
+              orderby p.ProductID
+              join s in sales
+              on p.ProductID equals s.ProductID
+              into newSales
+              select new ProductSales
+              {
+                  Product = p,
+                  Sales = newSales.OrderBy(s => s.SalesOrderID).ToList()
+              }).ToList();
+            
       return list;
     }
-    #endregion
+    #endregion 
 
     #region JoinIntoMethod
     /// <summary>
@@ -116,8 +179,15 @@
       // Load all Sales Order Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-
+            // Write Method Syntax Here
+            list = products.OrderBy(p => p.ProductID).GroupJoin(sales,
+                  p => p.ProductID,
+                  s => s.ProductID,
+                  (p, newSales) => new ProductSales
+                  {
+                      Product = p,
+                      Sales = newSales.OrderBy(s => s.SalesOrderID).ToList()
+                  }).ToList();
 
       return list;
     }
@@ -136,7 +206,24 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-
+      list = (from p in products
+              join s in sales
+              on p.ProductID equals s.ProductID
+              into newSales
+              from s in newSales.DefaultIfEmpty()
+              select new ProductOrder
+              {
+                  ProductID = p.ProductID,
+                  Name = p.Name,
+                  Color = p.Color,
+                  StandardCost = p.StandardCost,
+                  ListPrice = p.ListPrice,
+                  Size = p.Size,
+                  SalesOrderID = s?.SalesOrderID,
+                  OrderQty = s?.OrderQty,
+                  UnitPrice = s?.UnitPrice,
+                  LineTotal = s?.LineTotal
+              }).OrderBy(p => p.Name).ToList();
 
       return list;
     }
@@ -154,8 +241,21 @@
       // Load all Sales Order Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-
+            // Write Method Syntax Here
+            list = products.SelectMany(p => sales.Where(s => s.ProductID == p.ProductID).DefaultIfEmpty(),
+                (p, s) => new ProductOrder
+                {
+                    ProductID = p.ProductID,
+                    Name = p.Name,
+                    Color = p.Color,
+                    StandardCost = p.StandardCost,
+                    ListPrice = p.ListPrice,
+                    Size = p.Size,
+                    SalesOrderID = s?.SalesOrderID,
+                    OrderQty = s?.OrderQty,
+                    UnitPrice = s?.UnitPrice,
+                    LineTotal = s?.LineTotal
+                }).OrderBy(p => p.Name).ToList();
 
       return list;
     }
