@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "fYptMuSpzUVBicdRUxTiY/zBQRy3Ig4HnGVR/ungetXxIJXe8fkaxMI05dW2cnMjcOsJcWvImfL0Wp8ZQtWFqQ==",
+  "success": false,
+  "projectFilePath": "D:\\GitHub\\basics-csharp-projects\\LINQ Fundamentals\\Grouping\\LINQSamples.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\GitHub\\basics-csharp-projects\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\GitHub\\basics-csharp-projects\\LINQSamples.DataLayer\\LINQSamples.DataLayer.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\GitHub\\basics-csharp-projects\\LINQSamples.Common\\LINQSamples.Common.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\GitHub\\basics-csharp-projects\\LINQSamples.Common\\LINQSamples.Common.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
