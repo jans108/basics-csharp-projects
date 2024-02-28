@@ -13,7 +13,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      value = (from p in products select p).Count();
 
       return value;
     }
@@ -30,7 +30,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      value = products.Count;
 
       return value;
     }
@@ -47,10 +47,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax #1 Here
-      
+      value = (from p in products select p).Count(p => p.Color == "Red");
 
       // Write Query Syntax #2 Here
-     
+     value = (from p in products where p.Color == "Red" select p).Count();
 
       return value;
     }
@@ -67,10 +67,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax #1 Here
-      
+      value = products.Count(p => p.Color == "Red");
 
-      // Write Method Syntax #2 Here
-      
+            // Write Method Syntax #2 Here
+            value = products.Where(p => p.Color == "Red").Count();
 
       return value;
     }
@@ -87,10 +87,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax #1 Here
-     
+     value = (from p in products select p.ListPrice).Min();
 
       // Write Query Syntax #2 Here
-      
+      value = (from p in products select p).Min(p => p.ListPrice);
 
       return value;
     }
@@ -106,11 +106,11 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Method Syntax #1 Here
-      
+            // Write Method Syntax #1 Here
+            value = products.Select(p => p.ListPrice).Min();
 
-      // Write Method Syntax #2 Here
-      
+            // Write Method Syntax #2 Here
+            value = products.Min(p => p.ListPrice);
 
       return value;
     }
@@ -126,13 +126,15 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Query Syntax #1 Here
-      
+            // Write Query Syntax #1 Here
+            value = (from p in products select p.ListPrice).Max();
 
-      // Write Query Syntax #2 Here
-     
 
-      return value;
+            // Write Query Syntax #2 Here
+            value = (from p in products select p).Max(p => p.ListPrice);
+
+
+            return value;
     }
     #endregion
 
@@ -146,13 +148,15 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Method Syntax #1 Here
-      
+            // Write Method Syntax #1 Here
+            value = products.Select(p => p.ListPrice).Max();
 
-      // Write Method Syntax #2 Here
-      
 
-      return value;
+            // Write Method Syntax #2 Here
+            value = products.Max(p => p.ListPrice);
+
+
+            return value;
     }
     #endregion
 
@@ -167,7 +171,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      product = (from p in products select p).MinBy(p => p.ListPrice);
 
       return product;
     }
@@ -184,7 +188,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      product = products.MinBy(p => p.ListPrice);
 
       return product;
     }
@@ -201,7 +205,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      product = (from p in products select p).MaxBy(p => p.ListPrice);
 
       return product;
     }
@@ -218,7 +222,7 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-     
+     product = products.MaxBy(p => p.ListPrice);
 
       return product;
     }
@@ -234,11 +238,11 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Query Syntax #1 Here
-      
+            // Write Query Syntax #1 Here
+            value = (from p in products select p.ListPrice).Average();
 
       // Write Query Syntax #2 Here
-      
+      value = (from p in products select p).Average(p =>  p.ListPrice);
 
       return value;
     }
@@ -255,10 +259,10 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax #1 Here
-      
+      value = products.Select(p => p.ListPrice).Average();
 
       // Write Method Syntax #2 Here
-      
+      value = products.Average(p => p.ListPrice);
 
       return value;
     }
@@ -274,13 +278,15 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Query Syntax #1 Here
-      
+            // Write Query Syntax #1 Here
+            value = (from p in products select p.ListPrice).Sum();
 
-      // Write Query Syntax #2 Here
-      
 
-      return value;
+            // Write Query Syntax #2 Here
+            value = (from p in products select p).Sum(p => p.ListPrice);
+
+
+            return value;
     }
     #endregion
 
@@ -294,13 +300,15 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Method Syntax #1 Here
-      
+            // Write Method Syntax #1 Here
+            value = products.Select(p => p.ListPrice).Sum();
 
-      // Write Method Syntax #1 Here
-      
 
-      return value;
+            // Write Method Syntax #1 Here
+            value = products.Sum(p => p.ListPrice);
+
+
+            return value;
     }
     #endregion
 
@@ -314,8 +322,10 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from p in products
+                     select p)
+                     .Aggregate(0M, (sum, p) => sum += p.ListPrice);
 
       return value;
     }
@@ -331,8 +341,8 @@
       // Load all Product Data
       List<Product> products = ProductRepository.GetAll();
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = products.Aggregate(0M, (sum, p) => sum += p.ListPrice);
 
       return value;
     }
@@ -348,8 +358,10 @@
       // Load all Sales Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            value = (from s in sales
+                     select s)
+                     .Aggregate(0M, (sum, s) => sum += (s.OrderQty * s.UnitPrice));
 
       return value;
     }
@@ -365,8 +377,8 @@
       // Load all Sales Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            value = sales.Aggregate(0M, (sum, s) => sum += (s.OrderQty * s.UnitPrice));
 
       return value;
     }
@@ -383,7 +395,20 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      list = (from p in products
+              group p by p.Size into sizeGroup
+              where sizeGroup.Count() > 0
+              select new ProductStats
+              {
+                  Size = sizeGroup.Key,
+                  TotalProducts = sizeGroup.Count(),
+                  MinListPrice = sizeGroup.Min(s => s.ListPrice),
+                  MaxListPrice = sizeGroup.Max(s => s.ListPrice),
+                  AverageListPrice = sizeGroup.Average(s => s.ListPrice),
+              }
+              into result
+              orderby result.Size
+              select result).ToList();
 
       return list;
     }
@@ -400,9 +425,17 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      list = products.GroupBy(p => p.Size).Where(sizeGroup => sizeGroup.Count() > 0).Select(sizeGroup => new ProductStats
+      {
+          Size = sizeGroup.Key,
+          TotalProducts = sizeGroup.Count(),
+          MinListPrice = sizeGroup.Min(s => s.ListPrice),
+          MaxListPrice = sizeGroup.Max(s => s.ListPrice),
+          AverageListPrice = sizeGroup.Average(s => s.ListPrice),
+      })
+                .OrderBy(result => result.Size).ToList();
 
-      return list;
+      return list; 
     }
     #endregion
 
@@ -417,7 +450,21 @@
       List<Product> products = ProductRepository.GetAll();
 
       // Write Method Syntax Here
-      
+      list = products.GroupBy(s => s.Size)
+                .Where(sizeGroup => sizeGroup.Count() > 0)
+                .Select(sizeGroup =>
+                {
+                    ProductStats acc = new()
+                    {
+                        Size = sizeGroup.Key
+                    };
+
+                    sizeGroup.Aggregate(acc, (acc, p) => acc.Accumulate(p),
+                                            acc => acc.ComputeAverage());
+
+                    return acc;
+                })
+                .OrderBy(result => result.Size).ToList();
 
       return list;
     }
