@@ -11,7 +11,9 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      (from s in sales 
+       let tmp = s.LineTotal = s.OrderQty * s.UnitPrice
+       select s).ToList();
 
       return sales;
     }
@@ -26,8 +28,8 @@
       // Get all Sales Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-      
+            // Write Method Syntax Here
+            sales.ForEach(s => s.LineTotal = s.OrderQty * s.UnitPrice);
 
       return sales;
     }
@@ -44,7 +46,9 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Query Syntax Here
-      
+      (from p in products
+       let tmp = p.TotalSales =
+       sales.Where(s => s.ProductID == p.ProductID).Sum(s => s.LineTotal) select p).ToList();
 
       return products;
     }
@@ -61,7 +65,7 @@
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
       // Write Method Syntax Here
-     
+     products.ForEach(p => p.TotalSales = sales.Where(s => s.ProductID == p.ProductID).Sum(s => s.LineTotal));
 
       return products;
     }
@@ -80,12 +84,14 @@
       // Get all Sales Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Query Syntax Here
-      
+            // Write Query Syntax Here
+            var list = (from p in products
+                        let tmp = p.TotalSales = CalculateTotalSalesForProduct(p, sales)
+                        select p);
 
-      
+      list = list.Where(p => p.TotalSales > 0);
 
-      return null;
+      return list.ToList();
     }
     #endregion
 
@@ -95,8 +101,8 @@
     /// </summary>
     /// <param name="prod">A product</param>
     /// <returns>Total Sales for Product</returns>
-    private decimal CalculateTotalSalesForProduct(Product prod, List<SalesOrder> sales) {
-      return sales.Where(sale => sale.ProductID == prod.ProductID)
+    private decimal CalculateTotalSalesForProduct(Product p, List<SalesOrder> sales) {
+      return sales.Where(sale => sale.ProductID == p.ProductID)
                   .Sum(sale => sale.LineTotal);
     }
     #endregion
@@ -114,8 +120,9 @@
       // Get all Sales Data
       List<SalesOrder> sales = SalesOrderRepository.GetAll();
 
-      // Write Method Syntax Here
-     
+            // Write Method Syntax Here
+            products.ForEach(p => p.TotalSales = CalculateTotalSalesForProduct(p, sales));
+            products = products.Where(p => p.TotalSales > 0).ToList();
 
       return products;
     }
