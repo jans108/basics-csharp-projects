@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj": {}
+    "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+    "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+        "projectUniqueName": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
         "projectName": "StockAnalyzer.Core",
-        "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+        "projectPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
         "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\obj\\",
+        "outputPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj": {
+    "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
+        "projectUniqueName": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
         "projectName": "StockAnalyzer.Windows",
-        "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
+        "projectPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
         "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\obj\\",
+        "outputPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Windows\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
-                "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
+              "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+                "projectPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
               }
             }
           }

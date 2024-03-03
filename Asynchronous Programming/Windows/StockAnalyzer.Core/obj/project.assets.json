@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+      "projectUniqueName": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
       "projectName": "StockAnalyzer.Core",
-      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+      "projectPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
       "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\obj\\",
+      "outputPath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"
