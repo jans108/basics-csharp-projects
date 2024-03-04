@@ -4,13 +4,10 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Newtonsoft.Json;
-using StockAnalyzer.Core;
 using StockAnalyzer.Core.Domain;
-using StockAnalyzer.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Runtime.InteropServices;
@@ -52,93 +49,26 @@ public partial class MainWindow : Window
     private static string API_URL = "https://ps-async.fekberg.com/api/stocks";
     private Stopwatch stopwatch = new Stopwatch();
 
-    CancellationTokenSource? cancellationTokenSource;
-
-    private async void Search_Click(object sender, RoutedEventArgs e)
+    private void Search_Click(object sender, RoutedEventArgs e)
     {
-        if (cancellationTokenSource != null)
-        {
-            // Already have an instance of the cancellation token source?
-            // This means the button has already been pressed!
+        BeforeLoadingStockData();
 
-            cancellationTokenSource.Cancel();
-            cancellationTokenSource.Dispose();
-            cancellationTokenSource = null;
+        var client = new WebClient();
 
-            Search.Content = "Search";
-            return;
-        }
+        var content = client.DownloadString($"{API_URL}/{StockIdentifier.Text}");
 
-        try
-        {
-            cancellationTokenSource = new CancellationTokenSource();
-            cancellationTokenSource.Token.Register(() => {
-                Notes.Text = "Cancellation requested";
-            });
-            Search.Content = "Cancel"; // Button text
+        // Simulate that the web call takes a very long time
+        Thread.Sleep(10000);
 
-            BeforeLoadingStockData();
+        var data = JsonConvert.DeserializeObject<IEnumerable<StockPrice>>(content);
 
-            var service = new StockService();
+        // This is the same as ItemsSource in WPF used in the course videos
+        Stocks.Items = data;
 
-            var data = await service.GetStockPricesFor(StockIdentifier.Text, cancellationTokenSource.Token);
-            Stocks.Items = data;
-        }
-        catch (Exception ex)
-        {
-            Notes.Text = ex.Message;
-        }
-        finally
-        {
-            AfterLoadingStockData();
-
-            cancellationTokenSource?.Dispose();
-            cancellationTokenSource = null;
-
-            Search.Content = "Search";
-        }
+        AfterLoadingStockData();
     }
 
-    private static Task<List<string>>
-            SearchForStocks(CancellationToken cancellationToken)
-    {
-        return Task.Run(async () =>
-        {
-            using (var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv")))
-            {
-                var lines = new List<string>();
 
-                string line;
-                while ((line = await stream.ReadLineAsync()) != null)
-                {
-                    if (cancellationToken.IsCancellationRequested)
-                    {
-                        break;
-                    }
-
-                    lines.Add(line);
-                }
-
-                return lines;
-            }
-        }, cancellationToken);
-    }
-
-    private async Task GetStocks()
-    {
-        try
-        {
-            var store = new DataStore();
-
-            var responseTask = store.GetStockPrices(StockIdentifier.Text);
-
-            Stocks.Items = await responseTask;
-        }
-        catch (Exception ex)
-        {
-            throw;
-        }
-    }
 
 
 

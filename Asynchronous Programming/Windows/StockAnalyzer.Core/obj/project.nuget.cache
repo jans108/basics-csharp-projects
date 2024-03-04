@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r6KIAZnJ+E+gKHrjoilx1U7F6R4QeIJ9a1dxagb1fbzkEZMEsMg8Xi8VvzU49A9IPrgvShUUqR/WiqTfyN2wTQ==",
+  "dgSpecHash": "U58xcnl+2Ks23zi3q3KhLjHH0tyAUS8VOMk9yX68WRLZSX7VdIOidpmvq7XN3IaOjZNpvsuETKl/rQGBpgCkZg==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\basics-csharp-projects\\Asynchronous Programming\\Windows\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
+  "projectFilePath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\02\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maciek\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

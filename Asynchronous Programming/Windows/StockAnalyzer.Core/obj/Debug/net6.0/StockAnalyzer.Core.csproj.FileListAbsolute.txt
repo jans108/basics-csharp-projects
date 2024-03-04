@@ -10,16 +10,3 @@ C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\S
 C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Core\obj\Debug\net6.0\refint\StockAnalyzer.Core.dll
 C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.pdb
 C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Core\obj\Debug\net6.0\ref\StockAnalyzer.Core.dll
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.deps.json
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.dll
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.pdb
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.csproj.AssemblyReference.cache
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.AssemblyInfoInputs.cache
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.AssemblyInfo.cs
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.csproj.CoreCompileInputs.cache
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.sourcelink.json
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.dll
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\refint\StockAnalyzer.Core.dll
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.pdb
-D:\GitHub\basics-csharp-projects\Asynchronous Programming\Windows\StockAnalyzer.Core\obj\Debug\net6.0\ref\StockAnalyzer.Core.dll

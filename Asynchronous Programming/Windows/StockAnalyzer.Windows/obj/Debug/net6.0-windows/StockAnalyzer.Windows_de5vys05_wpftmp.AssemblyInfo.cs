@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockAnalyzer.Windows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c194562f36b2fe3bf7fb47c6ca8dc216a1c45942")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockAnalyzer.Windows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockAnalyzer.Windows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
