@@ -28,25 +28,39 @@ public partial class MainWindow : Window
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
 
-        BeforeLoadingStockData();
+        
 
-        var getStocksTask = GetStocks();
+        try
+        {
+            BeforeLoadingStockData();
 
-        await getStocksTask;
+            await GetStocks();
+        }
+        catch (Exception ex)
+        {
+            Notes.Text = ex.Message;
+        }
+        finally
+        {
+            AfterLoadingStockData();
+        }
 
-        AfterLoadingStockData();
-    
     }
 
     private async Task GetStocks()
     {
-        BeforeLoadingStockData();
+        try
+        {
+            var store = new DataStore();
 
-        var getStocksTask = GetStocks();
+            var responseTask = store.GetStockPrices(StockIdentifier.Text);
 
-        await getStocksTask;
-
-        AfterLoadingStockData();
+            Stocks.ItemsSource = await responseTask;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
     }
 
 
