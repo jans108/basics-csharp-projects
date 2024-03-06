@@ -1,0 +1,6 @@
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\StockAnalyzer.Windows.csproj.AssemblyReference.cache
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\StockAnalyzer.Windows_Content.g.cs
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\StockAnalyzer.Windows_MarkupCompile.cache
+C:\Users\Maciek\OneDrive\Pulpit\asynch programming\02\demos\Windows\Start_Here\StockAnalyzer.Windows\obj\Debug\net6.0-windows\StockAnalyzer.Windows_MarkupCompile.lref
