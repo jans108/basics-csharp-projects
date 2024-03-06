@@ -65,8 +65,10 @@ public partial class MainWindow : Window
                 Dispatcher.Invoke(() =>
                 {
                     Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                    
                 });
-            }
+            },
+            TaskContinuationOptions.OnlyOnRanToCompletion
 
             );
                 processStocksTask.ContinueWith(_ =>
