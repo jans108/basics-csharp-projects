@@ -27,7 +27,7 @@ public partial class MainWindow : Window
 
 
 
-    private async void Search_Click(object sender, RoutedEventArgs e)
+    private void Search_Click(object sender, RoutedEventArgs e)
     {
 
         
@@ -36,21 +36,42 @@ public partial class MainWindow : Window
         {
             BeforeLoadingStockData();
 
-            await Task.Run(() => { 
-            var lines = File.ReadAllLines("StockPrices_Small.csv");
+            var loadLinesTask = Task.Run(() => {
+                var lines = File.ReadAllLines("StockPrices_Small.csv");
 
-            var data = new List<StockPrice>();
+                return lines;
 
-            foreach (var line in lines.Skip(1))
-            {
-                var price = StockPrice.FromCSV(line);
-
-                data.Add(price);
-            }
-                Dispatcher.Invoke(() => { 
-                Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
             });
-        });
+
+            var processStocksTask = loadLinesTask.ContinueWith((completedTask) =>
+            {
+                var lines = completedTask.Result;
+
+                var data = new List<StockPrice>();
+
+                foreach (var line in lines.Skip(1))
+                {
+                    var price = StockPrice.FromCSV(line);
+
+                    data.Add(price);
+                }
+                Dispatcher.Invoke(() =>
+                {
+                    Stocks.ItemsSource = data.Where(sp => sp.Identifier == StockIdentifier.Text);
+                });
+            }
+
+            );
+                processStocksTask.ContinueWith(_ =>
+                {
+                    Dispatcher.Invoke(() =>
+                    {
+                        AfterLoadingStockData();
+                    });
+                });
+        
+
+
         }
         catch (Exception ex)
         {
