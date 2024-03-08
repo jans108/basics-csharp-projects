@@ -3,6 +3,7 @@ using StockAnalyzer.Core;
 using StockAnalyzer.Core.Domain;
 using StockAnalyzer.Core.Services;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -56,18 +57,36 @@ public partial class MainWindow : Window
             var identifiers = StockIdentifier.Text
                                              .Split(',', ' ');
 
-            var service = new MockStockService();
+            var service = new StockService();
 
             var loadingTask = new List<Task<IEnumerable<StockPrice>>>();
+            var stocks = new ConcurrentBag<StockPrice>();
 
             foreach(var identifier in identifiers)
             {
                 var loadTask = service.GetStockPricesFor(identifier, cancellationTokenSource.Token);
 
+                loadTask = loadTask.ContinueWith(t =>
+                {
+                    var aFewStocks = t.Result.Take(5);
+
+                    foreach(var stock in aFewStocks)
+                    {
+                        stocks.Add(stock);
+                    }
+
+                    Dispatcher.Invoke(() =>
+                    {
+                        Stocks.ItemsSource = stocks.ToArray();
+                    });
+
+                    return aFewStocks;
+                });
+
                 loadingTask.Add(loadTask);
             }
             
-            var timeout = Task.Delay(2000);
+            var timeout = Task.Delay(120000);
             var allStocksLoadingTask = Task.WhenAll(loadingTask);
 
             var completedTask = await Task.WhenAny(timeout, allStocksLoadingTask);
@@ -78,9 +97,6 @@ public partial class MainWindow : Window
                 throw new OperationCanceledException("Timeout!");
             }
 
-            Stocks.ItemsSource = allStocksLoadingTask
-                .Result
-                .SelectMany(x => x);
         }
         catch (Exception ex)
         {
