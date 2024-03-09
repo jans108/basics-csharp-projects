@@ -2,9 +2,11 @@
 using StockAnalyzer.Core;
 using StockAnalyzer.Core.Domain;
 using StockAnalyzer.Core.Services;
+using StockAnalyzer.Windows.Services;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -29,20 +31,37 @@ public partial class MainWindow : Window
 
 
     CancellationTokenSource? cancellationTokenSource;
-
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
         try
         {
-            var data = await GetStocksFor(StockIdentifier.Text);
+            BeforeLoadingStockData();
 
-            Notes.Text = "Stocks loaded!";
+            var identifiers = StockIdentifier.Text.Split(',', ' ');
+
+            var data = new ObservableCollection<StockPrice>();
 
             Stocks.ItemsSource = data;
+
+            var service = new StockDiskStreamService();
+
+            var enumerator = service.GetAllStockPrices();
+
+            await foreach (var price in enumerator.WithCancellation(CancellationToken.None))
+            {
+                if(identifiers.Contains(price.Identifier))
+                {
+                    data.Add(price);
+                }
+            }
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             Notes.Text = ex.Message;
+        }
+        finally
+        {
+            AfterLoadingStockData();
         }
     }
 
@@ -53,45 +72,8 @@ public partial class MainWindow : Window
         var data = await service.GetStockPricesFor(identifier,
             CancellationToken.None).ConfigureAwait(false);
 
-        
 
         return data.Take(5);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private static Task<List<string>> SearchForStocks(
-        CancellationToken cancellationToken    
-    )
-    {
-        return Task.Run(async () =>
-        {
-            using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
-
-            var lines = new List<string>();
-
-            while (await stream.ReadLineAsync() is string line)
-            {
-                if(cancellationToken.IsCancellationRequested)
-                {
-                    break;
-                }
-                lines.Add(line);
-            }
-
-            return lines;
-        }, cancellationToken);
     }
 
     private async Task GetStocks()
@@ -109,15 +91,6 @@ public partial class MainWindow : Window
             throw;
         }
     }
-
-
-
-
-
-
-
-
-
 
 
 
