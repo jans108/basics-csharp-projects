@@ -29,6 +29,7 @@ public partial class MainWindow : Window
 
 
     CancellationTokenSource? cancellationTokenSource;
+
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
         try
@@ -39,7 +40,7 @@ public partial class MainWindow : Window
 
             Stocks.ItemsSource = data;
         }
-        catch (Exception ex)
+        catch(Exception ex)
         {
             Notes.Text = ex.Message;
         }
@@ -52,8 +53,45 @@ public partial class MainWindow : Window
         var data = await service.GetStockPricesFor(identifier,
             CancellationToken.None).ConfigureAwait(false);
 
+        
 
         return data.Take(5);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private static Task<List<string>> SearchForStocks(
+        CancellationToken cancellationToken    
+    )
+    {
+        return Task.Run(async () =>
+        {
+            using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
+
+            var lines = new List<string>();
+
+            while (await stream.ReadLineAsync() is string line)
+            {
+                if(cancellationToken.IsCancellationRequested)
+                {
+                    break;
+                }
+                lines.Add(line);
+            }
+
+            return lines;
+        }, cancellationToken);
     }
 
     private async Task GetStocks()
@@ -71,6 +109,15 @@ public partial class MainWindow : Window
             throw;
         }
     }
+
+
+
+
+
+
+
+
+
 
 
 
