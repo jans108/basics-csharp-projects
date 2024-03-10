@@ -33,7 +33,25 @@ public partial class MainWindow : Window
     CancellationTokenSource? cancellationTokenSource;
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
-        await new StateMachineDemo().Run();
+        SearchForStocks().Wait();
+    }
+
+    private async Task SearchForStocks()
+    {
+        var service = new StockService();
+        var loadingTask = new List<Task<IEnumerable<StockPrice>>>();
+
+        foreach (var identifier in StockIdentifier.Text.Split(',', ' '))
+        {
+            var loadTask = service.GetStockPricesFor(identifier,
+                CancellationToken.None);
+
+            loadingTask.Add(loadTask);
+        }
+
+        var data = await Task.WhenAll(loadingTask);
+
+        Stocks.ItemsSource = data.SelectMany(stock => stock);
     }
 
     private async Task<IEnumerable<StockPrice>>
