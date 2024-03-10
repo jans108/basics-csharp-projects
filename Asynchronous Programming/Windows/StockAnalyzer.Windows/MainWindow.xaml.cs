@@ -33,36 +33,7 @@ public partial class MainWindow : Window
     CancellationTokenSource? cancellationTokenSource;
     private async void Search_Click(object sender, RoutedEventArgs e)
     {
-        try
-        {
-            BeforeLoadingStockData();
-
-            var identifiers = StockIdentifier.Text.Split(',', ' ');
-
-            var data = new ObservableCollection<StockPrice>();
-
-            Stocks.ItemsSource = data;
-
-            var service = new StockDiskStreamService();
-
-            var enumerator = service.GetAllStockPrices();
-
-            await foreach (var price in enumerator.WithCancellation(CancellationToken.None))
-            {
-                if(identifiers.Contains(price.Identifier))
-                {
-                    data.Add(price);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Notes.Text = ex.Message;
-        }
-        finally
-        {
-            AfterLoadingStockData();
-        }
+        await new StateMachineDemo().Run();
     }
 
     private async Task<IEnumerable<StockPrice>>
