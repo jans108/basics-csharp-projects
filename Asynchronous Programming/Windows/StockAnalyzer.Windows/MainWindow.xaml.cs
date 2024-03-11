@@ -36,14 +36,11 @@ public partial class MainWindow : Window
         try
         {
             BeforeLoadingStockData();
-            var progress = new Progress<IEnumerable<StockPrice>>();
-            progress.ProgressChanged += (_, stocks) =>
-            {
-                StockProgress.Value += 1;
-                Notes.Text += $"Loaded {stocks.Count()} for {stocks.First().Identifier}{Environment.NewLine}";
-            };
 
-            await SearchForStocks(progress);
+            var data = await SearchForStocks();
+
+            Stocks.ItemsSource = data.Where(price =>
+                                            price.Identifier == StockIdentifier.Text);
         }
         catch(Exception ex)
         {
@@ -55,29 +52,25 @@ public partial class MainWindow : Window
         }
     }
 
-    private async Task SearchForStocks(IProgress<IEnumerable<StockPrice>> progress)
+    private Task<IEnumerable<StockPrice>> SearchForStocks()
     {
-        var service = new StockService();
-        var loadingTask = new List<Task<IEnumerable<StockPrice>>>();
+        var tcs = new TaskCompletionSource<IEnumerable<StockPrice>>();
 
-        foreach (var identifier in StockIdentifier.Text.Split(',', ' '))
-        {
-            var loadTask = service.GetStockPricesFor(identifier,
-                CancellationToken.None);
+        ThreadPool.QueueUserWorkItem(_ => { 
+            var lines = File.ReadAllLines("StockPrices_Small.csv");
+            var prices = new List<StockPrice>();
 
-            loadTask = loadTask.ContinueWith(completedTask =>
+            foreach (var line in lines.Skip(1))
             {
-                progress?.Report(completedTask.Result);
-                return completedTask.Result;
-            });
+                prices.Add(StockPrice.FromCSV(line));
+            }
 
-            loadingTask.Add(loadTask);
-        }
+            tcs.SetResult(prices);
+        });
 
-        var data = await Task.WhenAll(loadingTask);
-
-        Stocks.ItemsSource = data.SelectMany(stock => stock);
+        return tcs.Task;
     }
+
 
     private async Task<IEnumerable<StockPrice>>
         GetStocksFor(string identifier)
