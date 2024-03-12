@@ -1,9 +1,9 @@
-﻿using StockAnalyzer.Core.Domain;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
+using StockAnalyzer.Core.Domain;
 
 namespace StockAnalyzer.Windows.Services;
 
@@ -15,7 +15,9 @@ public interface IStockStreamService
 
 public class MockStockStreamService : IStockStreamService
 {
-    public async IAsyncEnumerable<StockPrice> GetAllStockPrices([EnumeratorCancellation] CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<StockPrice> 
+        GetAllStockPrices([EnumeratorCancellation]
+                          CancellationToken cancellationToken = default)
     {
         await Task.Delay(500, cancellationToken);
 
@@ -37,12 +39,13 @@ public class MockStockStreamService : IStockStreamService
 
 public class StockDiskStreamService : IStockStreamService
 {
-    public async IAsyncEnumerable<StockPrice> GetAllStockPrices([EnumeratorCancellation]
-                                                           CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<StockPrice> 
+        GetAllStockPrices([EnumeratorCancellation]
+                           CancellationToken cancellationToken = default)
     {
         using var stream = new StreamReader(File.OpenRead("StockPrices_Small.csv"));
 
-        await stream.ReadLineAsync();
+        await stream.ReadLineAsync(); // Skip header row in the file
 
         while(await stream.ReadLineAsync() is string line)
         {
