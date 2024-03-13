@@ -48,30 +48,22 @@ public partial class MainWindow : Window
         {
             try
             {
-                Parallel.Invoke(
-                    () =>
+                var parallelLoopResult = Parallel.ForEach(stocks, (element, state) =>
+                {
+                    if (element.Key == "MSFT" || state.ShouldExitCurrentIteration)
                     {
-                        var msft = Calculate(stocks["MSFT"]);
-                        bag.Add(msft);
-                        throw new Exception("MSFT");
-                    },
-                    () =>
-                    {
-                        var googl = Calculate(stocks["GOOGL"]);
-                        bag.Add(googl);
-                        throw new Exception("GOOGL");
-                    },
-                    () =>
-                    {
-                        var aapl = Calculate(stocks["AAPL"]);
-                        bag.Add(aapl);
-                    },
-                    () =>
-                    {
-                        var cat = Calculate(stocks["CAT"]);
-                        bag.Add(cat);
+                        state.Break();
+
+                        return;
                     }
-                    );
+                    else
+                    {
+                        var result = Calculate(element.Value);
+                        bag.Add(result);
+                    }
+                });
+                
+                
             }
             catch (Exception ex)
             {
