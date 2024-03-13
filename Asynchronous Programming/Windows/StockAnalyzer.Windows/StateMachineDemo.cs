@@ -4,22 +4,18 @@ namespace StockAnalyzer.Windows;
 
 public class StateMachineDemo
 {
-    public Task<string>Run()
+    public Task<string> Run() 
     {
-        var result = Compute();
-
-        return result;
+        return Compute();
     }
 
-    public Task<string>Compute()
+    public Task<string> Compute()
     {
-        var result = Load();
-
-        return result;
+        return Load();
     }
 
-    public  Task<string>Load()
+    public Task<string> Load()
     {
-        return Task.Run(() => "StateMachine test");
+        return Task.Run(() => "Pluralsight");
     }
 }
