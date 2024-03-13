@@ -46,28 +46,37 @@ public partial class MainWindow : Window
 
         await Task.Run(() =>
         {
-            Parallel.Invoke(
-                () =>
-                {
-                    var msft = Calculate(stocks["MSFT"]);
-                    bag.Add(msft);
-                },
-                () =>
-                {
-                    var googl = Calculate(stocks["GOOGL"]);
-                    bag.Add(googl);
-                },
-                () =>
-                {
-                    var aapl = Calculate(stocks["AAPL"]);
-                    bag.Add(aapl);
-                },
-                () =>
-                {
-                    var cat = Calculate(stocks["CAT"]);
-                    bag.Add(cat);
-                }
-                );
+            try
+            {
+                Parallel.Invoke(
+                    () =>
+                    {
+                        var msft = Calculate(stocks["MSFT"]);
+                        bag.Add(msft);
+                        throw new Exception("MSFT");
+                    },
+                    () =>
+                    {
+                        var googl = Calculate(stocks["GOOGL"]);
+                        bag.Add(googl);
+                        throw new Exception("GOOGL");
+                    },
+                    () =>
+                    {
+                        var aapl = Calculate(stocks["AAPL"]);
+                        bag.Add(aapl);
+                    },
+                    () =>
+                    {
+                        var cat = Calculate(stocks["CAT"]);
+                        bag.Add(cat);
+                    }
+                    );
+            }
+            catch (Exception ex)
+            {
+                Notes.Text = ex.Message;
+            }
         });
 
         Stocks.ItemsSource = bag; 
