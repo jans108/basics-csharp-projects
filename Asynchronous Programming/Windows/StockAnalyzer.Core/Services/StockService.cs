@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using StockAnalyzer.Core.Domain;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,9 +45,7 @@ public class StockService : IStockService
 
 public class MockStockService : IStockService
 {
-    public Task<IEnumerable<StockPrice>>
-        GetStockPricesFor(string stockIdentifier, 
-        CancellationToken cancellationToken)
+    public Task<IEnumerable<StockPrice>> GetStockPricesFor(string stockIdentifier, CancellationToken cancellationToken)
     {
         var stocks = new List<StockPrice>
         {
@@ -77,9 +74,9 @@ public class MockStockService : IStockService
                 ChangePercent = 0.75m
             }
         };
-
+        
         var task = Task.FromResult(stocks.Where(stock => stock.Identifier == stockIdentifier));
-
         return task;
     }
 }
+

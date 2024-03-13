@@ -36,10 +36,3 @@ public class StockPrice
         return price;
     }
 }
-
-public class StockCalculation
-{
-    public string Identifier { get; set; }
-    public decimal? Result { get; set; }
-    public int TotalSeconds { get; set; }
-}
