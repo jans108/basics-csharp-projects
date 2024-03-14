@@ -10,34 +10,33 @@ internal class Program
 
     static object lock1 = new();
     static object lock2 = new();
-    static async Task Main(string[] args)
+    static void Main(string[] args)
     {
         Stopwatch stopwatch = new();
         stopwatch.Start();
 
-        var t1 = Task.Run(() => {
-            lock (lock1)
-            {
-                Thread.Sleep(1);
-                lock (lock2)
-                {
-                    Console.WriteLine("Hello!");
-                }
-            }
-        });
-        var t2 = Task.Run(() => { 
-            lock (lock2)
-            {
-                Thread.Sleep(1);
-                lock (lock1)
-                {
-                    Console.WriteLine("World");
-                }
-            }
-         });
 
-        await Task.WhenAll(t1, t2);
+        var cancellationTokenSource = new CancellationTokenSource();
+        cancellationTokenSource.CancelAfter(2000);
 
+        var parallelOptions = new ParallelOptions
+        {
+            CancellationToken = cancellationTokenSource.Token,
+            MaxDegreeOfParallelism = 1
+        };
+        int total = 0;
+        try
+        {
+            Parallel.For(0, 100, parallelOptions, (i) =>
+            {
+                Interlocked.Add(ref total, (int)Compute(i));
+            });
+        }
+        catch (OperationCanceledException ex)
+        {
+            Console.WriteLine("Cancellation Requested!");
+        }
+        Console.WriteLine(total);
         Console.WriteLine($"It took: {stopwatch.ElapsedMilliseconds}ms to run");
         Console.ReadLine();
     }
