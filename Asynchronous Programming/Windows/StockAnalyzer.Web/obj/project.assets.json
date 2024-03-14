@@ -76,11 +76,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
       "projectName": "StockAnalyzer.Web",
-      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
+      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\StockAnalyzer.Web.csproj",
       "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\obj\\",
+      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"
@@ -101,8 +101,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
-              "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
+            "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+              "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
             }
           }
         }

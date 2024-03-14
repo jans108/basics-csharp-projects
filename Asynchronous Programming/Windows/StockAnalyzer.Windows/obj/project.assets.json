@@ -77,11 +77,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
+      "projectUniqueName": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
       "projectName": "StockAnalyzer.Windows",
-      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
+      "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\StockAnalyzer.Windows.csproj",
       "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\obj\\",
+      "outputPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Windows\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Mincrosoft Visual Studio\\Shared\\NuGetPackages"
@@ -102,8 +102,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
-              "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\07\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
+            "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj": {
+              "projectPath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Core\\StockAnalyzer.Core.csproj"
             }
           }
         }
