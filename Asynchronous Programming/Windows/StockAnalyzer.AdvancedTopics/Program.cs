@@ -7,21 +7,37 @@ namespace StockAnalyzer.AdvancedTopics;
 internal class Program
 {
     static object syncRoot = new();
-    static void Main(string[] args)
+
+    static object lock1 = new();
+    static object lock2 = new();
+    static async Task Main(string[] args)
     {
         Stopwatch stopwatch = new();
         stopwatch.Start();
 
-        int total = 0;
-
-        Parallel.For(0, 100, (i) =>
-        {
-            var result = Compute(i);
-            Interlocked.Add(ref total, (int)result);
+        var t1 = Task.Run(() => {
+            lock (lock1)
+            {
+                Thread.Sleep(1);
+                lock (lock2)
+                {
+                    Console.WriteLine("Hello!");
+                }
+            }
         });
-      
+        var t2 = Task.Run(() => { 
+            lock (lock2)
+            {
+                Thread.Sleep(1);
+                lock (lock1)
+                {
+                    Console.WriteLine("World");
+                }
+            }
+         });
 
-        Console.WriteLine(total);
+        await Task.WhenAll(t1, t2);
+
         Console.WriteLine($"It took: {stopwatch.ElapsedMilliseconds}ms to run");
         Console.ReadLine();
     }
