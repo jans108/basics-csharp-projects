@@ -6,39 +6,19 @@ namespace StockAnalyzer.AdvancedTopics;
 
 internal class Program
 {
-    static object syncRoot = new();
 
-    static object lock1 = new();
-    static object lock2 = new();
+    static AsyncLocal<decimal?> asyncLocal = new();
     static void Main(string[] args)
     {
-        Stopwatch stopwatch = new();
-        stopwatch.Start();
-
-
-        var cancellationTokenSource = new CancellationTokenSource();
-        cancellationTokenSource.CancelAfter(2000);
-
-        var parallelOptions = new ParallelOptions
+        asyncLocal.Value = 200;
+        Parallel.For(0, 100, async (i) =>
         {
-            CancellationToken = cancellationTokenSource.Token,
-            MaxDegreeOfParallelism = 1
-        };
-        int total = 0;
-        try
-        {
-            Parallel.For(0, 100, parallelOptions, (i) =>
-            {
-                Interlocked.Add(ref total, (int)Compute(i));
-            });
-        }
-        catch (OperationCanceledException ex)
-        {
-            Console.WriteLine("Cancellation Requested!");
-        }
-        Console.WriteLine(total);
-        Console.WriteLine($"It took: {stopwatch.ElapsedMilliseconds}ms to run");
-        Console.ReadLine();
+            var options = new ParallelOptions { MaxDegreeOfParallelism = 2 };
+            var currentValue = asyncLocal.Value;
+            asyncLocal.Value = Compute(i);
+        });
+
+        var currentValue = asyncLocal.Value;
     }
 
     static Random random = new();
