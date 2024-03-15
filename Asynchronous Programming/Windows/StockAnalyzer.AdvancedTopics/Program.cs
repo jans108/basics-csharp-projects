@@ -1,24 +1,24 @@
-﻿
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace StockAnalyzer.AdvancedTopics;
 
 internal class Program
 {
-
-    static AsyncLocal<decimal?> asyncLocal = new();
     static void Main(string[] args)
     {
-        asyncLocal.Value = 200;
-        Parallel.For(0, 100, async (i) =>
-        {
-            var options = new ParallelOptions { MaxDegreeOfParallelism = 2 };
-            var currentValue = asyncLocal.Value;
-            asyncLocal.Value = Compute(i);
-        });
+        Stopwatch stopwatch = new();
+        stopwatch.Start();
 
-        var currentValue = asyncLocal.Value;
+        var result = Enumerable.Range(0, 100)
+            .AsParallel()
+            .AsOrdered()
+            .Select(Compute)
+            .Take(10);
+
+        result.ForAll(Console.WriteLine);
+
+        Console.WriteLine($"It took: {stopwatch.ElapsedMilliseconds}ms to run");
+        Console.ReadLine();
     }
 
     static Random random = new();
@@ -27,7 +27,8 @@ internal class Program
         var randomMilliseconds = random.Next(10, 50);
         var end = DateTime.Now + TimeSpan.FromMilliseconds(randomMilliseconds);
 
-        while (DateTime.Now < end) { }
+        // This will spin for a while...
+        while(DateTime.Now < end) { }
 
         return value + 0.5m;
     }

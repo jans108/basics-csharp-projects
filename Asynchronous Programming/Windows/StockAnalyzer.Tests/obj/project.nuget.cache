@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SRR8Jtu26AJEstLZbGUWxCC/QFb8bRHY3tbvg7T7Oaoc6SCrIHyVXtiz5JF0CYYsmv7FScAn9rssqZHV/+y/Vw==",
+  "dgSpecHash": "IpvBIGDWYOhbxBRfzNAhn1uGqSUen9JMW8p2P5VgBC4RSRWumqU7uITW+Ha0T7yyMnnkiOkwVByJXa4+43zGvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\08\\demos\\Windows\\Start_Here\\StockAnalyzer.Tests\\StockAnalyzer.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Maciek\\OneDrive\\Pulpit\\asynch programming\\09\\demos\\Windows\\Start_Here\\StockAnalyzer.Tests\\StockAnalyzer.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maciek\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Maciek\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
