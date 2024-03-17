@@ -3,7 +3,7 @@
 /// TODO
 /// CHANGE AttachDbFilename TO POINT TO THE DATABASE FILE (MDF)
 using SqlConnection connection
-    = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Code\WarehouseManagement.mdf;Integrated Security=True;Connect Timeout=30");
+    = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagement.mdf;Integrated Security=True;Connect Timeout=30");
 
 using SqlCommand command
     = new SqlCommand("SELECT * FROM [Orders]", connection);

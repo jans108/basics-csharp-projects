@@ -1,0 +1,11 @@
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net6.0\WarehouseManagementSystem.Domain.deps.json
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net6.0\WarehouseManagementSystem.Domain.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net6.0\WarehouseManagementSystem.Domain.pdb
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.AssemblyInfoInputs.cache
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.AssemblyInfo.cs
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\refint\WarehouseManagementSystem.Domain.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\WarehouseManagementSystem.Domain.pdb
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net6.0\ref\WarehouseManagementSystem.Domain.dll

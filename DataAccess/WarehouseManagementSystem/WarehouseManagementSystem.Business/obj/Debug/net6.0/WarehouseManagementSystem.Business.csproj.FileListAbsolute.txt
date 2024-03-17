@@ -1,0 +1,15 @@
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\bin\Debug\net6.0\WarehouseManagementSystem.Business.deps.json
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\bin\Debug\net6.0\WarehouseManagementSystem.Business.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\bin\Debug\net6.0\WarehouseManagementSystem.Business.pdb
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\bin\Debug\net6.0\WarehouseManagementSystem.Domain.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\bin\Debug\net6.0\WarehouseManagementSystem.Domain.pdb
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.csproj.AssemblyReference.cache
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.AssemblyInfoInputs.cache
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.AssemblyInfo.cs
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.csproj.CoreCompileInputs.cache
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\Warehous.C6666932.Up2Date
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\refint\WarehouseManagementSystem.Business.dll
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\WarehouseManagementSystem.Business.pdb
+C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Business\obj\Debug\net6.0\ref\WarehouseManagementSystem.Business.dll
