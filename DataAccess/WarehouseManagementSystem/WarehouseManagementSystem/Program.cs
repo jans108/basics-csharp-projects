@@ -1,21 +1,23 @@
-﻿using System.Data.SqlClient;
+﻿using Microsoft.EntityFrameworkCore;
+using WarehouseManagementSystem;
 
-/// TODO
-/// CHANGE AttachDbFilename TO POINT TO THE DATABASE FILE (MDF)
-using SqlConnection connection
-    = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Data Access\02\demos\Windows\Start_Here\WarehouseManagement.mdf;Integrated Security=True;Connect Timeout=30");
+using var context = new WarehouseContext();
 
-using SqlCommand command
-    = new SqlCommand("SELECT * FROM [Orders]", connection);
-
-connection.Open();
-
-using SqlDataReader reader =
-    command.ExecuteReader();
-
-while (reader.Read())
+foreach(var order in context.Orders.
+    Include(order => order.Customer).
+    Include(order => order.ShippingProvider).
+    Include(order => order.LineItems).
+    ThenInclude(lineItem => lineItem.Item))
+    
 {
-    Console.WriteLine(reader["Id"]);
+    Console.WriteLine($"Order Id: {order.Id}");
+    Console.WriteLine($"Customer: {order.Customer.Name}");
+    Console.WriteLine($"Shipping provider: {order.ShippingProvider}");
+    foreach(var lineItem in order.LineItems)
+    {
+        Console.WriteLine($"\t{lineItem.Item.Name}");
+        Console.WriteLine($"\t{lineItem.Item.Price}");
+    }
 }
 
 Console.ReadLine();
