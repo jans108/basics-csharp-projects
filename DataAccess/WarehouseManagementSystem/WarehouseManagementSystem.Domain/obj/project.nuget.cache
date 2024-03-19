@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MEzfy1jeXQ62/Y3bzAe/TgpoxmbyyXni4u9qKjaeuAT934EGm4Kxwk+wXp7/t38aM6WjWhadj6MZmX2heRfiTQ==",
+  "dgSpecHash": "K1qLuxATvkiPX8JZ1VjN0ZkQ+Xf+Z6tvGHUWlRXGq+aXsJAMhAXVdyCXn0YHSksboG4gYtG2eVtLWPIinHjRTg==",
   "success": true,
-  "projectFilePath": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\48662\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\48662\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\48662\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

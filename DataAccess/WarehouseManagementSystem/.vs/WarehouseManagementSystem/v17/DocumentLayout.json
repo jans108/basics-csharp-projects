@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\",
+  "WorkspaceRootPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|c:\\data access\\02\\demos\\windows\\start_here\\warehousemanagementsystem\\warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|d:\\data access\\02\\demos\\windows\\start_here\\warehousemanagementsystem\\warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|d:\\data access\\02\\demos\\windows\\start_here\\warehousemanagementsystem\\warehousemanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|d:\\data access\\02\\demos\\windows\\start_here\\warehousemanagementsystem\\warehousemanagementsystem\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\lineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|d:\\data access\\02\\demos\\windows\\start_here\\warehousemanagementsystem\\warehousemanagementsystem\\localdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\localdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Order.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem\\Order.cs",
+              "ToolTip": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Order.cs",
+              "RelativeToolTip": "WarehouseManagementSystem\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:38:46.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LineItem.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\LineItem.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem\\LineItem.cs",
+              "ToolTip": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\LineItem.cs",
+              "RelativeToolTip": "WarehouseManagementSystem\\LineItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:38:45.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LocalData.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\LocalData.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem\\LocalData.cs",
+              "ToolTip": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\LocalData.cs",
+              "RelativeToolTip": "WarehouseManagementSystem\\LocalData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T22:38:44.35Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem\\Program.cs",
-              "ToolTip": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
+              "ToolTip": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeToolTip": "WarehouseManagementSystem\\Program.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAuwBUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-17T15:01:20.393Z",
               "EditorCaption": ""

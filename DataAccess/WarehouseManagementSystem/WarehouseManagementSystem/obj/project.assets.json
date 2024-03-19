@@ -2494,23 +2494,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48662\\.nuget\\packages\\": {},
+    "C:\\Users\\macie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\WarehouseManagementSystem.csproj",
+      "projectUniqueName": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\WarehouseManagementSystem.csproj",
       "projectName": "WarehouseManagementSystem",
-      "projectPath": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\WarehouseManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\48662\\.nuget\\packages\\",
-      "outputPath": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\obj\\",
+      "projectPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\WarehouseManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
+      "outputPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\48662\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\macie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2519,14 +2519,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj": {
-              "projectPath": "C:\\Data Access\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj"
+            "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj": {
+              "projectPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj"
             }
           }
         }
@@ -2576,24 +2577,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

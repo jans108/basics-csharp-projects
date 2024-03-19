@@ -3,11 +3,16 @@ using WarehouseManagementSystem;
 
 using var context = new WarehouseContext();
 
-foreach(var order in context.Orders.
-    Include(order => order.Customer).
-    Include(order => order.ShippingProvider).
-    Include(order => order.LineItems).
-    ThenInclude(lineItem => lineItem.Item))
+var customer = context.Customers
+    .Include(customer => customer.Orders)
+    .FirstOrDefault(customer => customer.Name == "Filip Ekberg");
+
+foreach(var order in context.Orders
+    .Where(order => order.Customer.Name.Contains("Ekberg"))
+    .Include(order => order.Customer)
+    .Include(order => order.ShippingProvider)
+    .Include(order => order.LineItems)
+    .ThenInclude(lineItem => lineItem.Item))
     
 {
     Console.WriteLine($"Order Id: {order.Id}");
