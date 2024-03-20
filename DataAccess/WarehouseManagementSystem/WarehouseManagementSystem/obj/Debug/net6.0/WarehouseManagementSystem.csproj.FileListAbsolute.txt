@@ -86,3 +86,6 @@ D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagement
 D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\obj\Debug\net6.0\ref\WarehouseManagementSystem.dll
 D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\net6.0\Humanizer.dll
 D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\DATA ACCESS\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
