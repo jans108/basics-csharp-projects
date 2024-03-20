@@ -1,28 +1,25 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Data.SqlClient;
 using WarehouseManagementSystem;
+using Microsoft.EntityFrameworkCore;
 
 using var context = new WarehouseContext();
 
-var customer = context.Customers
-    .Include(customer => customer.Orders)
-    .FirstOrDefault(customer => customer.Name == "Filip Ekberg");
-
-foreach(var order in context.Orders
-    .Where(order => order.Customer.Name.Contains("Ekberg"))
-    .Include(order => order.Customer)
-    .Include(order => order.ShippingProvider)
-    .Include(order => order.LineItems)
-    .ThenInclude(lineItem => lineItem.Item))
-    
+var firstCustomer = context.Customers.First();
+firstCustomer.Orders.Add(new()
 {
-    Console.WriteLine($"Order Id: {order.Id}");
-    Console.WriteLine($"Customer: {order.Customer.Name}");
-    Console.WriteLine($"Shipping provider: {order.ShippingProvider}");
-    foreach(var lineItem in order.LineItems)
+    Id = Guid.NewGuid(),
+    LineItems = new LineItem[]
     {
-        Console.WriteLine($"\t{lineItem.Item.Name}");
-        Console.WriteLine($"\t{lineItem.Item.Price}");
+        new()
+    {
+            Id = Guid.NewGuid(),
+            Item = context.Items.First(),
+            Quantity = 1
     }
-}
+    },
+    ShippingProvider = context.ShippingProviders.First()
+});
 
-Console.ReadLine();
+context.Customers.Update(firstCustomer);
+context.SaveChanges();
+Console.WriteLine("Customer updated!");

@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj",
+      "projectUniqueName": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj",
       "projectName": "WarehouseManagementSystem.Business",
-      "projectPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj",
+      "projectPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\obj\\",
+      "outputPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj": {
-              "projectPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj"
+            "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj": {
+              "projectPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj"
             }
           }
         }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
+      "projectUniqueName": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
       "projectName": "WarehouseManagementSystem.Domain",
-      "projectPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
+      "projectPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "D:\\DATA ACCESS\\02\\demos\\Windows\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\obj\\",
+      "outputPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
