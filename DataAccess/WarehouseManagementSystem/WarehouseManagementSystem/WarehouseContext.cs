@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
 
 namespace WarehouseManagementSystem
 {
@@ -29,6 +31,12 @@ namespace WarehouseManagementSystem
             {
                 optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagement.mdf");
             }
+
+            optionsBuilder.UseLoggerFactory(
+                new LoggerFactory(new[]
+                {
+                    new DebugLoggerProvider()
+                }));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
