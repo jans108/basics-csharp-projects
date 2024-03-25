@@ -5,20 +5,36 @@ using Microsoft.Data.SqlClient;
 var connectionString =
     "Data Source=(LocalDB)\\MSSQLLocalDB;" +
     "Initial Catalog=WarehouseManagement;" +
-    "Integrated Security=True;";
+    "Integrated Security=True;"; 
 
 using SqlConnection connection = new(connectionString);
 
+using SqlCommand command = new(
+    "SELECT * FROM [Orders]" +
+    "INNER JOIN [Customers] ON" +
+    "[Customers].Id = [Orders].CustomerId", connection);
+
+connection.Open(); 
+
+using var reader = command.ExecuteReader();
+
+if(reader.HasRows == false)
+{
+    return;
+}
+
+while(reader.Read())
+{
+    var orderId = reader["Id"];
+    var customer = reader["Name"];
+
+    Console.WriteLine(orderId);
+    Console.WriteLine(customer);
+}
 
 
 
-
-
-
-
-
-
-
+Console.ReadLine();
 
 
 
