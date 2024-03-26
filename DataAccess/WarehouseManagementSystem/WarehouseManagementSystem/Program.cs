@@ -5,37 +5,47 @@ using Microsoft.Data.SqlClient;
 var connectionString =
     "Data Source=(LocalDB)\\MSSQLLocalDB;" +
     "Initial Catalog=WarehouseManagement;" +
-    "Integrated Security=True;"; 
+    "Integrated Security=True;";
 
 using SqlConnection connection = new(connectionString);
 
 using SqlCommand command = new(
-    "SELECT * FROM [Orders]" +
-    "INNER JOIN [Customers] ON" +
-    "[Customers].Id = [Orders].CustomerId", connection);
+    @"INSERT INTO [Customers]
+    (Id, Name, Address, PostalCode, Country, PhoneNumber)
+    VALUES(NEWID(), @Name, @Address, @PostalCode, @Country, @PhoneNumber)
+    ",connection);
 
-connection.Open(); 
+var nameParameter =
+    new SqlParameter("Name", System.Data.SqlDbType.NVarChar);
+nameParameter.Value = Console.ReadLine().Trim();
+command.Parameters.Add(nameParameter);
 
-using var reader = command.ExecuteReader();
+var addressParameter =
+    new SqlParameter("Address", System.Data.SqlDbType.NVarChar);
+addressParameter.Value = Console.ReadLine().Trim();
+command.Parameters.Add(addressParameter);
 
-if(reader.HasRows == false)
-{
-    return;
-}
+var postalCodeParameter =
+    new SqlParameter("PostalCode", System.Data.SqlDbType.NVarChar);
+postalCodeParameter.Value = Console.ReadLine().Trim();
+command.Parameters.Add(postalCodeParameter);
 
-while(reader.Read())
-{
-    var orderId = reader["Id"];
-    var customer = reader["Name"];
+var countryParameter =
+    new SqlParameter("Country", System.Data.SqlDbType.NVarChar);
+countryParameter.Value = Console.ReadLine().Trim();
+command.Parameters.Add(countryParameter);
 
-    Console.WriteLine(orderId);
-    Console.WriteLine(customer);
-}
+var phoneNumberParameter =
+    new SqlParameter("PhoneNumber", System.Data.SqlDbType.NVarChar);
+phoneNumberParameter.Value = Console.ReadLine().Trim();
+command.Parameters.Add(phoneNumberParameter);
 
+connection.Open();
 
+var rowsAffected = command.ExecuteNonQuery();
 
+Console.WriteLine($"Rows affected: { rowsAffected }");
 Console.ReadLine();
-
 
 
 //using System.Data.SqlClient;
