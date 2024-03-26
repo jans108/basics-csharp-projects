@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Domain", "WarehouseManagementSystem.Domain\WarehouseManagementSystem.Domain.csproj", "{875B6985-A7F5-47B1-969D-7E6F03A034F9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Web", "WarehouseManagementSystem.Web\WarehouseManagementSystem.Web.csproj", "{679AF7BD-BE4C-4077-8018-F3AF7641A990}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{875B6985-A7F5-47B1-969D-7E6F03A034F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{875B6985-A7F5-47B1-969D-7E6F03A034F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{875B6985-A7F5-47B1-969D-7E6F03A034F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679AF7BD-BE4C-4077-8018-F3AF7641A990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679AF7BD-BE4C-4077-8018-F3AF7641A990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679AF7BD-BE4C-4077-8018-F3AF7641A990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679AF7BD-BE4C-4077-8018-F3AF7641A990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
