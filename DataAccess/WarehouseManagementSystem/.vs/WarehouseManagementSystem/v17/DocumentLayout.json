@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C14D2A53-926C-4158-B30C-E0D846C5AF79}|WarehouseManagmentSystem.Infrastructure\\WarehouseManagmentSystem.Infrastructure.csproj|d:\\data access\\03\\demos\\start_here\\warehousemanagementsystem\\warehousemanagmentsystem.infrastructure\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14D2A53-926C-4158-B30C-E0D846C5AF79}|WarehouseManagmentSystem.Infrastructure\\WarehouseManagmentSystem.Infrastructure.csproj|solutionrelative:warehousemanagmentsystem.infrastructure\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{679AF7BD-BE4C-4077-8018-F3AF7641A990}|WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj|d:\\data access\\03\\demos\\start_here\\warehousemanagementsystem\\warehousemanagementsystem.web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{679AF7BD-BE4C-4077-8018-F3AF7641A990}|WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj|solutionrelative:warehousemanagementsystem.web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14D2A53-926C-4158-B30C-E0D846C5AF79}|WarehouseManagmentSystem.Infrastructure\\WarehouseManagmentSystem.Infrastructure.csproj|d:\\data access\\03\\demos\\start_here\\warehousemanagementsystem\\warehousemanagmentsystem.infrastructure\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14D2A53-926C-4158-B30C-E0D846C5AF79}|WarehouseManagmentSystem.Infrastructure\\WarehouseManagmentSystem.Infrastructure.csproj|solutionrelative:warehousemanagmentsystem.infrastructure\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "WarehouseManagmentSystem.Infrastructure\\GenericRepository.cs",
+              "ToolTip": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\GenericRepository.cs",
+              "RelativeToolTip": "WarehouseManagmentSystem.Infrastructure\\GenericRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAIwDAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:52:18.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\IRepository.cs",
+              "RelativeDocumentMoniker": "WarehouseManagmentSystem.Infrastructure\\IRepository.cs",
+              "ToolTip": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\IRepository.cs",
+              "RelativeToolTip": "WarehouseManagmentSystem.Infrastructure\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:42:48.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:24:53.673Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
