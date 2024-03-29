@@ -2,33 +2,38 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WarehouseManagementSystem.Web.Models;
+using WarehouseManagementSystem.Infrastructure;
 
 namespace WarehouseManagementSystem.Web.Controllers;
 
 public class OrderController : Controller
 {
-    private WarehouseContext context;
+    private IRepository<Order> orderRepository;
+    private IRepository<ShippingProvider> shippingProviderRepository;
+    private IRepository<Item> itemRepository;
 
-    public OrderController()
+    public OrderController( IRepository<Order> orderRepository,
+                            IRepository<ShippingProvider> shippingProviderRepository,
+                            IRepository<Item> itemRepository)
     {
-        context = new WarehouseContext();
+        this.orderRepository = orderRepository;
+        this.shippingProviderRepository = shippingProviderRepository;
+        this.itemRepository = itemRepository;
     }
 
     public IActionResult Index()
     {
-        var orders = context.Orders
-            .Include(order => order.LineItems)
-            .ThenInclude(lineItem => lineItem.Item)
-            .Where(order => 
-            order.CreatedAt > DateTime.UtcNow.AddDays(-1)
-        ).ToList();
+        var orders =
+            orderRepository.Find(
+                order => order.CreatedAt > DateTime.UtcNow.AddDays(-1)
+              );
 
         return View(orders);
     }
 
     public IActionResult Create()
     {
-        var items = context.Items.ToList();
+        var items = itemRepository.All();
 
         return View(items);
     }
@@ -54,21 +59,20 @@ public class OrderController : Controller
         var order = new Order
         {
             LineItems = model.LineItems
-                .Select(line => new LineItem { 
-                    Id = Guid.NewGuid(), 
-                    ItemId = line.ItemId, 
+                .Select(line => new LineItem {
+                    Id = Guid.NewGuid(),
+                    ItemId = line.ItemId,
                     Quantity = line.Quantity
                 })
                 .ToList(),
 
             Customer = customer,
-            ShippingProvider = context.ShippingProviders.First(),
+            ShippingProviderId = shippingProviderRepository.All().First().Id,
             CreatedAt = DateTimeOffset.UtcNow
         };
 
-        context.Orders.Add(order);
-
-        context.SaveChanges();
+        orderRepository.Add(order);
+        orderRepository.SaveChanges();
 
         return Ok("Order Created");
     }

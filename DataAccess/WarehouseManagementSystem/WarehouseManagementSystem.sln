@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Web", "WarehouseManagementSystem.Web\WarehouseManagementSystem.Web.csproj", "{679AF7BD-BE4C-4077-8018-F3AF7641A990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagmentSystem.Infrastructure", "WarehouseManagmentSystem.Infrastructure\WarehouseManagmentSystem.Infrastructure.csproj", "{C14D2A53-926C-4158-B30C-E0D846C5AF79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Infrastructure", "WarehouseManagmentSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj", "{C14D2A53-926C-4158-B30C-E0D846C5AF79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

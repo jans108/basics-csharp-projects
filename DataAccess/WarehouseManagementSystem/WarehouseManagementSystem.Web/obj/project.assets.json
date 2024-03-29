@@ -1027,6 +1027,16 @@
             "rid": "win"
           }
         }
+      },
+      "WarehouseManagementSystem.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WarehouseManagementSystem.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WarehouseManagementSystem.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2513,6 +2523,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WarehouseManagementSystem.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../WarehouseManagmentSystem.Infrastructure/WarehouseManagementSystem.Infrastructure.csproj",
+      "msbuildProject": "../WarehouseManagmentSystem.Infrastructure/WarehouseManagementSystem.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2521,27 +2536,28 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.7",
-      "Microsoft.Extensions.Logging.Debug >= 6.0.0"
+      "Microsoft.Extensions.Logging.Debug >= 6.0.0",
+      "WarehouseManagementSystem.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\macie\\.nuget\\packages\\": {},
+    "C:\\Users\\48662\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj",
+      "projectUniqueName": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj",
       "projectName": "WarehouseManagementSystem.Web",
-      "projectPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj",
-      "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "D:\\DATA ACCESS\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\obj\\",
+      "projectPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\WarehouseManagementSystem.Web.csproj",
+      "packagesPath": "C:\\Users\\48662\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\macie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\48662\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2550,13 +2566,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2608,6 +2627,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

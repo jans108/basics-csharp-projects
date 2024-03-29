@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\WarehouseManagementSystem.Web\WarehouseManagementSystem.Web.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,8 +1,8 @@
 ﻿using System.Linq.Expressions;
 
-namespace WarehouseManagmentSystem.Infrastructure;
+namespace WarehouseManagementSystem.Infrastructure;
 
-internal interface IRepository<T>
+public interface IRepository<T>
 {
     T Add(T entity);
     T Update(T entity);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj": {}
+    "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj": {
+    "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
-        "projectName": "WarehouseManagementSystem.Domain",
-        "projectPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj",
+        "projectName": "WarehouseManagementSystem.Infrastructure",
+        "projectPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\48662\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\48662\\Desktop\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagmentSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[6.0.28, 6.0.28]"
             },
             {

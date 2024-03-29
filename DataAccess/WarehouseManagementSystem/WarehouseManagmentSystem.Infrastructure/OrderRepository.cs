@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using WarehouseManagementSystem;
 
-namespace WarehouseManagmentSystem.Infrastructure;
+namespace WarehouseManagementSystem.Infrastructure;
 
 public class OrderRepository : GenericRepository<Order>
 {

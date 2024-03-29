@@ -1,6 +1,6 @@
 ﻿using WarehouseManagementSystem;
 
-namespace WarehouseManagmentSystem.Infrastructure;
+namespace WarehouseManagementSystem.Infrastructure;
 
 public class WarehouseRepository : GenericRepository<Warehouse>
 {

@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
 using WarehouseManagementSystem;
 
-namespace WarehouseManagmentSystem.Infrastructure;
+namespace WarehouseManagementSystem.Infrastructure;
 
 public abstract class GenericRepository<T>
     : IRepository<T> where T : class
