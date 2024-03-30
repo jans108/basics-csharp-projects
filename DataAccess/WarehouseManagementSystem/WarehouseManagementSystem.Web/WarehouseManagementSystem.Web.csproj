@@ -7,13 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="OLD\**" />
-	  <Content Remove="OLD\**" />
-	  <EmbeddedResource Remove="OLD\**" />
-	  <None Remove="OLD\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Content Remove="wwwroot\lib\vue\vue.min.js" />
 	</ItemGroup>
 	
@@ -36,7 +29,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\WarehouseManagmentSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj" />
+	  <ProjectReference Include="..\WarehouseManagementSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj" />
 	</ItemGroup>
-
 </Project>

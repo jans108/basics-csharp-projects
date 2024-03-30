@@ -1,4 +1,0 @@
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagmentSystem.Infrastructure\obj\Debug\net6.0\WarehouseManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagmentSystem.Infrastructure\obj\Debug\net6.0\WarehouseManagementSystem.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagmentSystem.Infrastructure\obj\Debug\net6.0\WarehouseManagementSystem.Infrastructure.AssemblyInfo.cs
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagmentSystem.Infrastructure\obj\Debug\net6.0\WarehouseManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache

@@ -1,8 +1,0 @@
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.csproj.AssemblyReference.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.AssemblyInfoInputs.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.AssemblyInfo.cs
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.csproj.CoreCompileInputs.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.RazorAssemblyInfo.cache
-C:\Users\48662\Desktop\03\demos\Start_Here\WarehouseManagementSystem\WarehouseManagementSystem.Web\obj\Debug\net6.0\WarehouseManagementSystem.Web.RazorAssemblyInfo.cs
