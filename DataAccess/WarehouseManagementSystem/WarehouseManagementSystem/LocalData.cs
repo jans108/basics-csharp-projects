@@ -5,11 +5,11 @@ namespace WarehouseManagementSystem
 {
     internal class LocalData
     {
-        public static IEnumerable<Order> Load()
+        public static IEnumerable<Domain.Order> Load()
         {
             var json = File.ReadAllText("orders.json");
 
-            return JsonSerializer.Deserialize<IEnumerable<Order>>(json) ?? Enumerable.Empty<Order>();
+            return JsonSerializer.Deserialize<IEnumerable<Domain.Order>>(json) ?? Enumerable.Empty<Domain.Order>();
         }
 
         public static void GenerateAndSave()

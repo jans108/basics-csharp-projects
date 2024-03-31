@@ -7,13 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="OLD\**" />
-	  <Content Remove="OLD\**" />
-	  <EmbeddedResource Remove="OLD\**" />
-	  <None Remove="OLD\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Content Remove="wwwroot\lib\vue\vue.min.js" />
 	</ItemGroup>
 	
@@ -35,4 +28,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\WarehouseManagementSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj" />
+	</ItemGroup>
 </Project>
