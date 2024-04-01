@@ -17,6 +17,11 @@ public class OrderControllerTests
         var shippingProviderRepository =
             new Mock<IRepository<ShippingProvider>>();
 
+        var unitOfWork = new Mock<IUnitOfWork>();
+        unitOfWork.SetupProperty(unit => unit.ItemRepository, itemRepository.Object);
+        unitOfWork.SetupProperty(unit => unit.ShippingProviderRepository, shippingProviderRepository.Object);
+        unitOfWork.SetupProperty(unit => unit.OrderRepository, orderRepository.Object);
+
         // Return a fake ShippingProvider
         // when All() is callled
         shippingProviderRepository.Setup(
@@ -24,9 +29,7 @@ public class OrderControllerTests
         ).Returns(new[] { new ShippingProvider() });
 
         var orderController = new OrderController(
-            orderRepository.Object,
-            shippingProviderRepository.Object,
-            itemRepository.Object
+            unitOfWork.Object
         );
 
         var createOrderModel = new CreateOrderModel
