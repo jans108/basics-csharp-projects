@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WarehouseManagementSystem.Business\WarehouseManagementSystem.Business.csproj" />
-    <ProjectReference Include="..\WarehouseManagementSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
