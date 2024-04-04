@@ -11,10 +11,10 @@ namespace Warehouse.Data.SQLite
             Warehouses = new HashSet<Warehouse>();
         }
 
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } 
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public string Price { get; set; } = null!;
+        public decimal Price { get; set; } 
         public long InStock { get; set; }
 
         public virtual ICollection<LineItem> LineItems { get; set; }

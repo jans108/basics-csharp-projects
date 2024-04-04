@@ -1,41 +1,44 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using WarehouseManagementSystem.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using WarehouseManagementSystem.Web.Models;
 
 namespace WarehouseManagementSystem.Web.Controllers;
 
 public class OrderController : Controller
 {
-    private readonly IUnitOfWork unitOfWork;
+    private WarehouseContext context;
 
-    public OrderController(
-        IUnitOfWork unitOfWork
-        )
+    public OrderController(global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> object1, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> @object)
     {
-        this.unitOfWork = unitOfWork;
+      
+    }
+
+    public OrderController(global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> object1, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.ShippingProvider> object2, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Item> object3)
+    {
     }
 
     public IActionResult Index()
     {
-        var orders =
-            unitOfWork.OrderRepository.Find(
-                order => 
-                order.CreatedAt > DateTime.UtcNow.AddDays(-1)
-            );
+        var orders = context.Orders
+            .Include(order => order.LineItems)
+            .ThenInclude(lineItem => lineItem.Item)
+            .Where(order => 
+            order.CreatedAt > DateTime.UtcNow.AddDays(-1)
+        ).ToList();
 
         return View(orders);
     }
 
     public IActionResult Create()
     {
-        var items = unitOfWork.ItemRepository.All();
+        var items = context.Items.ToList();
 
         return View(items);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(CreateOrderModel model)
+    public IActionResult Create(CreateOrderModel model)
     {
         #region Validate input
         if (!model.LineItems.Any()) return BadRequest("Please submit line items");
@@ -43,32 +46,14 @@ public class OrderController : Controller
         if (string.IsNullOrWhiteSpace(model.Customer.Name)) return BadRequest("Customer needs a name");
         #endregion
 
-        var customer =
-            unitOfWork.CustomerRepository
-            .Find(customer => customer.Name == model.Customer.Name)
-            .FirstOrDefault();
-
-        if (customer is null)
+        var customer = new Customer
         {
-            customer = new Customer
-            {
-                Name = model.Customer.Name,
-                Address = model.Customer.Address,
-                PostalCode = model.Customer.PostalCode,
-                Country = model.Customer.Country,
-                PhoneNumber = model.Customer.PhoneNumber
-            };
-        }
-        else
-        {
-            customer.Address = model.Customer.Address;
-            customer.PostalCode = model.Customer.PostalCode;
-            customer.Country = model.Customer.Country;
-            customer.PhoneNumber = model.Customer.PhoneNumber;
-
-            unitOfWork.CustomerRepository.Update(customer);
-            
-        }
+            Name = model.Customer.Name,
+            Address = model.Customer.Address,
+            PostalCode = model.Customer.PostalCode,
+            Country = model.Customer.Country,
+            PhoneNumber = model.Customer.PhoneNumber
+        };
 
         var order = new Order
         {
@@ -81,27 +66,16 @@ public class OrderController : Controller
                 .ToList(),
 
             Customer = customer,
-            ShippingProviderId = unitOfWork.ShippingProviderRepository.All().First().Id,
+            ShippingProvider = context.ShippingProviders.First(),
             CreatedAt = DateTimeOffset.UtcNow
         };
 
-        unitOfWork.OrderRepository.Add(order);
+        context.Orders.Add(order);
 
-        unitOfWork.SaveChanges();
-
-        var invoiceRepository = new InvoiceRepository();
-        await invoiceRepository.Add(new() { 
-            Id = Guid.NewGuid(),
-            CustomerId = customer.Id,
-            OrderId = order.Id,
-            DueDate = new(2025, 01, 01),
-            AmountDue = 9999 // Calculate sum..
-        });
+        context.SaveChanges();
 
         return Ok("Order Created");
     }
-
-
 
 
 

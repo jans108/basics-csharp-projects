@@ -17,11 +17,10 @@ namespace WarehouseManagementSystem
         public DbSet<Order> Orders { get; set; }
         public DbSet<ShippingProvider> ShippingProviders { get; set; }
 
-        protected override void 
-            OnConfiguring(DbContextOptionsBuilder 
-            optionsBuilder)
+        protected override void
+            OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // MOVE TO A SECURE PLACE!!!!
+            // MOVE TO A SECURE PLACE
             var connectionString =
                 "Data Source=(LocalDB)\\MSSQLLocalDB;" +
                 "Initial Catalog=WarehouseManagement;" +

@@ -1,28 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WarehouseManagementSystem.Infrastructure;
 
 namespace WarehouseManagementSystem.Web.Controllers;
 
 public class CustomerController : Controller
 {
-    private IRepository<Customer> customerRepository;
+    private WarehouseContext context;
 
-    public CustomerController(IRepository<Customer> customerRepository)
+    public CustomerController()
     {
-        this.customerRepository = customerRepository;
+        context = new WarehouseContext();
     }
 
     public IActionResult Index(Guid? id)
     {
         if (id == null)
         {
-            var customers = customerRepository.All();
+            var customers = context.Customers.ToList();
 
             return View(customers);
         }
         else
         {
-            var customer = customerRepository.Get(id.Value);
+            var customer = context.Customers.Find(id.Value);
 
             return View(new[] { customer });
         }
