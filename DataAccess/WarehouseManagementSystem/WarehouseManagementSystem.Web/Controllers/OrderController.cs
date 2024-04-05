@@ -1,38 +1,35 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using WarehouseManagementSystem.Infrastructure;
 using WarehouseManagementSystem.Web.Models;
 
 namespace WarehouseManagementSystem.Web.Controllers;
 
 public class OrderController : Controller
 {
-    private WarehouseContext context;
+    private readonly IUnitOfWork unitOfWork;
 
-    public OrderController(global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> object1, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> @object)
+    public OrderController(
+        IUnitOfWork unitOfWork
+        )
     {
-      
-    }
-
-    public OrderController(global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Order> object1, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.ShippingProvider> object2, global::WarehouseManagmentSystem.Infrastructure.IRepository<global::Warehouse.Data.SQLite.Item> object3)
-    {
+        this.unitOfWork = unitOfWork;
     }
 
     public IActionResult Index()
     {
-        var orders = context.Orders
-            .Include(order => order.LineItems)
-            .ThenInclude(lineItem => lineItem.Item)
-            .Where(order => 
-            order.CreatedAt > DateTime.UtcNow.AddDays(-1)
-        ).ToList();
+        var orders =
+            unitOfWork.OrderRepository.Find(
+                order => 
+                order.CreatedAt > DateTime.UtcNow.AddDays(-1)
+            );
 
         return View(orders);
     }
 
     public IActionResult Create()
     {
-        var items = context.Items.ToList();
+        var items = unitOfWork.ItemRepository.All();
 
         return View(items);
     }
@@ -46,14 +43,32 @@ public class OrderController : Controller
         if (string.IsNullOrWhiteSpace(model.Customer.Name)) return BadRequest("Customer needs a name");
         #endregion
 
-        var customer = new Customer
+        var customer =
+            unitOfWork.CustomerRepository
+            .Find(customer => customer.Name == model.Customer.Name)
+            .FirstOrDefault();
+
+        if (customer is null)
         {
-            Name = model.Customer.Name,
-            Address = model.Customer.Address,
-            PostalCode = model.Customer.PostalCode,
-            Country = model.Customer.Country,
-            PhoneNumber = model.Customer.PhoneNumber
-        };
+            customer = new Customer
+            {
+                Name = model.Customer.Name,
+                Address = model.Customer.Address,
+                PostalCode = model.Customer.PostalCode,
+                Country = model.Customer.Country,
+                PhoneNumber = model.Customer.PhoneNumber
+            };
+        }
+        else
+        {
+            customer.Address = model.Customer.Address;
+            customer.PostalCode = model.Customer.PostalCode;
+            customer.Country = model.Customer.Country;
+            customer.PhoneNumber = model.Customer.PhoneNumber;
+
+            unitOfWork.CustomerRepository.Update(customer);
+            
+        }
 
         var order = new Order
         {
@@ -66,16 +81,18 @@ public class OrderController : Controller
                 .ToList(),
 
             Customer = customer,
-            ShippingProvider = context.ShippingProviders.First(),
+            ShippingProviderId = unitOfWork.ShippingProviderRepository.All().First().Id,
             CreatedAt = DateTimeOffset.UtcNow
         };
 
-        context.Orders.Add(order);
+        unitOfWork.OrderRepository.Add(order);
 
-        context.SaveChanges();
+        unitOfWork.SaveChanges();
 
         return Ok("Order Created");
     }
+
+
 
 
 

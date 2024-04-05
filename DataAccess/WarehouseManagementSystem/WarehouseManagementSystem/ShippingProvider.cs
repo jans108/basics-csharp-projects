@@ -7,7 +7,6 @@ namespace WarehouseManagementSystem
     {
         public ShippingProvider()
         {
-            LineItems = new HashSet<LineItem>();
             Orders = new HashSet<Order>();
         }
 
@@ -15,7 +14,6 @@ namespace WarehouseManagementSystem
         public string Name { get; set; } = null!;
         public decimal FreightCost { get; set; }
 
-        public virtual ICollection<LineItem> LineItems { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }
 }
