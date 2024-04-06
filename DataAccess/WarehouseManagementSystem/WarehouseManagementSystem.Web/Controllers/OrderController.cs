@@ -35,7 +35,7 @@ public class OrderController : Controller
     }
 
     [HttpPost]
-    public IActionResult Create(CreateOrderModel model)
+    public async Task<IActionResult> Create(CreateOrderModel model)
     {
         #region Validate input
         if (!model.LineItems.Any()) return BadRequest("Please submit line items");
@@ -88,6 +88,16 @@ public class OrderController : Controller
         unitOfWork.OrderRepository.Add(order);
 
         unitOfWork.SaveChanges();
+
+        var invoiceRepository = new InvoiceRepository();
+        await invoiceRepository.Add(new()
+        {
+            Id = Guid.NewGuid(),
+            CustomerId = customer.Id,
+            OrderId = order.Id,
+            DueDate = new(2025, 01, 01),
+            AmountDue = 9999
+        });
 
         return Ok("Order Created");
     }
