@@ -12,7 +12,7 @@ public class InvoiceRepository
     public async Task Add(Invoice invoice)
     {
         using var client = new CosmosClient(
-            accountEndpoint: "https://csharp-data-acess.com"
+            accountEndpoint: "https://csharp-data-acess.com",
             authKeyOrResourceToken: "f4mkemfkl903KWfawld"
             );
 
