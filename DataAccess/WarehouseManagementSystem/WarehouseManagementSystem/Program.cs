@@ -1,6 +1,28 @@
 ﻿
 using WarehouseManagementSystem.Infrastructure;
 
+var supportRequestRepository =
+    new SupportRequestRepository();
+
+
+supportRequestRepository.Initialize();
+
+Guid customerId = Guid.NewGuid();
+
+supportRequestRepository.Add(
+    customerId, "sample@email.com", "Hello from Course!"
+    );
+
+foreach(var request in supportRequestRepository.Get(customerId))
+{
+    Console.WriteLine(request.Message);
+}
+
+
+
+
+
+
 var itemRepository = new ItemRepository(new());
 var itemDetailService = new ItemDetailService();
 

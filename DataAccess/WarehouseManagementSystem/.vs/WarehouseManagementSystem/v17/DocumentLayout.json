@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|d:\\data access\\05\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.infrastructure\\supportrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|solutionrelative:warehousemanagementsystem.infrastructure\\supportrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|d:\\data access\\05\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.infrastructure\\supportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|solutionrelative:warehousemanagementsystem.infrastructure\\supportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|d:\\data access\\05\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.infrastructure\\itemdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B26A241-2F64-46EA-ACDD-CDC046C985C0}|WarehouseManagementSystem.Infrastructure\\WarehouseManagementSystem.Infrastructure.csproj|solutionrelative:warehousemanagementsystem.infrastructure\\itemdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupportRequestRepository.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\SupportRequestRepository.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem.Infrastructure\\SupportRequestRepository.cs",
+              "ToolTip": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\SupportRequestRepository.cs",
+              "RelativeToolTip": "WarehouseManagementSystem.Infrastructure\\SupportRequestRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T21:14:45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SupportRequest.cs",
+              "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\SupportRequest.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem.Infrastructure\\SupportRequest.cs",
+              "ToolTip": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\SupportRequest.cs",
+              "RelativeToolTip": "WarehouseManagementSystem.Infrastructure\\SupportRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T21:10:08.552Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,27 +74,27 @@
               "RelativeDocumentMoniker": "WarehouseManagementSystem\\Program.cs",
               "ToolTip": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeToolTip": "WarehouseManagementSystem\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T21:39:27.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ItemDetailService.cs",
               "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\ItemDetailService.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Infrastructure\\ItemDetailService.cs",
               "ToolTip": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\ItemDetailService.cs",
               "RelativeToolTip": "WarehouseManagementSystem.Infrastructure\\ItemDetailService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAANAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T21:27:07.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Web\\Controllers\\OrderController.cs",
@@ -73,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "InvoiceRepository.cs",
               "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\InvoiceRepository.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Infrastructure\\InvoiceRepository.cs",
@@ -86,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Invoice.cs",
               "DocumentMoniker": "D:\\DATA ACCESS\\05\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Infrastructure\\Invoice.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Infrastructure\\Invoice.cs",
