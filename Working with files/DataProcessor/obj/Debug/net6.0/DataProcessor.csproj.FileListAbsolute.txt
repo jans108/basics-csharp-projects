@@ -1,0 +1,28 @@
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\bin\Debug\net6.0\DataProcessor.exe
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\bin\Debug\net6.0\DataProcessor.deps.json
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\bin\Debug\net6.0\DataProcessor.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\bin\Debug\net6.0\DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\bin\Debug\net6.0\DataProcessor.pdb
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\refint\DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.pdb
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\DataProcessor.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Working with Files\02\demos\before\02FileExists\DataProcessor\obj\Debug\net6.0\ref\DataProcessor.dll
+D:\Files\DataProcessor\bin\Debug\net6.0\DataProcessor.exe
+D:\Files\DataProcessor\bin\Debug\net6.0\DataProcessor.deps.json
+D:\Files\DataProcessor\bin\Debug\net6.0\DataProcessor.runtimeconfig.json
+D:\Files\DataProcessor\bin\Debug\net6.0\DataProcessor.dll
+D:\Files\DataProcessor\bin\Debug\net6.0\DataProcessor.pdb
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.AssemblyInfoInputs.cache
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.AssemblyInfo.cs
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.csproj.CoreCompileInputs.cache
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.dll
+D:\Files\DataProcessor\obj\Debug\net6.0\refint\DataProcessor.dll
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.pdb
+D:\Files\DataProcessor\obj\Debug\net6.0\DataProcessor.genruntimeconfig.cache
+D:\Files\DataProcessor\obj\Debug\net6.0\ref\DataProcessor.dll

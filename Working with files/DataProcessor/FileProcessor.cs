@@ -2,7 +2,7 @@
 
 namespace DataProcessor;
 
-internal class FileProcessor
+public class FileProcessor
 {
     public string InputFilePath { get; }
 
@@ -12,10 +12,9 @@ internal class FileProcessor
     {
         WriteLine($"Begin process of {InputFilePath}");
 
-        // Check if file exists
         if (!File.Exists(InputFilePath))
         {
-            WriteLine($"ERROR: file {InputFilePath} does not exist.");
+            WriteLine($"ERROR: file {InputFilePath} doesn't exist.");
             return;
         }
 
