@@ -44,5 +44,21 @@ public class FileProcessor
         string backupFilePath = Path.Combine( backupDirectoryPath, inputFileName);
         WriteLine($"Copying {InputFilePath} to {backupFilePath}");
         File.Copy(InputFilePath, backupFilePath, true);
+
+        //Move to in progress dir
+        Directory.CreateDirectory(Path.Combine(rootDirectoryPath, InProgressDirectoryName));
+        string inProgressFilePath =
+            Path.Combine(rootDirectoryPath, InProgressDirectoryName, inputFileName);
+
+        if (File.Exists(inProgressFilePath))
+        {
+            WriteLine($"ERROR: a file with the name {inProgressFilePath} already exist");
+            return;
+        }
+        else
+        {
+            WriteLine($"Moving {InputFilePath} to {inProgressFilePath}");
+            File.Move(InputFilePath, inProgressFilePath);
+        }
     }
 }
