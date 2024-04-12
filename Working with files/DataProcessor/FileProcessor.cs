@@ -72,6 +72,22 @@ public class FileProcessor
                 WriteLine($"{extension} is an unsupported file type.");
                 break;
         }
+
+        //Move file after processing is complete
+        string completedDirectoryPath 
+            = Path.Combine(rootDirectoryPath, CompletedDirectoryName);
+        Directory.CreateDirectory(completedDirectoryPath);
+
+        string fileNameWithCompletedExtension =
+            Path.ChangeExtension(inputFileName, ".complete");
+        string completedFileName = 
+            $"{Guid.NewGuid()}_{fileNameWithCompletedExtension}";
+
+        string completedFilePath =
+            Path.Combine(completedDirectoryPath, completedFileName);
+
+        WriteLine($"Moving {inProgressFilePath} to {completedFilePath}");
+        File.Move(inProgressFilePath, completedFilePath);
     }
 
     private void ProcessTextFile(string inProgressFilePath)
