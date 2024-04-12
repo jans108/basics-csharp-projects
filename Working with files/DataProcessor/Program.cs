@@ -45,6 +45,20 @@ static void ProcessSingleFile(string filePath)
 
 static void ProcessDirectory(string directoryPath, string fileType)
 {
-
+  //  string[] allFiles = Directory.GetFiles(directoryPath); //to get all files
+    switch (fileType)
+    {
+        case "TEXT":
+            string[] textFiles = Directory.GetFiles(directoryPath, "*.txt");
+            foreach (var textFilePath in textFiles)
+            {
+                var fileProcessor = new FileProcessor(textFilePath);
+                fileProcessor.Process();
+            }
+            break;
+        default:
+            WriteLine($"ERROR: {fileType} is not supported");
+            return;
+    }
 }
 
