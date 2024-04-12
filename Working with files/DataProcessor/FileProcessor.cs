@@ -88,6 +88,9 @@ public class FileProcessor
 
         WriteLine($"Moving {inProgressFilePath} to {completedFilePath}");
         File.Move(inProgressFilePath, completedFilePath);
+
+        string? inProgressDirectoryPath = Path.GetDirectoryName(inProgressFilePath);
+        Directory.Delete(inProgressDirectoryPath!, true);
     }
 
     private void ProcessTextFile(string inProgressFilePath)
