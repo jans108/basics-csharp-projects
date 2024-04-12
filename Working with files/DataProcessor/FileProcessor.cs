@@ -60,5 +60,23 @@ public class FileProcessor
             WriteLine($"Moving {InputFilePath} to {inProgressFilePath}");
             File.Move(InputFilePath, inProgressFilePath);
         }
+
+        // Determine type of file
+        string extension = Path.GetExtension(InputFilePath);
+        switch (extension)
+        {
+            case ".txt":
+                ProcessTextFile(inProgressFilePath);
+                break;
+            default:
+                WriteLine($"{extension} is an unsupported file type.");
+                break;
+        }
+    }
+
+    private void ProcessTextFile(string inProgressFilePath)
+    {
+        WriteLine($"Processing text file {inProgressFilePath}");
+        //Read in and process
     }
 }
