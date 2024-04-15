@@ -21,7 +21,7 @@ using var inputFileWatcher = new FileSystemWatcher(directoryToWatch);
 inputFileWatcher.IncludeSubdirectories = false;
 inputFileWatcher.InternalBufferSize = 32_768; // 32 KB
 inputFileWatcher.Filter = "*.*"; // this is the default
-inputFileWatcher.NotifyFilter = NotifyFilters.LastWrite;
+inputFileWatcher.NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite;
 
 inputFileWatcher.Created += FileCreated;
 inputFileWatcher.Changed += FileChanged;
@@ -37,6 +37,8 @@ ReadLine();
 static void FileCreated(object sender, FileSystemEventArgs e)
 {
     WriteLine($"* File Created: {e.Name} - type: {e.ChangeType}");
+
+    ProcessSingleFile(e.FullPath);
 }
 
 static void FileChanged(object sender, FileSystemEventArgs e)
