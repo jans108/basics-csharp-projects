@@ -17,6 +17,7 @@ if(!Directory.Exists(directoryToWatch))
 
 WriteLine($"Watching directory {directoryToWatch} for changes");
 using var inputFileWatcher = new FileSystemWatcher(directoryToWatch);
+using var timer = new Timer(ProcessFiles, null, 0, 1000);
 
 inputFileWatcher.IncludeSubdirectories = false;
 inputFileWatcher.InternalBufferSize = 32_768; // 32 KB
@@ -38,12 +39,14 @@ static void FileCreated(object sender, FileSystemEventArgs e)
 {
     WriteLine($"* File Created: {e.Name} - type: {e.ChangeType}");
 
-    ProcessSingleFile(e.FullPath);
+    FilesToProcess.Files.TryAdd(e.FullPath, e.FullPath);
 }
 
 static void FileChanged(object sender, FileSystemEventArgs e)
 {
     WriteLine($"* File changed: {e.Name} - type: {e.ChangeType}");
+
+    FilesToProcess.Files.TryAdd(e.FullPath, e.FullPath);
 }
 
 static void FileDeleted(object sender, FileSystemEventArgs e)
@@ -61,10 +64,16 @@ static void WatcherError(object sender, ErrorEventArgs e)
     WriteLine($"ERROR: file system watching may no longer be active: {e.GetException()}");
 }
 
-static void ProcessSingleFile(string filePath)
+static void ProcessFiles(object stateInfo)
 {
-    var fileProcessor = new FileProcessor(filePath);
-    fileProcessor.Process();
+    foreach (var fileName in FilesToProcess.Files.Keys)
+    {
+        if (FilesToProcess.Files.TryRemove(fileName, out _))
+        {
+            var fileProcessor = new FileProcessor(fileName);
+            fileProcessor.Process();
+        }
+    }
 }
 
 
