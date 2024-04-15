@@ -3,39 +3,61 @@ using static System.Console;
 
 WriteLine("Parsing command line options");
 
+var directoryToWatch = args[0];
+
 // Command line validation omitted for brevity
 
-var command = args[0];
-
-if (command == "--file")
+if(!Directory.Exists(directoryToWatch))
 {
-    var filePath = args[1];
+    WriteLine($"ERROR: {directoryToWatch} does not exist");
+    WriteLine("Press enter to quit.");
+    ReadLine();
+    return;
+}
 
-    //Check if path is absolute
-    if(!Path.IsPathFullyQualified(filePath))
-    {
-        WriteLine($"ERROR: path '{filePath}' must be fully qualified.");
-        ReadLine();
-        return;
-    }
+WriteLine($"Watching directory {directoryToWatch} for changes");
+using var inputFileWatcher = new FileSystemWatcher(directoryToWatch);
 
-    WriteLine($"Single file {filePath} selected");
-    ProcessSingleFile(filePath);
-}
-else if (command == "--dir")
-{
-    var directoryPath = args[1];
-    var fileType = args[2];
-    WriteLine($"Directory {directoryPath} selected for {fileType} files");
-    ProcessDirectory(directoryPath, fileType);
-}
-else
-{
-    WriteLine("Invalid command line options");
-}
+inputFileWatcher.IncludeSubdirectories = false;
+inputFileWatcher.InternalBufferSize = 32_768; // 32 KB
+inputFileWatcher.Filter = "*.*"; // this is the default
+inputFileWatcher.NotifyFilter = NotifyFilters.LastWrite;
+
+inputFileWatcher.Created += FileCreated;
+inputFileWatcher.Changed += FileChanged;
+inputFileWatcher.Deleted += FileDeleted;
+inputFileWatcher.Renamed += FileRenamed;
+inputFileWatcher.Error += WatcherError;
+
+inputFileWatcher.EnableRaisingEvents = true;
 
 WriteLine("Press enter to quit.");
 ReadLine();
+
+static void FileCreated(object sender, FileSystemEventArgs e)
+{
+    WriteLine($"* File Created: {e.Name} - type: {e.ChangeType}");
+}
+
+static void FileChanged(object sender, FileSystemEventArgs e)
+{
+    WriteLine($"* File changed: {e.Name} - type: {e.ChangeType}");
+}
+
+static void FileDeleted(object sender, FileSystemEventArgs e)
+{
+    WriteLine($"* File deleted: {e.Name} - type: {e.ChangeType}");
+}
+
+static void FileRenamed(object sender, RenamedEventArgs e)
+{
+    WriteLine($"* File renamed: {e.OldName} to {e.Name} - type: {e.ChangeType}");
+}
+
+static void WatcherError(object sender, ErrorEventArgs e)
+{
+    WriteLine($"ERROR: file system watching may no longer be active: {e.GetException()}");
+}
 
 static void ProcessSingleFile(string filePath)
 {
@@ -43,22 +65,5 @@ static void ProcessSingleFile(string filePath)
     fileProcessor.Process();
 }
 
-static void ProcessDirectory(string directoryPath, string fileType)
-{
-  //  string[] allFiles = Directory.GetFiles(directoryPath); //to get all files
-    switch (fileType)
-    {
-        case "TEXT":
-            string[] textFiles = Directory.GetFiles(directoryPath, "*.txt");
-            foreach (var textFilePath in textFiles)
-            {
-                var fileProcessor = new FileProcessor(textFilePath);
-                fileProcessor.Process();
-            }
-            break;
-        default:
-            WriteLine($"ERROR: {fileType} is not supported");
-            return;
-    }
-}
+
 
