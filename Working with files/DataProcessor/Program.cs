@@ -16,6 +16,8 @@ if(!Directory.Exists(directoryToWatch))
     return;
 }
 
+ProcessExistingFiles(directoryToWatch); 
+
 WriteLine($"Watching directory {directoryToWatch} for changes");
 using var inputFileWatcher = new FileSystemWatcher(directoryToWatch);
 
@@ -92,5 +94,14 @@ static void ProcessFile(CacheEntryRemovedArguments args)
     }
 }
 
+static void ProcessExistingFiles(string inputDirectory)
+{
+    WriteLine($"Checking {inputDirectory} for existing files");
 
+    foreach(var filePath in Directory.EnumerateFiles(inputDirectory))
+    {
+        WriteLine($"  - Found {filePath}");
+        AddToCache(filePath);
+    }
+}
 
