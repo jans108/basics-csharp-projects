@@ -82,6 +82,10 @@ public class FileProcessor
                 var textProcessor = new TextFileProcessor(inProgressFilePath, completedFilePath);
                 textProcessor.Process();
                 break;
+            case ".data":
+                var binaryProcessor = new BinaryFileProcessor(inProgressFilePath, completedFilePath);
+                binaryProcessor.Process();
+                break;
             default:
                 WriteLine($"{extension} is an unsupported file type.");
                 break;
