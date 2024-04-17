@@ -21,7 +21,7 @@ public class BinaryFileProcessor
 
         Array.Copy(data, newData, data.Length);
 
-        newData[newData.Length - 1] = largest;
+        newData[^1] = largest;
 
         File.WriteAllBytes(OutputFilePath, newData);
     }
