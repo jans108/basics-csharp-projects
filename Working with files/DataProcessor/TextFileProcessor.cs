@@ -13,23 +13,36 @@ public class TextFileProcessor
 
     public void Process()
     {
-        var openToReadFrom = new FileStreamOptions { Mode = FileMode.Open };
-        using var inputFileStream = new FileStream(InputFilePath, openToReadFrom);
-        using var inputStreamReader = new StreamReader(inputFileStream);
+        //var openToReadFrom = new FileStreamOptions { Mode = FileMode.Open };
+        //using var inputFileStream = new FileStream(InputFilePath, openToReadFrom);
+        //using var inputStreamReader = new StreamReader(inputFileStream);
 
-        var createToWriteTo = new FileStreamOptions 
-        {
-            Mode = FileMode.CreateNew,
-            Access = FileAccess.Write
-        };
-        using var outputFileStream = new FileStream(OutputFilePath, createToWriteTo);
-        using var outputStreamWriter = new StreamWriter(outputFileStream);
+        using StreamReader inputStreamReader = File.OpenText(InputFilePath);
+
+        //var createToWriteTo = new FileStreamOptions 
+        //{
+        //    Mode = FileMode.CreateNew,
+        //    Access = FileAccess.Write
+        //};
+        //using var outputFileStream = new FileStream(OutputFilePath, createToWriteTo);
+
+        using var outputStreamWriter = new StreamWriter(OutputFilePath);
 
         while (!inputStreamReader.EndOfStream)
         {
             string inputLine = inputStreamReader.ReadLine()!;
             string processedLine = inputLine.ToUpperInvariant();
-            outputStreamWriter.WriteLine(processedLine);
+
+            bool isLastLine = inputStreamReader.EndOfStream;
+
+            if (isLastLine)
+            {
+                outputStreamWriter.Write(processedLine);
+            }
+            else
+            {
+                outputStreamWriter.WriteLine(processedLine);
+            }
         }
 
 
