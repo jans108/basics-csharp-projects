@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RrF62aQnUVZ4owhK5413enJYRblfrfPPihhKfcSYz3y/afINpxV4iZrLXeGzXuB7b8hwvirYeJugb6fBudmJfQ==",
+  "dgSpecHash": "4v1xjmzYcLNQvdnhcWhNwaGjjenkxWv8ABmBtxGbji+vfGXsFxW1SmRGYRxUuSWvnNrBl3B5IRxBcuID8IBk6A==",
   "success": true,
   "projectFilePath": "D:\\Files\\DataProcessor\\DataProcessor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\macie\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
