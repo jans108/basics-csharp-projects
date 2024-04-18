@@ -15,27 +15,27 @@ public class BinaryFileProcessor
     {
         var openToReadFrom = new FileStreamOptions { Mode = FileMode.Open };
         using FileStream inputFileStream = File.Open(InputFilePath , openToReadFrom);
+        using var binaryReader = new BinaryReader(inputFileStream);
 
         using FileStream outputFileStream = File.Create(OutputFilePath);
+        using var binaryWriter = new BinaryWriter(outputFileStream);
 
-        const int endOfStream = -1;
 
-        int largestByte = 0;
+        byte largestByte = 0;
 
-        // Read next byte (as an int): returns -1 if end of stream
-        int currentByte = inputFileStream.ReadByte();
-        while (currentByte != endOfStream)
+  
+        while (binaryReader.BaseStream.Position < binaryReader.BaseStream.Length)
         {
-            outputFileStream.WriteByte((byte) currentByte);
+            byte currentByte = binaryReader.ReadByte();
+
+            binaryWriter.Write(currentByte);
 
             if (currentByte > largestByte)
             {
                 largestByte = currentByte;
             }
-
-            currentByte = inputFileStream.ReadByte();
         }
 
-        outputFileStream.WriteByte((byte)largestByte);
+        binaryWriter.Write(largestByte);
     }
 }
