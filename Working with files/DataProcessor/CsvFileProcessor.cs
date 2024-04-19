@@ -28,15 +28,15 @@ public class CsvFileProcessor
             Delimiter = "," // this is the default
         };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
+        csvReader.Context.RegisterClassMap<ProcessedOrderMap>();
 
-        IEnumerable<Order> records = csvReader.GetRecords<Order>();
+        IEnumerable<ProcessedOrder> records = csvReader.GetRecords<ProcessedOrder>();
 
-        foreach(var order in records)
+        foreach(ProcessedOrder processedOrder in records)
         {
-            Console.WriteLine($"Order Number: {order.OrderNumber}");
-            Console.WriteLine($"Customer Number: {order.CustomerNumber}");
-            Console.WriteLine($"Description: {order.Description}");
-            Console.WriteLine($"Quantity: {order.Quantity}");
+            Console.WriteLine($"Order Number: {processedOrder.OrderNumber}");
+            Console.WriteLine($"Customer: {processedOrder.Customer}");
+            Console.WriteLine($"Amount: {processedOrder.Amount}");
         }
     }
 }
