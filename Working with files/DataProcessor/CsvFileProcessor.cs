@@ -19,7 +19,11 @@ public class CsvFileProcessor
     {
         using StreamReader inputReader = File.OpenText(InputFilePath);
 
-        var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture);
+        var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            Comment = '@',
+            AllowComments = true
+        };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
 
         IEnumerable<dynamic> records = csvReader.GetRecords<dynamic>();
