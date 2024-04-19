@@ -24,19 +24,15 @@ public class CsvFileProcessor
             Comment = '@',
             AllowComments = true,
             TrimOptions = TrimOptions.Trim,
-            IgnoreBlankLines = true, // this is the default
-            Delimiter = "," // this is the default
         };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
         csvReader.Context.RegisterClassMap<ProcessedOrderMap>();
 
         IEnumerable<ProcessedOrder> records = csvReader.GetRecords<ProcessedOrder>();
 
-        foreach(ProcessedOrder processedOrder in records)
-        {
-            Console.WriteLine($"Order Number: {processedOrder.OrderNumber}");
-            Console.WriteLine($"Customer: {processedOrder.Customer}");
-            Console.WriteLine($"Amount: {processedOrder.Amount}");
-        }
+        using StreamWriter output = File.CreateText(OutputFilePath);
+        using var csvWriter = new CsvWriter(output, CultureInfo.InvariantCulture);
+
+        csvWriter.WriteRecords(records);
     }
 }
