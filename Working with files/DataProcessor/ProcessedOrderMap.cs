@@ -9,6 +9,7 @@ public class ProcessedOrderMap : ClassMap<ProcessedOrder>
     {
         AutoMap(CultureInfo.InvariantCulture);
         Map(po => po.Customer).Name("CustomerNumber");
-        Map(po => po.Amount).Name("Quantity");
+        Map(po => po.Amount).Name("Quantity")
+                            .TypeConverter<RomanTypeConverter>();
     }
 }
