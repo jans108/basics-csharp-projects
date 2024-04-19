@@ -22,7 +22,8 @@ public class CsvFileProcessor
         var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
             Comment = '@',
-            AllowComments = true
+            AllowComments = true,
+            TrimOptions = TrimOptions.Trim
         };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
 
