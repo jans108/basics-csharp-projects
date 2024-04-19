@@ -25,18 +25,18 @@ public class CsvFileProcessor
             AllowComments = true,
             TrimOptions = TrimOptions.Trim,
             IgnoreBlankLines = true, // this is the default
-            Delimiter = ";"
+            Delimiter = "," // this is the default
         };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
 
-        IEnumerable<dynamic> records = csvReader.GetRecords<dynamic>();
+        IEnumerable<Order> records = csvReader.GetRecords<Order>();
 
-        foreach(var record in records)
+        foreach(var order in records)
         {
-            Console.WriteLine(record.OrderNumber);
-            Console.WriteLine(record.CustomerNumber);
-            Console.WriteLine(record.Description);
-            Console.WriteLine(record.Quantity);
+            Console.WriteLine($"Order Number: {order.OrderNumber}");
+            Console.WriteLine($"Customer Number: {order.CustomerNumber}");
+            Console.WriteLine($"Description: {order.Description}");
+            Console.WriteLine($"Quantity: {order.Quantity}");
         }
     }
 }
