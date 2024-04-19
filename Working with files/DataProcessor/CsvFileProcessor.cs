@@ -23,7 +23,9 @@ public class CsvFileProcessor
         {
             Comment = '@',
             AllowComments = true,
-            TrimOptions = TrimOptions.Trim
+            TrimOptions = TrimOptions.Trim,
+            IgnoreBlankLines = true, // this is the default
+            HasHeaderRecord = false
         };
         using CsvReader csvReader = new CsvReader(inputReader, csvConfiguration);
 
@@ -31,10 +33,10 @@ public class CsvFileProcessor
 
         foreach(var record in records)
         {
-            Console.WriteLine(record.OrderNumber);
-            Console.WriteLine(record.CustomerNumber);
-            Console.WriteLine(record.Decription);
-            Console.WriteLine(record.Quantity);
+            Console.WriteLine(record.Field1);
+            Console.WriteLine(record.Field2);
+            Console.WriteLine(record.Field3);
+            Console.WriteLine(record.Field4);
         }
     }
 }
