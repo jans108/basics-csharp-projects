@@ -54,6 +54,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ApprovalTests": {
+              "target": "Package",
+              "version": "[5.7.2, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
