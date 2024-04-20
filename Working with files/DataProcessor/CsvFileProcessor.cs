@@ -1,23 +1,30 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
+using System.IO.Abstractions;
 
 namespace DataProcessor;
 
 public class CsvFileProcessor
 {
+    public readonly IFileSystem _fileSystem;
+
     public string InputFilePath { get; }
     public string OutputFilePath { get; }
 
-    public CsvFileProcessor(string inputFilePath, string outputFilePath)
+    public CsvFileProcessor(string inputFilePath, string outputFilePath, IFileSystem fileSystem)
     {
         InputFilePath = inputFilePath;
         OutputFilePath = outputFilePath;
+        _fileSystem = fileSystem;
     }
+
+    public CsvFileProcessor(string inputFilePath, string outputFilePath)
+        : this(inputFilePath, outputFilePath, new FileSystem()) { }
 
     public void Process()
     {
-        using StreamReader inputReader = File.OpenText(InputFilePath);
+        using var inputReader = _fileSystem.File.OpenText(InputFilePath);
 
         var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
@@ -30,7 +37,7 @@ public class CsvFileProcessor
 
         IEnumerable<ProcessedOrder> records = csvReader.GetRecords<ProcessedOrder>();
 
-        using StreamWriter output = File.CreateText(OutputFilePath);
+        using var output = _fileSystem.File.CreateText(OutputFilePath);
         using var csvWriter = new CsvWriter(output, CultureInfo.InvariantCulture);
 
         csvWriter.WriteRecords(records);

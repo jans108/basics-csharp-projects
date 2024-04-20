@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[27.2.1, )"
             },
+            "System.IO.Abstractions": {
+              "target": "Package",
+              "version": "[16.1.25, )"
+            },
             "System.Runtime.Caching": {
               "target": "Package",
               "version": "[8.0.0, )"
