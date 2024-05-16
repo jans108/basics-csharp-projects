@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿
+using static System.Console;
 
 WriteLine("Welcome to the Globomantics calculator!");
 WriteLine();
@@ -26,7 +27,3 @@ else
 WriteLine("Press enter to exit");
 ReadLine();
 
-static int Add(int a, int b)
-{
-    return a + b;
-}
