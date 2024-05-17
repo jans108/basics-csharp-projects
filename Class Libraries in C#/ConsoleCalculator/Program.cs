@@ -1,4 +1,4 @@
-﻿
+﻿using Globomantics.Math;
 using static System.Console;
 
 WriteLine("Welcome to the Globomantics calculator!");
@@ -16,7 +16,7 @@ int number2 = int.Parse(ReadLine()!);
 
 if (operation == "+")
 {
-    var result = Add(number1, number2);
+    var result = Calculator.Add(number1, number2);
     WriteLine($"The result is: {result}");
 }
 else

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCalculator", "ConsoleCalculator\ConsoleCalculator.csproj", "{36B9B7CD-4EAE-4B62-80CF-A5B2D990FBC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globomantics.Math", "Globomantics.Math\Globomantics.Math.csproj", "{AC2E8B88-55A1-4FB8-B6F1-2193BF3EAC0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Globomantics.Math", "Globomantics.Math\Globomantics.Math.csproj", "{AC2E8B88-55A1-4FB8-B6F1-2193BF3EAC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globomantics.Math.Tests", "Globomantics.Math.Tests\Globomantics.Math.Tests.csproj", "{ED0D47FB-67C2-4DE4-919F-7A2DFB5A57D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AC2E8B88-55A1-4FB8-B6F1-2193BF3EAC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC2E8B88-55A1-4FB8-B6F1-2193BF3EAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC2E8B88-55A1-4FB8-B6F1-2193BF3EAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0D47FB-67C2-4DE4-919F-7A2DFB5A57D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0D47FB-67C2-4DE4-919F-7A2DFB5A57D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0D47FB-67C2-4DE4-919F-7A2DFB5A57D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0D47FB-67C2-4DE4-919F-7A2DFB5A57D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

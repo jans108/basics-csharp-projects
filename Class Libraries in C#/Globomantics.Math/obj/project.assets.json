@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "ConsoleCalculator/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ConsoleCalculator.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ConsoleCalculator.dll": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "ConsoleCalculator/1.0.0": {
-      "type": "project",
-      "path": "../ConsoleCalculator/ConsoleCalculator.csproj",
-      "msbuildProject": "../ConsoleCalculator/ConsoleCalculator.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "ConsoleCalculator >= 1.0.0"
-    ]
+    "net8.0": []
   },
   "packageFolders": {
     "C:\\Users\\macie\\.nuget\\packages\\": {},
@@ -58,11 +39,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\ConsoleCalculator\\ConsoleCalculator.csproj": {
-              "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\ConsoleCalculator\\ConsoleCalculator.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -95,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
