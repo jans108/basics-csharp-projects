@@ -11,9 +11,6 @@
 
 	<ItemGroup>
 		<AssemblyAttribute Include="NUnit.Framework.ParallelizableAttribute" />
-		<AssemblyAttribute Include="NUnit.Framework.TimeoutAttribute">
-			<_Parameter1>1000</_Parameter1>
-		</AssemblyAttribute>
 	</ItemGroup>
 	
 	

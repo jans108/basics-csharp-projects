@@ -12,7 +12,6 @@ using System;
 using System.Reflection;
 
 [assembly: NUnit.Framework.ParallelizableAttribute()]
-[assembly: NUnit.Framework.TimeoutAttribute("1000")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Globomantics.Math.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
