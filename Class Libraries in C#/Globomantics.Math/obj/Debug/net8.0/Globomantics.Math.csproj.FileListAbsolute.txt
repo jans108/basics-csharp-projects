@@ -9,3 +9,4 @@ C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibr
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\net8.0\refint\Globomantics.Math.dll
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\net8.0\Globomantics.Math.pdb
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\net8.0\ref\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\net8.0\Globomantics.Math.csproj.AssemblyReference.cache

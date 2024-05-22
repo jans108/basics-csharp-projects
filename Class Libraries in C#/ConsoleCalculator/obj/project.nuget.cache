@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qhoj3CiEqSz9BqVEaIX7vYGti+j1z9J2C3HhDoiUpdNPmD7YyNwBg6uicDnEREBcvGmCgnq1dxf+4Gml0RpkQQ==",
+  "dgSpecHash": "FxM1EqFnyWlMhFOgOqS7NWnKJLYtVYpfH4mjZrwQIbesS3PNW1ldoSIGHaE2KeSr/EQkyflwenuu2iqrLAPygw==",
   "success": true,
   "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\ConsoleCalculator\\ConsoleCalculator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\macie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512"
+  ],
   "logs": []
 }

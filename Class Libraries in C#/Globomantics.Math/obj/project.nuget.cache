@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "r8BghWqVVZuQQ1Apsb044DYpTjv8kpOUhZrQxHF1uK/knbHl70f/ZvwRdIzggasZjo2yZ2LLBMSnyU8+YNrNUA==",
+  "dgSpecHash": "nib1xwhX8Tn0DFyxyQiap0dO4laUkkA+GgRHi8cLoR607yrxvi4j/EFOlDmgclv0K+29p3qClB7SYk32A91l/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math\\Globomantics.Math.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\macie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.3\\microsoft.netframework.referenceassemblies.net461.1.0.3.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
