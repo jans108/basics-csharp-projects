@@ -3,3 +3,8 @@ C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibr
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\netstandard2.0\Globomantics.Math.AssemblyInfoInputs.cache
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\netstandard2.0\Globomantics.Math.AssemblyInfo.cs
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\netstandard2.0\Globomantics.Math.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\netstandard2.0\Globomantics.Math.deps.json
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\netstandard2.0\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\netstandard2.0\Globomantics.Math.pdb
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\netstandard2.0\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\obj\Debug\netstandard2.0\Globomantics.Math.pdb
