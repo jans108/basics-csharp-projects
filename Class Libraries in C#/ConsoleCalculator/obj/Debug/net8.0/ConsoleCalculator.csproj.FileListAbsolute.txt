@@ -16,3 +16,4 @@ C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibr
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleCalculator\obj\Debug\net8.0\ConsoleCalculator.pdb
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleCalculator\obj\Debug\net8.0\ConsoleCalculator.genruntimeconfig.cache
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleCalculator\obj\Debug\net8.0\ref\ConsoleCalculator.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleCalculator\bin\Debug\net8.0\Humanizer.dll
