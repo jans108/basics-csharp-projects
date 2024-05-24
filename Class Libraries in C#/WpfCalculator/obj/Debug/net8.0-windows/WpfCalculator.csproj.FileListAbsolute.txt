@@ -18,3 +18,8 @@ C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibr
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\obj\Debug\net8.0-windows\WpfCalculator.pdb
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\obj\Debug\net8.0-windows\WpfCalculator.genruntimeconfig.cache
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\obj\Debug\net8.0-windows\ref\WpfCalculator.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\bin\Debug\net8.0-windows\Humanizer.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\bin\Debug\net8.0-windows\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\bin\Debug\net8.0-windows\Globomantics.Math.pdb
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\obj\Debug\net8.0-windows\WpfCalculator.csproj.AssemblyReference.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\WpfCalculator\obj\Debug\net8.0-windows\WpfCalcu.8D2C7274.Up2Date

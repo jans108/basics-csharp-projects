@@ -1,0 +1,10 @@
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\bin\Debug\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\bin\Debug\Globomantics.Math.pdb
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\obj\Debug\ConsoleCalculatorNet472.csproj.AssemblyReference.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\obj\Debug\ConsoleCalculatorNet472.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\obj\Debug\ConsoleC.E621261C.Up2Date
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

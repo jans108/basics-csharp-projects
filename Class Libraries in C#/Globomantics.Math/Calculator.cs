@@ -13,9 +13,9 @@
             var hex = a.ToString("X");
 #if NET8_0
             return $"{hex} from .NET 8";
-#elif NET461
-            return $"{hex} from .NET Framework 4.6.1";
-#else
+#elif NET461_OR_GREATER
+            return $"{hex} from .NET Framework 4.7.2";
+#elif NETSTANDARD2_0
             return $"{hex} from .NET Standard 2.0";
 #endif
 

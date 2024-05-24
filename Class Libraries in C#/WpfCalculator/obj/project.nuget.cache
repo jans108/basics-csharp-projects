@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ns5RvjuwGifj5I+Vxg9xm3b1iPLzHxP1n88P/ZHiv0+tV2k3edPIYh98Caf3yGDYmun4uxZRkoKhBnGtJFN3Yw==",
+  "dgSpecHash": "nOdHw1Ik+VTBFJFcr3uiOOu/DkFuKpGa1Gi4v43P2BUdVL8nClUQRHOka8rXR8H+yTbB8wqGTUgwZZRlqYHL7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\WpfCalculator\\WpfCalculator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\macie\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512"
+  ],
   "logs": []
 }
