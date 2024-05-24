@@ -16,6 +16,21 @@
         }
       }
     },
+    ".NETFramework,Version=v4.8": {
+      "Humanizer.Core/2.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
     ".NETStandard,Version=v2.0": {
       "Humanizer.Core/2.14.1": {
         "type": "package",
@@ -239,6 +254,9 @@
     ".NETFramework,Version=v4.7.2": [
       "Humanizer.Core >= 2.14.1"
     ],
+    ".NETFramework,Version=v4.8": [
+      "Humanizer.Core >= 2.14.1"
+    ],
     ".NETStandard,Version=v2.0": [
       "Humanizer.Core >= 2.14.1",
       "NETStandard.Library >= 2.0.3"
@@ -271,6 +289,7 @@
       ],
       "originalTargetFrameworks": [
         "net472",
+        "net48",
         "net8.0",
         "netstandard2.0"
       ],
@@ -286,6 +305,10 @@
         },
         "net472": {
           "targetAlias": "net472",
+          "projectReferences": {}
+        },
+        "net48": {
+          "targetAlias": "net48",
           "projectReferences": {}
         },
         "netstandard2.0": {
@@ -333,6 +356,16 @@
       },
       "net472": {
         "targetAlias": "net472",
+        "dependencies": {
+          "Humanizer.Core": {
+            "target": "Package",
+            "version": "[2.14.1, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+      },
+      "net48": {
+        "targetAlias": "net48",
         "dependencies": {
           "Humanizer.Core": {
             "target": "Package",
