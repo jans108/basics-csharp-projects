@@ -97,3 +97,7 @@ C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibr
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\net8.0\Globomantics.Math.Tests.pdb
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\net8.0\Globomantics.Math.Tests.genruntimeconfig.cache
 C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\net8.0\ref\Globomantics.Math.Tests.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Globomantics.Math.Tests
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\bin\Debug\net8.0\Humanizer.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\bin\Debug\net8.0\Globomantics.Math.dll
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\bin\Debug\net8.0\Globomantics.Math.pdb

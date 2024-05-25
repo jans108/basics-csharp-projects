@@ -1,11 +1,159 @@
 {
   "version": 3,
   "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "coverlet.collector/6.0.2": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/coverlet.collector.targets": {}
+        }
+      },
+      "Humanizer.Core/2.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.CodeCoverage/17.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/17.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "17.9.0"
+        },
+        "compile": {
+          "lib/net462/_._": {}
+        },
+        "runtime": {
+          "lib/net462/_._": {}
+        },
+        "build": {
+          "build/net462/Microsoft.NET.Test.Sdk.props": {},
+          "build/net462/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "NUnit/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net462/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net462/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net462/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit.Analyzers/4.2.0": {
+        "type": "package"
+      },
+      "NUnit3TestAdapter/4.5.0": {
+        "type": "package",
+        "build": {
+          "build/net462/NUnit3TestAdapter.props": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Globomantics.Math/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Humanizer.Core": "2.14.1"
+        },
+        "compile": {
+          "bin/placeholder/Globomantics.Math.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Globomantics.Math.dll": {}
+        }
+      }
+    },
     "net8.0": {
       "coverlet.collector/6.0.2": {
         "type": "package",
         "build": {
           "build/netstandard2.0/coverlet.collector.targets": {}
+        }
+      },
+      "Humanizer.Core/2.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Humanizer.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CodeCoverage/17.9.0": {
@@ -346,6 +494,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Globomantics.Math/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Humanizer.Core": "2.14.1"
+        },
+        "compile": {
+          "bin/placeholder/Globomantics.Math.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Globomantics.Math.dll": {}
+        }
       }
     }
   },
@@ -418,6 +579,24 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Humanizer.Core/2.14.1": {
+      "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
+      "type": "package",
+      "path": "humanizer.core/2.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.14.1.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/net6.0/Humanizer.dll",
+        "lib/net6.0/Humanizer.xml",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
     "Microsoft.CodeCoverage/17.9.0": {
@@ -797,10 +976,90 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Globomantics.Math/1.0.0": {
+      "type": "project",
+      "path": "../Globomantics.Math/Globomantics.Math.csproj",
+      "msbuildProject": "../Globomantics.Math/Globomantics.Math.csproj"
     }
   },
   "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Globomantics.Math >= 1.0.0",
+      "Microsoft.NET.Test.Sdk >= 17.9.0",
+      "NUnit >= 4.1.0",
+      "NUnit.Analyzers >= 4.2.0",
+      "NUnit3TestAdapter >= 4.5.0",
+      "coverlet.collector >= 6.0.2"
+    ],
     "net8.0": [
+      "Globomantics.Math >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.9.0",
       "NUnit >= 4.1.0",
       "NUnit.Analyzers >= 4.2.0",
@@ -821,6 +1080,7 @@
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -830,6 +1090,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
+        "net472",
         "net8.0"
       ],
       "sources": {
@@ -840,7 +1101,19 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math\\Globomantics.Math.csproj": {
+              "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math\\Globomantics.Math.csproj"
+            }
+          }
+        },
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math\\Globomantics.Math.csproj": {
+              "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Class Libraries\\02\\demos\\before\\01CreateClassLibraryProjectVS\\Globomantics.Math\\Globomantics.Math.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -900,6 +1173,36 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+      },
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[17.9.0, )"
+          },
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
+          "NUnit.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.2.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "coverlet.collector": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.2, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }
