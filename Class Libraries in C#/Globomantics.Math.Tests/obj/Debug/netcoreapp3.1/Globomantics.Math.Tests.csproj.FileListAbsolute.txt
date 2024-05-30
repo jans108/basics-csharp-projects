@@ -1,0 +1,6 @@
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping_Globomantics.Math.Tests
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\netcoreapp3.1\Globomantics.Math.Tests.csproj.AssemblyReference.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\netcoreapp3.1\Globomantics.Math.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\netcoreapp3.1\Globomantics.Math.Tests.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\netcoreapp3.1\Globomantics.Math.Tests.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math.Tests\obj\Debug\netcoreapp3.1\Globomantics.Math.Tests.csproj.CoreCompileInputs.cache
