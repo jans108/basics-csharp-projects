@@ -5,6 +5,12 @@
         <AssemblyVersion>2.1.3.4</AssemblyVersion>
         <FileVersion>4.3.2.1</FileVersion>
 		<InformationalVersion>2 beta 4</InformationalVersion>
+		<Authors>Globomantics</Authors>
+		<Description>Contains general math related functionality.</Description>
+		<PackageProjectUrl>https://www.pluralsight.com</PackageProjectUrl>
+		<PackageReleaseNotes>This version add a new hex display feature.</PackageReleaseNotes>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageLicenseExpression>0BSD</PackageLicenseExpression>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(TargetFrameWork)' == 'net6.0' ">

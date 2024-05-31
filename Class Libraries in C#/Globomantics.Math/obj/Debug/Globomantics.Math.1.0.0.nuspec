@@ -3,8 +3,12 @@
   <metadata>
     <id>Globomantics.Math</id>
     <version>1.0.0</version>
-    <authors>Globomantics.Math</authors>
-    <description>Package Description</description>
+    <authors>Globomantics</authors>
+    <license type="expression">0BSD</license>
+    <licenseUrl>https://licenses.nuget.org/0BSD</licenseUrl>
+    <projectUrl>https://www.pluralsight.com/</projectUrl>
+    <description>Contains general math related functionality.</description>
+    <releaseNotes>This version add a new hex display feature.</releaseNotes>
     <repository type="git" />
     <dependencies>
       <group targetFramework=".NETFramework4.7.2">

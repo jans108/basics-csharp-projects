@@ -11,8 +11,9 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Globomantics.Math")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Globomantics")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Contains general math related functionality.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("4.3.2.1")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("2 beta 4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Globomantics.Math")]
