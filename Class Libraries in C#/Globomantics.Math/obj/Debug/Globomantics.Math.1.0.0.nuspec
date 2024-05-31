@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Globomantics.Math</id>
+    <version>1.0.0</version>
+    <authors>Globomantics.Math</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Humanizer.Core" version="2.14.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.8">
+        <dependency id="Humanizer.Core" version="2.14.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Humanizer.Core" version="2.14.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Humanizer.Core" version="2.14.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\net472\Globomantics.Math.dll" target="lib\net472\Globomantics.Math.dll" />
+    <file src="C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\net48\Globomantics.Math.dll" target="lib\net48\Globomantics.Math.dll" />
+    <file src="C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\net8.0\Globomantics.Math.dll" target="lib\net8.0\Globomantics.Math.dll" />
+    <file src="C:\Users\macie\OneDrive\Pulpit\Class Libraries\02\demos\before\01CreateClassLibraryProjectVS\Globomantics.Math\bin\Debug\netstandard2.0\Globomantics.Math.dll" target="lib\netstandard2.0\Globomantics.Math.dll" />
+  </files>
+</package>
