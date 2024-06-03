@@ -1,0 +1,15 @@
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\CoffeeMachineData.csv
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\WiredBrainCoffee.DataProcessor.exe
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\WiredBrainCoffee.DataProcessor.deps.json
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\WiredBrainCoffee.DataProcessor.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\WiredBrainCoffee.DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\bin\Debug\net8.0\WiredBrainCoffee.DataProcessor.pdb
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\refint\WiredBrainCoffee.DataProcessor.dll
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.pdb
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\WiredBrainCoffee.DataProcessor.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Unit Testing\02\demos\before\WiredBrainCoffee.DataProcessor\obj\Debug\net8.0\ref\WiredBrainCoffee.DataProcessor.dll
