@@ -36,9 +36,12 @@ public class CsvLineParserTests
     public void ShouldThrowExceptionForInvalidLine()
     {
         //Arrange
-        string[] csvLines = new[] { "Cappuccino" };
+        var csvLine = "Cappuccino";
+        var csvLines = new[] { csvLine };
 
-        //Act
-        Assert.Throws<Exception>(() => CsvLineParser.Parse(csvLines));
+        //Act and Assert
+        var exception = Assert.Throws<Exception>(() => CsvLineParser.Parse(csvLines));
+
+        Assert.Equal($"Invalid csv line: {csvLine}", exception.Message);
     }
 }
