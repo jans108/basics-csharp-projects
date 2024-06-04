@@ -32,29 +32,18 @@ public class CsvLineParserTests
         Assert.Empty(machineDataItems);
     }
 
-    [Fact]
-    public void ShouldThrowExceptionForInvalidLine()
+    [InlineData("Cappuccino", "Invalid csv line")]
+    [InlineData("Cappuccino;InvalidDateTime", "Invalid datetime in csv line")]
+    [Theory]
+    public void ShouldThrowExceptionForInvalidLine(string csvLine, string expectedMessagePrefix)
     {
         //Arrange
-        var csvLine = "Cappuccino";
         var csvLines = new[] { csvLine };
 
         //Act and Assert
         var exception = Assert.Throws<Exception>(() => CsvLineParser.Parse(csvLines));
 
-        Assert.Equal($"Invalid csv line: {csvLine}", exception.Message);
+        Assert.Equal($"{expectedMessagePrefix}: {csvLine}", exception.Message);
     }
 
-    [Fact]
-    public void ShouldThrowExceptionForInvalidLine2()
-    {
-        //Arrange
-        var csvLine = "Cappuccino;InvalidDateTime";
-        var csvLines = new[] { csvLine };
-
-        //Act and Assert
-        var exception = Assert.Throws<Exception>(() => CsvLineParser.Parse(csvLines));
-
-        Assert.Equal($"Invalid datetime in csv line: {csvLine}", exception.Message);
-    }
 }
