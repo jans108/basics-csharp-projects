@@ -49,9 +49,11 @@ public class MachineDataProcessorTests : IDisposable
             new MachineDataItem("Cappuccino",new DateTime(2022,10,27,8,0,0))
         };
 
+
         //Act
         _machineDataProcessor.ProcessItems(items);
         _machineDataProcessor.ProcessItems(items);
+
 
         //Assert
         Assert.Equal(2, _coffeeCountStore.SavedItems.Count);
