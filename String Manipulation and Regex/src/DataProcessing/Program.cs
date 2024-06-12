@@ -40,9 +40,17 @@ try
     var appCulture = CultureInfo.CreateSpecificCulture("en-GB");
     CultureInfo.DefaultThreadCurrentCulture = appCulture;
 
+    var (forename, surname, departmentId) = AcceptUserDetails();
+    while(!ValidateUserDetails(forename, surname, departmentId))
+    {
+        (forename, surname, departmentId) = AcceptUserDetails();
+    }
+
+    var context = new SessionContext(forename!, surname!, departmentId!);
+
      // Configure the options for the processor.
     // Adds two output writers used when reports are generated.
-    var options = new ProcessingOptions(loggerFactory)
+    var options = new ProcessingOptions(appCulture, context, loggerFactory)
         .AddOutputWriter(new ThirdPartyOutputWriter())
         .AddOutputWriter(new ConsoleOutputWriter());
 
@@ -64,4 +72,33 @@ catch (OperationCanceledException)
     Console.WriteLine();
     Console.WriteLine("CANCELLED: Press any key to exit.");
     Console.ReadKey();
+}
+
+static (string? forename, string? surname, string? deparmentId) AcceptUserDetails()
+{
+    Console.Clear();
+
+    Console.Write("Forename: ");
+    var forename = Console.ReadLine(); 
+    Console.Write("Surname: ");
+    var surname = Console.ReadLine();   
+    Console.Write("Department ID: ");
+    var departmentId = Console.ReadLine();
+
+    return (forename, surname, departmentId);
+}
+
+static bool ValidateUserDetails(string? forename, string? surname, string? departmentId)
+{
+    if (string.IsNullOrWhiteSpace(forename) ||
+        string.IsNullOrWhiteSpace(surname)  ||
+        string.IsNullOrWhiteSpace(departmentId))
+    {
+        Console.Clear();
+        Console.WriteLine("ERROR: You must supply your name and department to continue.");
+        Console.WriteLine("Press any key to restart the application.");
+        Console.ReadKey();
+        return false;
+    }
+    return true;
 }
