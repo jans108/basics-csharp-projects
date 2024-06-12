@@ -36,6 +36,10 @@ try
     // Set the output to Unicode to ensure we can display emojis consistently.
     Console.OutputEncoding = System.Text.Encoding.Unicode;
 
+    // Set application culture
+    var appCulture = CultureInfo.CreateSpecificCulture("en-GB");
+    CultureInfo.DefaultThreadCurrentCulture = appCulture;
+
      // Configure the options for the processor.
     // Adds two output writers used when reports are generated.
     var options = new ProcessingOptions(loggerFactory)
