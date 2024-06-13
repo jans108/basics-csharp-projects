@@ -77,7 +77,9 @@ catch (OperationCanceledException)
 static (string? forename, string? surname, string? deparmentId) AcceptUserDetails()
 {
     Console.Clear();
+    Console.WriteLine("Welcome to \"Data Muncher\" the Globomantics data processor! " + char.ConvertFromUtf32(128514));
 
+    Console.WriteLine("Please provide a few details:\n");
     Console.Write("Forename: ");
     var forename = Console.ReadLine(); 
     Console.Write("Surname: ");

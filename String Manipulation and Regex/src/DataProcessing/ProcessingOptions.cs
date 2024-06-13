@@ -18,7 +18,7 @@ internal sealed class ProcessingOptions
         LoggerFactory = loggerFactory;
     }
 
-    public string OutputPath { get; init; } = string.Empty;
+    public string OutputPath { get; init; } = "C:\\Users\\macie\\OneDrive\\Pulpit\\String Manipulation\\src\\DataProcessing\\Output\\";
     public string InputDirectory { get; init; } = "_SourceData";
 
     public bool ProcessSalesData { get; init; } = true;
