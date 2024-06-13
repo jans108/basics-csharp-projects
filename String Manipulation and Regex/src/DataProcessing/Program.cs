@@ -77,11 +77,16 @@ catch (OperationCanceledException)
 static (string? forename, string? surname, string? deparmentId) AcceptUserDetails()
 {
     Console.Clear();
-    Console.WriteLine("Welcome to \"Data Muncher\" the Globomantics data processor! " + char.ConvertFromUtf32(128514));
+    Console.WriteLine("""Welcome to "Data Muncher" the Globomantics data processor! """ + char.ConvertFromUtf32(128514));
 
     Console.WriteLine("Please provide a few details:\n");
     Console.Write("Forename: ");
     var forename = Console.ReadLine(); 
+    if (forename == "magical")
+    {
+        PrintCredits();
+        AcceptUserDetails();
+    }
     Console.Write("Surname: ");
     var surname = Console.ReadLine();   
     Console.Write("Department ID: ");
@@ -103,4 +108,23 @@ static bool ValidateUserDetails(string? forename, string? surname, string? depar
         return false;
     }
     return true;
+}
+
+static void PrintCredits()
+{
+    var credits = $$"""
+        {-- Data Muncher --}
+
+        Copywrite 1984-{{DateTime.Now.Year}}
+
+        Developed By: Maciej Broda
+
+        -- In partnership with Pluralsight --
+        """;
+
+    Console.Clear();
+    Console.WriteLine(credits);
+    Console.WriteLine();
+    Console.WriteLine("Press any key to continue");
+    Console.ReadKey();
 }
