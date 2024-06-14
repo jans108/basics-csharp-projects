@@ -39,7 +39,12 @@ internal sealed class HistoricalSalesData
         ArgumentNullException.ThrowIfNull(cultureInfo);
 
         historicalSalesData = null;
-        // TODO - Implementation
+        
+        if (sourceData.Length == 7)
+        {
+            var productName = sourceData[0];
+        }
+
         return false;
     }
 

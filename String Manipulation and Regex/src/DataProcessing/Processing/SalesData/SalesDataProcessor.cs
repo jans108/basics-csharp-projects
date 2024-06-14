@@ -2,6 +2,7 @@
 
 internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
 {
+    private const char SplitChar = '|';
     private readonly CultureInfo _cultureInfo;
     private readonly ILogger<SalesDataProcessor> _logger;
 
@@ -30,18 +31,24 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
 
             if (!string.IsNullOrEmpty(row))
             {
-                // TODO - Split row
+                var rowParts = row.Split(SplitChar);
+
+                if (HistoricalSalesData.TryCreateFromHistoricalData(rowParts, _cultureInfo, out var historicalSalesData))
+                {
+                    processedData.Add(historicalSalesData);
+                    succeeded = true;
+                }
+
+                if (!succeeded)
+                {
+                    _logger.LogWarning("Row is invalid and cannot be processed. {FailedRow}.", row);
+                    failedRows.Add(row);
+                }
+
+                _logger.LogInformation("Processing row {RowNumber}: {Result}", counter++, succeeded ? "SUCCEEDED" : "FAILED");
             }
 
-            if (!succeeded)
-            {
-                _logger.LogWarning("Row is invalid and cannot be processed. {FailedRow}.", row);
-                failedRows.Add(row);
-            }
-
-            _logger.LogInformation("Processing row {RowNumber}: {Result}", counter++, succeeded ? "SUCCEEDED" : "FAILED");
+            return new ProcessedSalesData(processedData, failedRows);
         }
-
-        return new ProcessedSalesData(processedData, failedRows);
     }
 }
