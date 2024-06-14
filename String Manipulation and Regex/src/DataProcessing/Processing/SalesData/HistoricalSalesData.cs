@@ -62,7 +62,7 @@ internal sealed class HistoricalSalesData
             if (!DateTimeOffset.TryParse(sourceData[4], cultureInfo, DateStyle, out var date))
                 return false;
 
-            if (!Category.TryParse(sourceData[6], out var category)) 
+            if (!Category.TryParse(sourceData[6], out var category))
                 return false;
 
             var data = new HistoricalSalesData
@@ -98,9 +98,45 @@ internal sealed class HistoricalSalesData
 
         historicalSalesData = null;
 
-        var match = Regex.Match(row, @"^([|]+\|){6}.+$");
+        var match = Regex.Match(row, @"^(?:(?<parts>[|]+)\|){6}(?<parts>(?<code>[a-zA-Z]{3}\d{3}):(?<desc>.+)).+$");
 
-        return false;
+        var parts = match.Groups["parts"];
+
+        if (!match.Success)
+            return false;
+
+        var productName = parts.Captures[0].Value;
+
+        if (!long.TryParse(parts.Captures[1].Value, NumberStyles.Number, cultureInfo, out var quantity))
+            return false;
+
+        if (!decimal.TryParse(parts.Captures[2].Value, NumberStyles.Currency, cultureInfo, out var unitPrice) || unitPrice < 0)
+            return false;
+
+        if (!int.TryParse(parts.Captures[3].Value, NumberStyles.Number, cultureInfo, out var tax) || tax < 0 || tax > 100)
+            return false;
+
+        if (!DateTimeOffset.TryParse(parts.Captures[4].Value, cultureInfo, DateStyle, out var date))
+            return false;
+
+        var data = new HistoricalSalesData
+        {
+            ProductName = productName,
+            ProductInfo = ProductInfo.Parse(parts.Captures[5].Value),
+            Quantity = quantity,
+            UnitPrice = unitPrice,
+            SalesTaxPercentage = tax,
+            UtcSalesDateTime = date,
+            Category = new Category(match.Groups["code"].Value,
+                match.Groups["desc"].Value),
+            CurrencySymbol = cultureInfo.NumberFormat.CurrencySymbol,
+        };
+
+        if (data.IsValid)
+        {
+            historicalSalesData = data;
+            return true;
+        }
     }
 
     public static bool TryCreateFromRow(string row, Regex regex, CultureInfo cultureInfo,
