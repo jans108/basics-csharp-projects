@@ -34,9 +34,15 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
             if (!string.IsNullOrEmpty(row))
             {
                 //var rowParts = row.Split(SplitChar);
-                var rowParts = Regex.Split(row, @"\|");
+                //var rowParts = Regex.Split(row, @"\|");
 
-                if (HistoricalSalesData.TryCreateFromHistoricalData(rowParts, _cultureInfo, out var historicalSalesData))
+                //if (HistoricalSalesData.TryCreateFromHistoricalData(rowParts, _cultureInfo, out var historicalSalesData))
+                //{
+                //    processedData.Add(historicalSalesData);
+                //    succeeded = true;
+                //}
+
+                if (HistoricalSalesData.TryCreateFromRow(row, _cultureInfo, out var historicalSalesData))
                 {
                     processedData.Add(historicalSalesData);
                     succeeded = true;

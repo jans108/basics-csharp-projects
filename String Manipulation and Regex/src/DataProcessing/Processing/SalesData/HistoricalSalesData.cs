@@ -97,7 +97,9 @@ internal sealed class HistoricalSalesData
         ArgumentNullException.ThrowIfNull(cultureInfo);
 
         historicalSalesData = null;
-        // TODO - Implementation
+
+        var match = Regex.Match(row, @"^([|]+\|){6}.+$");
+
         return false;
     }
 
