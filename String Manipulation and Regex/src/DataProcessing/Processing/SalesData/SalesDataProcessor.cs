@@ -28,7 +28,10 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
         {
             var succeeded = false;
 
-            // TODO - Implementation
+            if (!string.IsNullOrEmpty(row))
+            {
+                // TODO - Split row
+            }
 
             if (!succeeded)
             {

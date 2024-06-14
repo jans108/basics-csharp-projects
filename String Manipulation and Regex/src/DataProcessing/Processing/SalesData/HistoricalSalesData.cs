@@ -5,9 +5,9 @@ namespace DataProcessing;
 
 internal sealed class HistoricalSalesData
 {
-    public string ProductName { get; init; }
+    public string ProductName { get; init; } = string.Empty;
     public long Quantity { get; init; } = -1;
-    public string CurrencySymbol { get; init; }
+    public string CurrencySymbol { get; init; } = string.Empty;
     public decimal UnitPrice { get; init; } = -1;
     public int SalesTaxPercentage { get; init; } = -1;
     public DateTimeOffset UtcSalesDateTime { get; init; } = DateTimeOffset.MinValue;
