@@ -1,4 +1,6 @@
-﻿namespace DataProcessing;
+﻿using System.Text.RegularExpressions;
+
+namespace DataProcessing;
 
 internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
 {
@@ -31,7 +33,8 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
 
             if (!string.IsNullOrEmpty(row))
             {
-                var rowParts = row.Split(SplitChar);
+                //var rowParts = row.Split(SplitChar);
+                var rowParts = Regex.Split(row, @"\|");
 
                 if (HistoricalSalesData.TryCreateFromHistoricalData(rowParts, _cultureInfo, out var historicalSalesData))
                 {
@@ -47,8 +50,7 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
 
                 _logger.LogInformation("Processing row {RowNumber}: {Result}", counter++, succeeded ? "SUCCEEDED" : "FAILED");
             }
-
-            return new ProcessedSalesData(processedData, failedRows);
         }
+        return new ProcessedSalesData(processedData, failedRows);
     }
 }
