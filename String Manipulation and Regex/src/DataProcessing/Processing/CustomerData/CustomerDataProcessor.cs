@@ -1,4 +1,6 @@
-﻿namespace DataProcessing;
+﻿using System.Text.RegularExpressions;
+
+namespace DataProcessing;
 
 internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 {
@@ -18,7 +20,12 @@ internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 
         await foreach (var row in dataReader.ReadRowsAsync(cancellationToken))
         {
-            // TODO - Implementation
+            var matches = Regex.Matches(row, @"\[(?<data>.*?)\]");
+
+            if(matches.Count == 4)
+            {
+                var customerCode = matches[0].Groups["data"].Value;
+            }
         }
 
         return new ProcessedCustomerData(priorityCustomers, regularCustomers);
