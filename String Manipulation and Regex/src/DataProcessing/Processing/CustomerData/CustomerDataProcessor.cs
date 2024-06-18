@@ -6,6 +6,10 @@ internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 {
     private const string RegularCustomerStartCode = "BA";
 
+    //language=regex
+    private const string CustomerDataPattern = @"\[(?<data>.*?)\]";
+    private static readonly Regex CustomerRegex = new(CustomerDataPattern, RegexOptions.Compiled, TimeSpan.FromSeconds(1));
+
     public CustomerDataProcessor(ProcessingOptions processingOptions) : base(processingOptions)
     {
     }
@@ -21,7 +25,7 @@ internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 
         await foreach (var row in dataReader.ReadRowsAsync(cancellationToken))
         {
-            var matches = Regex.Matches(row, @"\[(?<data>.*?)\]");
+            var matches = CustomerRegex.Matches(row);
 
             if (matches.Count == 4)
             {
