@@ -4,6 +4,7 @@ namespace DataProcessing;
 
 internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 {
+    private const string RegularCustomerStartCode = "BA";
 
     public CustomerDataProcessor(ProcessingOptions processingOptions) : base(processingOptions)
     {
@@ -22,9 +23,28 @@ internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
         {
             var matches = Regex.Matches(row, @"\[(?<data>.*?)\]");
 
-            if(matches.Count == 4)
+            if (matches.Count == 4)
             {
                 var customerCode = matches[0].Groups["data"].Value;
+
+                if (!Guid.TryParseExact(matches[1].Groups["data"].Value, "D",
+                    out var parsedGuid))
+                    continue;
+
+                var country = matches[2].Groups["data"].Value;
+
+                var data = new HistoricalCustomerData(parsedGuid, customerCode, country);
+
+                var compareResult = string.CompareOrdinal(customerCode, RegularCustomerStartCode);
+
+                if (compareResult < 0)
+                {
+                    priorityCustomers.Add(data);
+                }
+                else
+                {
+                    regularCustomers.Add(data);
+                }
             }
         }
 
