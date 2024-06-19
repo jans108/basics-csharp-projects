@@ -2,14 +2,17 @@
 
 namespace DataProcessing;
 
-internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
+internal sealed partial class CustomerDataProcessor : Processor<ProcessedCustomerData>
 {
     private const string RegularCustomerStartCode = "BA";
 
     //language=regex
     private const string CustomerDataPattern = @"\[(?<data>.*?)\]";
-    private static readonly Regex CustomerRegex = new(CustomerDataPattern, RegexOptions.Compiled, TimeSpan.FromSeconds(1));
+    //private static readonly Regex CustomerRegex = new(CustomerDataPattern,
+    //    RegexOptions.Compiled, TimeSpan.FromSeconds(1));
 
+    [GeneratedRegex(CustomerDataPattern, RegexOptions.None, 1000)]
+    private static partial Regex CustomerRegex();
     public CustomerDataProcessor(ProcessingOptions processingOptions) : base(processingOptions)
     {
     }
@@ -25,7 +28,7 @@ internal sealed class CustomerDataProcessor : Processor<ProcessedCustomerData>
 
         await foreach (var row in dataReader.ReadRowsAsync(cancellationToken))
         {
-            var matches = CustomerRegex.Matches(row);
+            var matches = CustomerRegex().Matches(row);
 
             if (matches.Count == 4)
             {
