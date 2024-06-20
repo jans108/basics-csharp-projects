@@ -31,6 +31,13 @@ internal sealed class SalesDataProcessor : Processor<ProcessedSalesData>
         {
             var succeeded = false;
 
+            if (row.StartsWith('\u2610'))
+            {
+                failedRows.Add(row);
+                _logger.LogWarning("Row starts with an invalid character. ");
+                continue;
+            }
+
             if (!string.IsNullOrEmpty(row))
             {
                 //var rowParts = row.Split(SplitChar);
