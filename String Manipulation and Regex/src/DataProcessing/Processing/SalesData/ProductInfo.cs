@@ -13,8 +13,25 @@ internal readonly struct ProductInfo : IEquatable<ProductInfo>
     public static ProductInfo Parse(string productInfoString)
     {
         ArgumentNullException.ThrowIfNull(productInfoString);
-        // TODO - Implementation
-        return new ProductInfo("TODO", "TODO");
+        if (string.Empty.Equals(productInfoString) ||
+            !productInfoString.Contains('-'))
+        {
+            return Invalid;
+        }
+
+        var parts = productInfoString.Split('-');
+
+        if (parts.Length != 2 ||
+            string.IsNullOrEmpty(parts[0]) ||
+            string.IsNullOrEmpty(parts[1]))
+        {
+            return Invalid;
+        }
+
+        var salesCode = parts[0];
+        var sku = parts[1];
+
+        return new ProductInfo(salesCode, sku);
     }
 
     public static ProductInfo ParseUsingRegex(string productInfoString)
