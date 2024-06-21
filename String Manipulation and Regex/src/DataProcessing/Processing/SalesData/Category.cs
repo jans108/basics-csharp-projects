@@ -15,7 +15,38 @@ internal readonly struct Category : IEquatable<Category>
     public static bool TryParse(string source, [MaybeNullWhen(false)] out Category category)
     {
         category = Empty;
-        return true;
+
+        if (string.IsNullOrEmpty(source) || source.Length < 8)
+            return false;
+
+        var colonIndex = source.IndexOf(':');
+
+        if (colonIndex > -1)
+        {
+            var categoryCode = source[..6];
+
+            for (var index = 0; index < categoryCode.Length; index++)
+            {
+                if (index < 3 && !char.IsLetter(source, index))
+                    return false;
+
+                var character = categoryCode[index];
+                if (index >= 3 &&
+                    character != '0' &&
+                    character != '1' &&
+                    character != '2' &&
+                    character != '3')
+                {
+                    return false;
+                }
+            }
+
+            var categoryDescription = source.Substring(colonIndex + 1);
+            category = new Category(categoryCode, categoryDescription);
+            return true;
+        }
+
+        return false;
     }
 
     public static bool TryParseUsingRegex(string source, [MaybeNullWhen(false)] out Category category)
