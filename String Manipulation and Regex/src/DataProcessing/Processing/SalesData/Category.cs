@@ -20,6 +20,7 @@ internal readonly struct Category : IEquatable<Category>
             return false;
 
         var colonIndex = source.IndexOf(':');
+        source = source.Trim();
 
         if (colonIndex > -1)
         {
@@ -41,7 +42,9 @@ internal readonly struct Category : IEquatable<Category>
                 }
             }
 
-            var categoryDescription = source.Substring(colonIndex + 1);
+            categoryCode = categoryCode.ToUpperInvariant();
+
+            var categoryDescription = source.Substring(colonIndex + 1).TrimStart();
             category = new Category(categoryCode, categoryDescription);
             return true;
         }

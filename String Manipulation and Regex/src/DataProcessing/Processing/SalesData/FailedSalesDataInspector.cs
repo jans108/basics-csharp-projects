@@ -16,7 +16,12 @@ internal class FailedSalesDataInspector
     {
         ArgumentNullException.ThrowIfNull(failedRow);
 
-        var seperatorCount = failedRow.Count(c => c.Equals('|'));
+        var seperatorCount = 0;
+        for (var index = 0; index < failedRow.Length; index++)
+        {
+            if (failedRow[index] == '|')
+                seperatorCount++;
+        }
 
         if (seperatorCount < 6)
         {
