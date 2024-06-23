@@ -1,9 +1,13 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
 namespace DataProcessing;
 
 internal readonly struct Category : IEquatable<Category>
 {
+    // language = regex
+    private const string CattegoryPattern = @"^\s*([a-zA-Z]{3}[0-3]{3})\s*:\s*(.+?)\s*$";
+
     public static Category Empty = new(string.Empty, string.Empty);
 
     public Category(string code, string description) => (Code, Description) = (code, description);
@@ -55,7 +59,23 @@ internal readonly struct Category : IEquatable<Category>
     public static bool TryParseUsingRegex(string source, [MaybeNullWhen(false)] out Category category)
     {
         category = Empty;
-        return true;
+
+        if (string.IsNullOrEmpty(source))
+            return false;
+
+        var match = Regex.Match(source, CattegoryPattern, RegexOptions.None,
+            TimeSpan.FromSeconds(1));
+
+        if(match.Success && match.Groups.Count == 3)
+        {
+            var categoryCode = match.Groups[1].Value.ToUpperInvariant();
+            var categoryDescription = match.Groups[2].Value;
+
+            category  = new Category(categoryCode, categoryDescription);
+            return true;
+        }
+
+        return false;
     }
 
     public override bool Equals(object? obj) => obj is Category category && Equals(category);
