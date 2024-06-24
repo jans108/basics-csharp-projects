@@ -49,6 +49,7 @@ internal sealed class HistoricalSalesData
         if (sourceData.Length == 7)
         {
             var productName = sourceData[0];
+            productName = productName.Replace("Color", "Colour");
 
             if (!long.TryParse(sourceData[1], NumberStyles.Number, cultureInfo, out var quantity))
                 return false;
@@ -106,6 +107,8 @@ internal sealed class HistoricalSalesData
             return false;
 
         var productName = parts.Captures[0].Value;
+        productName = productName.Replace("Color", "Colour");
+
 
         if (!long.TryParse(parts.Captures[1].Value, NumberStyles.Number, cultureInfo, out var quantity))
             return false;

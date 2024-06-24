@@ -13,13 +13,18 @@ internal readonly struct ProductInfo : IEquatable<ProductInfo>
     public static ProductInfo Parse(string productInfoString)
     {
         ArgumentNullException.ThrowIfNull(productInfoString);
+
+        //productInfoString = productInfoString.Replace(':', '-');
+
         if (string.Empty.Equals(productInfoString) ||
-            !productInfoString.Contains('-'))
+            (!productInfoString.Contains('-') && !productInfoString.Contains(':')))
         {
             return Invalid;
         }
 
-        var parts = productInfoString.Split('-');
+        var parts = productInfoString.Contains('-')
+            ? productInfoString.Split('-')
+            : productInfoString.Split(":");
 
         if (parts.Length != 2 ||
             string.IsNullOrEmpty(parts[0]) ||
@@ -30,6 +35,24 @@ internal readonly struct ProductInfo : IEquatable<ProductInfo>
 
         var salesCode = parts[0];
         var sku = parts[1];
+
+        if (salesCode.Any(c => !char.IsDigit(c)))
+            return Invalid;
+
+        if (char.IsLower(sku[0]) && sku[1].Equals('#'))
+        {
+            sku = sku[2..];
+        }
+        else if (sku.Contains('#'))
+        {
+            return Invalid;
+        }
+
+        var parenStart = sku.IndexOf('(');
+        if (parenStart != -1)
+        {
+            sku = sku.Remove(parenStart);
+        }
 
         return new ProductInfo(salesCode, sku);
     }
