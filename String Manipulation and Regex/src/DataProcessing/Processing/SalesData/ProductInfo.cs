@@ -2,6 +2,9 @@
 
 internal readonly struct ProductInfo : IEquatable<ProductInfo>
 {
+    // language = regex
+    private const string ParsePattern = @"^(?<code>\d+)[:-](?:[a-z]#)?(?!.*#|.*-)(?<sku>[^(\n]+)";
+
     public const string InvalidValue = "INVALID";
     public static ProductInfo Invalid = new(InvalidValue, InvalidValue);
 
