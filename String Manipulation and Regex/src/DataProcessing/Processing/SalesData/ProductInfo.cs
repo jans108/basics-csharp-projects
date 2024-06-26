@@ -1,9 +1,11 @@
-﻿namespace DataProcessing;
+﻿using System.Text.RegularExpressions;
+
+namespace DataProcessing;
 
 internal readonly struct ProductInfo : IEquatable<ProductInfo>
 {
     // language = regex
-    private const string ParsePattern = @"^(?<code>\d+)[:-](?:[a-z]#)?(?!.*#|.*-)(?<sku>[^(\n]+)";
+    private const string ParsePattern = @"^(?<code>\d+)[:-](?:[a-z]#)?(?!.*#|.*-)(?<sku>[^(]+)";
 
     public const string InvalidValue = "INVALID";
     public static ProductInfo Invalid = new(InvalidValue, InvalidValue);
@@ -63,8 +65,13 @@ internal readonly struct ProductInfo : IEquatable<ProductInfo>
     public static ProductInfo ParseUsingRegex(string productInfoString)
     {
         ArgumentNullException.ThrowIfNull(productInfoString);
-        // TODO - Implementation
-        return Invalid;
+
+        var match = Regex.Match(productInfoString, ParsePattern, RegexOptions.None,
+            TimeSpan.FromSeconds(1));
+
+        return match.Success && match.Groups.ContainsKey("code") && match.Groups.ContainsKey("sku")
+            ? new ProductInfo(match.Groups["code"].Value, match.Groups["sku"].Value)
+            : Invalid;
     }
 
     public override bool Equals(object? obj) => obj is ProductInfo info && Equals(info);
