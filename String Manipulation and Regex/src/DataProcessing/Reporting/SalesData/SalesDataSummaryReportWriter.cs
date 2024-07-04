@@ -30,8 +30,7 @@ internal class SalesDataSummaryReportWriter : DataWriter<IEnumerable<HistoricalS
         {
             //formattedOutput += "Date: " + item.UtcSalesDateTime.ToString("D", Options.ApplicationCulture) +
             //    Environment.NewLine;
-            formattedOutput += string.Format("Date: {0}{1}", item.UtcSalesDateTime, 
-                Environment.NewLine);
+            formattedOutput += string.Format(Options.ApplicationCulture, "Date: {0:D}{1}", item.UtcSalesDateTime,  Environment.NewLine);
             formattedOutput += "Product Name: " + item.ProductName +
                 Environment.NewLine;
             formattedOutput += "Product SKU: " + item.ProductSku +
