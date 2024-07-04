@@ -28,13 +28,16 @@ internal class SalesDataSummaryReportWriter : DataWriter<IEnumerable<HistoricalS
 
         foreach (var item in salesData.OrderBy(d => d.UtcSalesDateTime))
         {
-            formattedOutput += "Date: " + item.UtcSalesDateTime.ToString("D", Options.ApplicationCulture) +
-                Environment.NewLine;
+            //formattedOutput += "Date: " + item.UtcSalesDateTime.ToString("D", Options.ApplicationCulture) +
+            //    Environment.NewLine;
+            formattedOutput += string.Format("Date: {0}{1}", item.UtcSalesDateTime, 
+                Environment.NewLine);
             formattedOutput += "Product Name: " + item.ProductName +
                 Environment.NewLine;
             formattedOutput += "Product SKU: " + item.ProductSku +
                 Environment.NewLine;
         }
+
 
         return string.Empty;
     }
