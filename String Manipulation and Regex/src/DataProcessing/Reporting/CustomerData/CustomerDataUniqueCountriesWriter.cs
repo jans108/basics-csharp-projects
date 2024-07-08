@@ -1,4 +1,6 @@
-﻿namespace DataProcessing.Reporting;
+﻿using System.Text;
+
+namespace DataProcessing.Reporting;
 
 internal class CustomerDataUniqueCountriesWriter : DataWriter<IEnumerable<HistoricalCustomerData>>
 {
@@ -13,15 +15,23 @@ internal class CustomerDataUniqueCountriesWriter : DataWriter<IEnumerable<Histor
     {
     }
 
-    protected override Task WriteAsyncCore(
+    protected override async Task WriteAsyncCore(
         string pathAndFileName, 
         IEnumerable<HistoricalCustomerData> data, 
         CancellationToken cancellationToken = default)
     {
         var countries = new SortedSet<string>(data.Select(d => d.Country), _stringComparer);
 
-        // TODO - Implementation
+        var stringBuilder = new StringBuilder();
 
-        return Task.CompletedTask;
+        foreach (var country in countries)
+        {
+            stringBuilder.AppendLine(country);
+        }
+
+        foreach (var writer in OutputWriters)
+        {
+            await writer.WriteDataAsync(stringBuilder.ToString(), pathAndFileName, cancellationToken);
+        }
     }
 }
