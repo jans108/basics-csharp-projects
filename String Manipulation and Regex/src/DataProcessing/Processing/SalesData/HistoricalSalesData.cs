@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace DataProcessing;
@@ -181,5 +182,18 @@ internal sealed class HistoricalSalesData
             Quantity.ToString("N0", culture),
             SalesTaxPercentage.ToString("N0", culture)
         };
+
+    public void ProduceRow(CultureInfo culture, StringBuilder stringBuilder) =>
+        _ = stringBuilder
+            .AppendFormat(culture, "{0:u}", UtcSalesDateTime)
+            .Append(ProductSalesCode).Append(',')
+            .Append(ProductSku).Append(',')
+            .Append(ProductName).Append(',')
+            .Append(Category.Code).Append(',')
+            .Append(Currency).Append(',')
+            .AppendFormat(culture, "{0:N2}", UnitPrice)
+            .AppendFormat(culture, "{0:N0}", Quantity)
+            .AppendFormat(culture, "{0:N0}", SalesTaxPercentage)
+            .AppendLine();
 
 }
