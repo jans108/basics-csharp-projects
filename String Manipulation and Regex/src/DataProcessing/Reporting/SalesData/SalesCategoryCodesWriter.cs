@@ -1,4 +1,6 @@
-﻿namespace DataProcessing.Reporting;
+﻿using System.Text;
+
+namespace DataProcessing.Reporting;
 
 internal sealed class SalesCategoryCodesWriter : DataWriter<IEnumerable<HistoricalSalesData>>
 {
@@ -6,7 +8,7 @@ internal sealed class SalesCategoryCodesWriter : DataWriter<IEnumerable<Historic
     {
     }
 
-    protected override Task WriteAsyncCore(
+    protected override async Task WriteAsyncCore(
         string pathAndFileName, 
         IEnumerable<HistoricalSalesData> salesData, 
         CancellationToken cancellationToken = default)
@@ -14,9 +16,21 @@ internal sealed class SalesCategoryCodesWriter : DataWriter<IEnumerable<Historic
         var sortedCodes = salesData
             .Select(s => s.Category.Code)
             .Distinct(StringComparer.OrdinalIgnoreCase)
-            .OrderBy(s => s, StringComparer.OrdinalIgnoreCase);
+            .OrderBy(s => s, StringComparer.OrdinalIgnoreCase)
+            .ToArray();
 
-        // TODO - Implementation
-        return Task.CompletedTask;
+        var capacity = sortedCodes.Length * (6 + Environment.NewLine.Length);
+
+        var stringBuilder = new StringBuilder(capacity);
+
+        foreach (var item in sortedCodes)
+        {
+            stringBuilder.Append(item);
+        }
+
+        foreach (var writer in OutputWriters)
+        {
+            await writer.WriteDataAsync(stringBuilder.ToString(), pathAndFileName, cancellationToken);
+        }
     }
 }
