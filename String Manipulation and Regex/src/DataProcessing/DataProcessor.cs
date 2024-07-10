@@ -13,5 +13,7 @@ internal static class DataProcessor
         if (options.ProcessCustomerData)
             await CustomerData.ProcessCustomerDataSamplesAsync(options, cancellationToken);
 
+        if (options.ProcessLogData)
+            await LogData.ProcessLogDataSamplesAsync(options, cancellationToken);
     }
 }
