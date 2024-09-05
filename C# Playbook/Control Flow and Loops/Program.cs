@@ -5,6 +5,8 @@ string filePath = Assembly.GetEntryAssembly()!.Location;
 
 Console.WriteLine("Entry assembly is " + Path.GetFileName(filePath));
 Console.WriteLine("Folders are:");
-FolderProcessor.DisplayParentNames_While(filePath);
+foreach (var folder in FolderProcessor.EnumParentNames_While(filePath).Reverse())
+    Console.WriteLine(folder);
+
 return;
 

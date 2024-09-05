@@ -1,0 +1,4 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\02\demos\FolderTree - 1 - Before\obj\Debug\net8.0\FolderTreeDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\02\demos\FolderTree - 1 - Before\obj\Debug\net8.0\FolderTreeDemo.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\02\demos\FolderTree - 1 - Before\obj\Debug\net8.0\FolderTreeDemo.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\02\demos\FolderTree - 1 - Before\obj\Debug\net8.0\FolderTreeDemo.csproj.CoreCompileInputs.cache
