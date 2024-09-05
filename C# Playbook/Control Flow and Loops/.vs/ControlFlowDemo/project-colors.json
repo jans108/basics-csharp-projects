@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2fbdd09d-ff64-4a34-a7e0-631a90010a2a": {
+      "ProjectGuid": "2fbdd09d-ff64-4a34-a7e0-631a90010a2a",
+      "DisplayName": "ControlFlowDemo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
