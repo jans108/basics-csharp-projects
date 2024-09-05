@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m03 methods-and-props\\code\\paymentsdemo - 2 - basicguard\\paymentsdemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:paymentsdemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m03 methods-and-props\\code\\paymentsdemo - 2 - basicguard\\cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m03 methods-and-props\\code\\paymentsdemo - 2 - basicguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentsDemo",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\PaymentsDemo.csproj",
+              "RelativeDocumentMoniker": "PaymentsDemo.csproj",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\PaymentsDemo.csproj",
+              "RelativeToolTip": "PaymentsDemo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T17:43:42.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:43:37.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CookieCustomer.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\CookieCustomer.cs",
+              "RelativeDocumentMoniker": "CookieCustomer.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m03 methods-and-props\\Code\\PaymentsDemo - 2 - BasicGuard\\CookieCustomer.cs",
+              "RelativeToolTip": "CookieCustomer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:43:37.884Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
