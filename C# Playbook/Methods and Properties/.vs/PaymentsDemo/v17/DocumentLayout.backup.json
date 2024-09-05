@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\saleslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:saleslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 2 - basicguard\\paymentsdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:paymentsdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentsDemo",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\PaymentsDemo.csproj",
+              "RelativeDocumentMoniker": "PaymentsDemo.csproj",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\PaymentsDemo.csproj",
+              "RelativeToolTip": "PaymentsDemo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-05T19:25:41.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SalesList.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\SalesList.cs",
+              "RelativeDocumentMoniker": "SalesList.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\SalesList.cs",
+              "RelativeToolTip": "SalesList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T19:25:30.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\Sale.cs",
+              "RelativeDocumentMoniker": "Sale.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\Sale.cs",
+              "RelativeToolTip": "Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T19:19:47.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T17:43:37.883Z"
+              "WhenOpened": "2024-05-06T17:43:37.883Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CookieCustomer.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\CookieCustomer.cs",
               "RelativeDocumentMoniker": "CookieCustomer.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 2 - BasicGuard\\CookieCustomer.cs",
               "RelativeToolTip": "CookieCustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:43:37.884Z",
               "EditorCaption": ""
