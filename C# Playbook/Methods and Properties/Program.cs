@@ -15,4 +15,4 @@ sales.AddSale(new(jimmy, 200))
 // Fluent coding in LINQ
 var highValueSales = sales.EnumerateItems()
     .Where(s => s.Value > 100)
-    .OrderBy(s => s.Customer.Name)
+    .OrderBy(s => s.Customer.Name);
