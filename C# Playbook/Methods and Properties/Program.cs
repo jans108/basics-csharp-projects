@@ -22,6 +22,9 @@ var highest = sales.GetHighestValueCustomer();
 Console.WriteLine("\r\nHighest spender: ");
 Console.WriteLine($"{highest.CustomerName} Spent {highest.TotalSpent} in {highest.NSales} pruchases");
 
+bool eligible = BusinessRules.EligibleForVoucher(NSales, in totalValue);
+Console.WriteLine($"\nIs {name} eligible for voucher? {eligible}");
+
 // Fluent coding in LINQ
 var highValueSales = sales.EnumerateItems()
     .Where(s => s.Value > 100)

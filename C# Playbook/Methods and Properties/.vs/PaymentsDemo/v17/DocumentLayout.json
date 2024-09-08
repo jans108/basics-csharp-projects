@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\48662\\Desktop\\C# Playbook\\",
+  "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\48662\\desktop\\c# playbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\48662\\desktop\\c# playbook\\saleslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\businessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:businessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\saleslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:saleslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\48662\\desktop\\c# playbook\\cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:cookiecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\48662\\desktop\\c# playbook\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\48662\\desktop\\c# playbook\\paymentsdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\03\\demos\\paymentsdemo - 1 - before\\paymentsdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F7584A09-B3D6-44F8-BFBA-5ED6C90DE6D3}|PaymentsDemo.csproj|solutionrelative:paymentsdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -30,15 +34,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "BusinessRules.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\BusinessRules.cs",
+              "RelativeDocumentMoniker": "BusinessRules.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\BusinessRules.cs",
+              "RelativeToolTip": "BusinessRules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T21:06:15.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PaymentsDemo.csproj",
-              "DocumentMoniker": "C:\\Users\\48662\\Desktop\\C# Playbook\\PaymentsDemo.csproj",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\PaymentsDemo.csproj",
               "RelativeDocumentMoniker": "PaymentsDemo.csproj",
-              "ToolTip": "C:\\Users\\48662\\Desktop\\C# Playbook\\PaymentsDemo.csproj",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\PaymentsDemo.csproj",
               "RelativeToolTip": "PaymentsDemo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -46,24 +63,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SalesList.cs",
-              "DocumentMoniker": "C:\\Users\\48662\\Desktop\\C# Playbook\\SalesList.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\SalesList.cs",
               "RelativeDocumentMoniker": "SalesList.cs",
-              "ToolTip": "C:\\Users\\48662\\Desktop\\C# Playbook\\SalesList.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\SalesList.cs",
               "RelativeToolTip": "SalesList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T19:25:30.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T19:25:30.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\48662\\Desktop\\C# Playbook\\Sale.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\Sale.cs",
               "RelativeDocumentMoniker": "Sale.cs",
-              "ToolTip": "C:\\Users\\48662\\Desktop\\C# Playbook\\Sale.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\Sale.cs",
               "RelativeToolTip": "Sale.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,26 +89,36 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\48662\\Desktop\\C# Playbook\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\48662\\Desktop\\C# Playbook\\Program.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABmAAAA",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:43:37.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CookieCustomer.cs",
-              "DocumentMoniker": "C:\\Users\\48662\\Desktop\\C# Playbook\\CookieCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\CookieCustomer.cs",
               "RelativeDocumentMoniker": "CookieCustomer.cs",
-              "ToolTip": "C:\\Users\\48662\\Desktop\\C# Playbook\\CookieCustomer.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\03\\demos\\PaymentsDemo - 1 - Before\\CookieCustomer.cs",
               "RelativeToolTip": "CookieCustomer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:43:37.884Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

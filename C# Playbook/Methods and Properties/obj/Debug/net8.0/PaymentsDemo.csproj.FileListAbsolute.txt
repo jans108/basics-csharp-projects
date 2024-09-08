@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\bin\Debug\net8.0\PaymentsDemo.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\bin\Debug\net8.0\PaymentsDemo.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\bin\Debug\net8.0\PaymentsDemo.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\bin\Debug\net8.0\PaymentsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\bin\Debug\net8.0\PaymentsDemo.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\refint\PaymentsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\PaymentsDemo.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\03\demos\PaymentsDemo - 1 - Before\obj\Debug\net8.0\ref\PaymentsDemo.dll
