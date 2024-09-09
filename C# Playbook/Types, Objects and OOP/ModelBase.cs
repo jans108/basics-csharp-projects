@@ -1,4 +1,6 @@
-﻿namespace Pluralsight.CShPlaybook.Oop;
+﻿using Pluralsight.CShPlaybook.Oop;
+
+namespace Pluralsight.CShPlaybook.Oop;
 
 public class ModelBase
 {
@@ -14,4 +16,7 @@ public class ModelBase
 	}
 
 	public override string ToString() => Name;
+
+    
 }
+

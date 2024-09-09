@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\modelphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:modelphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\missingphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:missingphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\caninemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:caninemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +19,20 @@
       "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\modelphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:modelphotoprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\04\\demos\\modelagency - 1 - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9473FA75-0A9C-4692-9929-3D5D78A40426}|ModelAgency.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +42,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "MissingPhotoProvider.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\MissingPhotoProvider.cs",
+              "RelativeDocumentMoniker": "MissingPhotoProvider.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\MissingPhotoProvider.cs",
+              "RelativeToolTip": "MissingPhotoProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:03:44.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T17:47:59.549Z",
+              "WhenOpened": "2024-09-09T19:17:44.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:17:34.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:16:29.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:36:48.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ModelPhotoProvider.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\ModelPhotoProvider.cs",
               "RelativeDocumentMoniker": "ModelPhotoProvider.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\ModelPhotoProvider.cs",
               "RelativeToolTip": "ModelPhotoProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:47:59.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ModelBase.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\ModelBase.cs",
               "RelativeDocumentMoniker": "ModelBase.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\ModelBase.cs",
               "RelativeToolTip": "ModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T17:47:59.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T17:47:59.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CanineModel.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\CanineModel.cs",
               "RelativeDocumentMoniker": "CanineModel.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\04\\demos\\ModelAgency - 1 - Before\\CanineModel.cs",
               "RelativeToolTip": "CanineModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAywAkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:47:59.554Z",
               "EditorCaption": ""

@@ -2,20 +2,25 @@
 
 public interface IPhotoProvider
 {
-	Image? GetPhoto();
+    Image? GetPhoto();
 }
 
 public class ModelPhotoProvider : IPhotoProvider
 {
-	private Image? _photo;
+    private Image? _photo;
+    private string _filePath;
 
-	public ModelPhotoProvider(string fileName)
-	{
-		string filePath = DataFileFinder.GetFilePath(fileName);
-		if (File.Exists(filePath))
-			_photo = Image.FromFile(filePath);
-	}
+    public ModelPhotoProvider(string fileName)
+    {
+        _filePath = DataFileFinder.GetFilePath(fileName);
+    }
 
-	public Image? GetPhoto() => _photo;
+    public Image? GetPhoto()
+    {
+        if (_photo == null && File.Exists(_filePath))
+            _photo = Image.FromFile(_filePath);
+
+        return _photo;
+    }
 }
 
