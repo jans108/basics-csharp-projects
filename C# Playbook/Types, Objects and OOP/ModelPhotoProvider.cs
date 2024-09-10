@@ -7,20 +7,16 @@ public interface IPhotoProvider
 
 public class ModelPhotoProvider : IPhotoProvider
 {
-    private Image? _photo;
+    private Lazy<Image?> _photo;
     private string _filePath;
 
     public ModelPhotoProvider(string fileName)
     {
         _filePath = DataFileFinder.GetFilePath(fileName);
+        _photo = new Lazy<Image?>(() => File.Exists(_filePath) ? Image.FromFile(_filePath) : null);
     }
 
-    public Image? GetPhoto()
-    {
-        if (_photo == null && File.Exists(_filePath))
-            _photo = Image.FromFile(_filePath);
-
-        return _photo;
-    }
+    public Image? GetPhoto() => _photo.Value;
+    
 }
 
