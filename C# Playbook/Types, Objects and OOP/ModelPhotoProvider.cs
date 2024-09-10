@@ -10,7 +10,7 @@ public class ModelPhotoProvider : IPhotoProvider
     private Lazy<Image?> _photo;
     private string _filePath;
 
-    public ModelPhotoProvider(string fileName)
+    private ModelPhotoProvider(string fileName)
     {
         _filePath = DataFileFinder.GetFilePath(fileName);
         _photo = new Lazy<Image?>(() => File.Exists(_filePath) ? Image.FromFile(_filePath) : null);
