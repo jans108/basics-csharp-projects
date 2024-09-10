@@ -20,6 +20,32 @@ public partial class Form1 : Form
         this.lbxModels.DataSource = models;
     }
 
+    private void lbxModels_SelectedIndexChangedSwitchOption(object sender, EventArgs e)
+    {
+        try
+        {
+
+            switch (lbxModels.SelectedItem)
+            {
+                case ModelBase model:
+                    this.pbxPhoto.Image = model.PhotoProvider.GetPhoto();
+                    this.tbxName.Text = model.Name;
+                    this.tbxHuman.Text = (model as CanineModel)?.CompanionHuman;
+                    break;
+                default:
+                    this.pbxPhoto.Image = null;
+                    this.tbxName = null;
+                    this.tbxHuman = null;
+                    break;
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Error displaying photo");
+        }
+    }
+
+
     private void lbxModels_SelectedIndexChanged(object sender, EventArgs e)
     {
         try
