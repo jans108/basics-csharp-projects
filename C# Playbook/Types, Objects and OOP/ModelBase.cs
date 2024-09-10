@@ -14,7 +14,7 @@ public class ModelBase
     {
         Id = id;
         Name = name;
-        PhotoProvider = PhotoProviderFactory.Create(photoFileName);
+        PhotoProvider = ModelPhotoProvider.PhotoProviderFactory.Create(photoFileName);
     }
 
     public override string ToString() => Name;
@@ -22,15 +22,5 @@ public class ModelBase
 
 }
 
-public static class PhotoProviderFactory
-{
-    public static IPhotoProvider Create(string fileName)
-    {
-        string filePath = DataFileFinder.GetFilePath(fileName);
-        if (File.Exists(filePath))
-            return new ModelPhotoProvider(fileName);
-        else
-            return MissingPhotoProvider.Instance;
-    }
-}
+
 
