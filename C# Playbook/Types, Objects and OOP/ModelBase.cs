@@ -4,6 +4,8 @@ namespace Pluralsight.CShPlaybook.Oop;
 
 public class ModelBase
 {
+	private string _otherInfo = "";
+
 	public string Name { get; }
 	public int Id { get; }
 	public IPhotoProvider PhotoProvider { get; }
@@ -12,7 +14,10 @@ public class ModelBase
 	{
 		Id = id;
 		Name = name;
-		PhotoProvider = new ModelPhotoProvider(photoFileName);
+		if (File.Exists(DataFileFinder.GetFilePath(photoFileName)))
+			PhotoProvider = new ModelPhotoProvider(photoFileName);
+		else
+			PhotoProvider = MissingPhotoProvider.Instance;
 	}
 
 	public override string ToString() => Name;

@@ -1,0 +1,16 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\bin\Debug\net8.0-windows7.0\ModelAgency.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\bin\Debug\net8.0-windows7.0\ModelAgency.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\bin\Debug\net8.0-windows7.0\ModelAgency.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\bin\Debug\net8.0-windows7.0\ModelAgency.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\bin\Debug\net8.0-windows7.0\ModelAgency.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\Pluralsight.CShPlaybook.Oop.Form1.resources
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.csproj.GenerateResource.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\refint\ModelAgency.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ModelAgency.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\04\demos\ModelAgency - 1 - Before\obj\Debug\net8.0-windows7.0\ref\ModelAgency.dll
