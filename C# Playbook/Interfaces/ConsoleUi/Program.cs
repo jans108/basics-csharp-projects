@@ -1,9 +1,9 @@
 ﻿using Pluralsight.CShPlaybook.Interfaces.Demo.BusinessObjects;
 using Pluralsight.CShPlaybook.Interfaces.Demo.DataAccess;
 
-GardenClient client = new GardenClient(1, "Simon the Ace Gardener");
-client.AddToCart("Carnations");
-client.AddToCart("Roses");
+var repository = new ClientRepository("connection string");
+GardenClient client = repository.GetClientFromId(1);
+client.SaveCart();
 
 DisplayClient(client);
 

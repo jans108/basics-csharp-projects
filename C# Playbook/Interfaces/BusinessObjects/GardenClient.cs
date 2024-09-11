@@ -1,4 +1,6 @@
-﻿namespace Pluralsight.CShPlaybook.Interfaces.Demo.BusinessObjects;
+﻿using BusinessObjects;
+
+namespace Pluralsight.CShPlaybook.Interfaces.Demo.BusinessObjects;
 
 public class GardenClient
 {
@@ -8,15 +10,23 @@ public class GardenClient
 
 	public List<string> ShoppingCart { get; private init; } = new();
 
-	public GardenClient(int id, string name)
+	private IClientRepository _repository;
+
+	public GardenClient(int id, string name, IClientRepository repository)
 	{
 		Id = id;
 		Name = name;
+		_repository = repository;
 	}
 
 	public void AddToCart(string itemName)
 	{
 		ShoppingCart.Add(itemName);
+	}
+
+	public void SaveCart()
+	{
+		_repository.PersistCart(this);
 	}
 }
 
