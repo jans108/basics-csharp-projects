@@ -11,6 +11,10 @@ public class GardenClient : ILoggable
 
     public List<string> ShoppingCart { get; private init; } = new();
 
+    public ILogger? Logger { get; set; }
+
+    public void LogMyself() => Logger?.LogState(this);
+
     string ILoggable.Name => $"Client Id = {Id}";
 
     string ILoggable.CurrentState
