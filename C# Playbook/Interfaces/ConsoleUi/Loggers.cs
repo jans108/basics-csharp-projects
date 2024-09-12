@@ -25,4 +25,12 @@ public class ConsoleLogger : ILogger
         string msg = $"{source.Name}:\r\n{source.CurrentState}\r\n\r\n";
         Console.WriteLine(msg);
     }
+
+    public bool CanLogMethodCall => true;
+
+    public void LogMethodCall(ILoggable source, string methodName)
+    {
+        string msg = $"{source.Name}: Calling method {methodName}\r\n";
+        Console.WriteLine(msg);
+    }
 }
