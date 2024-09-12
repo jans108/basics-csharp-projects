@@ -45,6 +45,7 @@ public class GardenClient : ILoggable
 
     public void SaveCart()
     {
+        Logger?.LogMethodCall(this, nameof(SaveCart));
         _repository.PersistCart(this);
     }
 }

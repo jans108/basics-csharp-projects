@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|solutionrelative:consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\businessobjects\\gardenclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\gardenclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\businessobjects\\loggerinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\loggerinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\consoleui\\loggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|solutionrelative:consoleui\\loggers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\businessobjects\\loggerinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\loggerinterfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\businessobjects\\gardenclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5ACF6EC-5514-4564-AF9A-71F3C6B96237}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\gardenclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D76A54-FDF0-46EE-B7CE-ADB46AD8C223}|ConsoleUi\\ConsoleUi.csproj|solutionrelative:consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39754D49-D9A7-4636-8915-FBDB97450B4D}|DataAccess\\DataAccess.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\05\\demos\\gardenstore - 1 - before\\dataaccess\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,30 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Loggers.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\ConsoleUi\\Loggers.cs",
               "RelativeDocumentMoniker": "ConsoleUi\\Loggers.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\ConsoleUi\\Loggers.cs",
               "RelativeToolTip": "ConsoleUi\\Loggers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T19:24:57.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LoggerInterfaces.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\BusinessObjects\\LoggerInterfaces.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\LoggerInterfaces.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\BusinessObjects\\LoggerInterfaces.cs",
               "RelativeToolTip": "BusinessObjects\\LoggerInterfaces.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T20:01:22.368Z",
               "EditorCaption": ""
@@ -88,26 +88,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GardenClient.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\BusinessObjects\\GardenClient.cs",
               "RelativeDocumentMoniker": "BusinessObjects\\GardenClient.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\BusinessObjects\\GardenClient.cs",
               "RelativeToolTip": "BusinessObjects\\GardenClient.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:50:14.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\ConsoleUi\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleUi\\Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\05\\demos\\GardenStore - 1 - Before\\ConsoleUi\\Program.cs",
               "RelativeToolTip": "ConsoleUi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:50:14.857Z",
               "EditorCaption": ""
