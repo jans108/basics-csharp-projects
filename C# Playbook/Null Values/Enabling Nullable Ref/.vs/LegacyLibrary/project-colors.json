@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b84f6658-217f-4174-afb4-761e766e5f45": {
+      "ProjectGuid": "b84f6658-217f-4174-afb4-761e766e5f45",
+      "DisplayName": "LegacyLibrary",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "1beb032f-c730-41d7-8328-87d79a095564": {
+      "ProjectGuid": "1beb032f-c730-41d7-8328-87d79a095564",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
