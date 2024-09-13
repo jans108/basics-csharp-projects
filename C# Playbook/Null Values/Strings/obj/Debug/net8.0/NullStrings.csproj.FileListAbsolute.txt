@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\bin\Debug\net8.0\NullStrings.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\bin\Debug\net8.0\NullStrings.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\bin\Debug\net8.0\NullStrings.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\bin\Debug\net8.0\NullStrings.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\bin\Debug\net8.0\NullStrings.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\refint\NullStrings.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\NullStrings.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\06\demos\NullStrings - Before\obj\Debug\net8.0\ref\NullStrings.dll

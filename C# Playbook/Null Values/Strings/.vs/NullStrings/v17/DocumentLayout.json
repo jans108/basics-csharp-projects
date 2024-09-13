@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A38BFBC-4A96-4C33-92A6-6B340BBC468D}|NullStrings.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\06\\demos\\nullstrings - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A38BFBC-4A96-4C33-92A6-6B340BBC468D}|NullStrings.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A38BFBC-4A96-4C33-92A6-6B340BBC468D}|NullStrings.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\06\\demos\\nullstrings - before\\nullstrings.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{9A38BFBC-4A96-4C33-92A6-6B340BBC468D}|NullStrings.csproj|solutionrelative:nullstrings.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NullStrings",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\06\\demos\\NullStrings - Before\\NullStrings.csproj",
-              "RelativeDocumentMoniker": "NullStrings.csproj",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\06\\demos\\NullStrings - Before\\NullStrings.csproj",
-              "RelativeToolTip": "NullStrings.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-06T17:57:22.528Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +24,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\06\\demos\\NullStrings - Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T17:57:14.564Z",
               "EditorCaption": ""
