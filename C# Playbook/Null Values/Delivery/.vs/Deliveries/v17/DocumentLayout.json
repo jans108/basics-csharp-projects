@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m06 nulls\\code\\for-upload\\deliveries - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m06 nulls\\code\\for-upload\\deliveries - before\\deliveries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|solutionrelative:deliveries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m06 nulls\\code\\for-upload\\deliveries - before\\deliverytimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|solutionrelative:deliverytimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m06 nulls\\code\\for-upload\\deliveries - before\\deliveryplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|solutionrelative:deliveryplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m06 nulls\\code\\for-upload\\deliveries - before\\legacydeliveries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6405FB1F-6FA7-4199-9457-4D25033F1B82}|DeliveryPlanner.csproj|solutionrelative:legacydeliveries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeliveryPlanner",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\DeliveryPlanner.csproj",
+              "RelativeDocumentMoniker": "DeliveryPlanner.csproj",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\DeliveryPlanner.csproj",
+              "RelativeToolTip": "DeliveryPlanner.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T17:54:32.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:54:28.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeliveryTimes.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\DeliveryTimes.cs",
+              "RelativeDocumentMoniker": "DeliveryTimes.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\DeliveryTimes.cs",
+              "RelativeToolTip": "DeliveryTimes.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAA2wAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:54:28.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deliveries.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\Deliveries.cs",
+              "RelativeDocumentMoniker": "Deliveries.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\Deliveries.cs",
+              "RelativeToolTip": "Deliveries.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAA2wA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:54:28.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LegacyDeliveries.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\LegacyDeliveries.cs",
+              "RelativeDocumentMoniker": "LegacyDeliveries.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m06 nulls\\Code\\For-upload\\Deliveries - Before\\LegacyDeliveries.cs",
+              "RelativeToolTip": "LegacyDeliveries.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:54:28.125Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
