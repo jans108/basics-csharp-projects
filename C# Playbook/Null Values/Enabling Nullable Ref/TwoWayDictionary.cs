@@ -2,6 +2,8 @@
 
 namespace Pluralsight.CShPlaybook.NullValues;
 public class TwoWayReadOnlyDictionary<T1, T2> 
+	where T1 : notnull
+	where T2 : notnull
 {
 	public ReadOnlyDictionary<T1, T2> ForwardDict { get; private init; }
 	public ReadOnlyDictionary<T2, T1> ReverseDict { get; private init; }
