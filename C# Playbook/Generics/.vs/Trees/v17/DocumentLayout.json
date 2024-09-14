@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\",
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\07\\demos\\treenodes\\m03-after\\treenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|solutionrelative:treenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\07\\demos\\treenodes\\m03-after\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m07 generics\\code\\treenodes\\m04-after\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\07\\demos\\treenodes\\m03-after\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m07 generics\\code\\treenodes\\m04-after\\treenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|solutionrelative:treenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m07 generics\\code\\treenodes\\m04-after\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5E817A8-8ED9-4B0F-9EB0-4FF28549C906}|Trees.csproj|solutionrelative:location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,55 +22,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:01:48.393Z",
+              "WhenOpened": "2024-05-06T18:02:10.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Location.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\Location.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\Location.cs",
               "RelativeDocumentMoniker": "Location.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\Location.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\Location.cs",
               "RelativeToolTip": "Location.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:01:48.395Z"
+              "WhenOpened": "2024-05-06T18:02:10.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TreeNode.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\TreeNode.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\TreeNode.cs",
               "RelativeDocumentMoniker": "TreeNode.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\07\\demos\\TreeNodes\\m03-after\\TreeNode.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m07 generics\\Code\\TreeNodes\\m04-after\\TreeNode.cs",
               "RelativeToolTip": "TreeNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:01:48.397Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "WhenOpened": "2024-05-06T18:02:10.191Z"
             }
           ]
         }
