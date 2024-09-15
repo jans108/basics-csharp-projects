@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m08 immutability\\code\\before\\drawingstuff.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:drawingstuff.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m08 immutability\\code\\before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m08 immutability\\code\\before\\drawtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:drawtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m08 immutability\\code\\before\\intextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:intextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DrawingStuff",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\DrawingStuff.csproj",
+              "RelativeDocumentMoniker": "DrawingStuff.csproj",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\DrawingStuff.csproj",
+              "RelativeToolTip": "DrawingStuff.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T18:55:17.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DrawTextBox.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\DrawTextBox.cs",
+              "RelativeDocumentMoniker": "DrawTextBox.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\DrawTextBox.cs",
+              "RelativeToolTip": "DrawTextBox.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:04:47.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IntExtension.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\IntExtension.cs",
+              "RelativeDocumentMoniker": "IntExtension.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\IntExtension.cs",
+              "RelativeToolTip": "IntExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:04:47.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m08 Immutability\\Code\\Before\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:04:47.135Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
