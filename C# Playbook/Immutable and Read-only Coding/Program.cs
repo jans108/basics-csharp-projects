@@ -1,16 +1,6 @@
 ﻿using Pluralsight.CShPlaybook.DrawingStuff;
 
-PolyLine shape = new PolyLine(new Point());
-Point point1 = new Point(2, 0);
-Point point2 = new Point(2, 2);
-Point point3 = new Point(0, 2);
-Point point4 = new Point(0, 0);
+MutablePoint point = new MutablePoint(4, 4);
+Console.WriteLine($"Norm is {Norm(point)}");
 
-shape.AddLineTo(point1);
-shape.AddLineTo(point2);
-shape.AddLineTo(point3);
-shape.AddLineTo(point4);
-Console.WriteLine($"Length of shape is {shape.Length}");
-
-var vertices = shape.Vertices;
-var vertices2 = shape.Vertices;
+static double Norm(in MutablePoint pt) => pt.DistSqFrom(new MutablePoint(0, 0));
