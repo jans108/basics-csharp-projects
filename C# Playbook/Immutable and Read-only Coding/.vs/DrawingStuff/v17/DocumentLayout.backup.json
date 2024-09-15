@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\polyline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:polyline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\drawtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\intextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:intextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\08\\demos\\before\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72481713-D201-4CA0-BFD8-BB528CBF425B}|DrawingStuff.csproj|solutionrelative:point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Polyline.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Polyline.cs",
+              "RelativeDocumentMoniker": "Polyline.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Polyline.cs",
+              "RelativeToolTip": "Polyline.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:21:31.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Point.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Point.cs",
               "RelativeDocumentMoniker": "Point.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Point.cs",
               "RelativeToolTip": "Point.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T14:56:56.145Z",
               "EditorCaption": ""
@@ -69,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\08\\demos\\Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:04:47.135Z",
               "EditorCaption": ""
