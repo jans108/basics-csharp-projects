@@ -5,4 +5,8 @@ string directoryPath = Console.ReadLine()!;
 
 DirectoryInfo directoryToBackup = new DirectoryInfo(directoryPath);
 Console.WriteLine($"Processing directory {directoryToBackup.Name}");
-DirectoryCleaner.DoBackupAndClean(directoryToBackup);
+
+BackupRules backupRules = BackupRulesSerializer.DeserializeFromJson();
+DirectoryCleaner.DoBackupAndClean(directoryToBackup, backupRules);
+
+Console.ReadLine();

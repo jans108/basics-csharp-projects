@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\directorycleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:directorycleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\backuprules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:backuprules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\backuprulesserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:backuprulesserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\directorycleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:directorycleaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\09\\demos\\datadriven - 1 - before\\backuprules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB35E08-20C9-4BAA-AD54-F7DB8C3E2760}|PatternsDemo.csproj|solutionrelative:backuprules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,54 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BackupRulesSerializer.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\BackupRulesSerializer.cs",
               "RelativeDocumentMoniker": "BackupRulesSerializer.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\BackupRulesSerializer.cs",
               "RelativeToolTip": "BackupRulesSerializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:09:24.09Z"
+              "WhenOpened": "2024-05-06T18:09:24.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BackupRules.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\BackupRules.cs",
               "RelativeDocumentMoniker": "BackupRules.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\BackupRules.cs",
               "RelativeToolTip": "BackupRules.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAWwBEAAAAkAAAA",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:09:24.092Z"
+              "WhenOpened": "2024-05-06T18:09:24.092Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DirectoryCleaner.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\DirectoryCleaner.cs",
               "RelativeDocumentMoniker": "DirectoryCleaner.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\DirectoryCleaner.cs",
               "RelativeToolTip": "DirectoryCleaner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:09:24.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\09\\demos\\DataDriven - 1 - Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:09:24.094Z",
               "EditorCaption": ""
