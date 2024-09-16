@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cf8449e1-5459-4202-be7d-f53cfbf50de6": {
+      "ProjectGuid": "cf8449e1-5459-4202-be7d-f53cfbf50de6",
+      "DisplayName": "EventsDemo",
+      "ColorIndex": 0
+    },
+    "a96607c6-504d-4b60-85b3-cc348240a308": {
+      "ProjectGuid": "a96607c6-504d-4b60-85b3-cc348240a308",
+      "DisplayName": "BusinessObjects",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
