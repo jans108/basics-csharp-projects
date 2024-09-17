@@ -15,7 +15,7 @@ public class BookmarkProduct
 			if (value != _price)
 			{
 				_price = value;
-				PriceChanged!(this, EventArgs.Empty);
+				PriceChanged?.Invoke(this, EventArgs.Empty);
 			}
 		}
 	}

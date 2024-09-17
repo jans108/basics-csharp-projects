@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\bin\Debug\net8.0\EventsDemo.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\bin\Debug\net8.0\EventsDemo.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\bin\Debug\net8.0\EventsDemo.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\bin\Debug\net8.0\EventsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\bin\Debug\net8.0\EventsDemo.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\refint\EventsDemo.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\EventsDemo.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\10\demos\m09-01 before\EventsDemo\obj\Debug\net8.0\ref\EventsDemo.dll
