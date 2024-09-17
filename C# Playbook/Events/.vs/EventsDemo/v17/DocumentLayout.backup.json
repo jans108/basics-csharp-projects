@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|solutionrelative:bookmarkproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\10\\demos\\m09-01 before\\eventsdemo\\pricechangedeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|solutionrelative:pricechangedeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\10\\demos\\m09-01 before\\eventsdemo\\pricealerter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|solutionrelative:pricealerter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\10\\demos\\m09-01 before\\eventsdemo\\pricechangedeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|solutionrelative:pricechangedeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF8449E1-5459-4202-BE7D-F53CFBF50DE6}|EventsDemo.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\10\\demos\\m09-01 before\\eventsdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PriceChangedEventArgs.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\10\\demos\\m09-01 before\\EventsDemo\\PriceChangedEventArgs.cs",
               "RelativeDocumentMoniker": "PriceChangedEventArgs.cs",
@@ -49,20 +49,20 @@
               "RelativeDocumentMoniker": "BookmarkProduct.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\10\\demos\\m09-01 before\\EventsDemo\\BookmarkProduct.cs",
               "RelativeToolTip": "BookmarkProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:11:09.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PriceAlerter.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\10\\demos\\m09-01 before\\EventsDemo\\PriceAlerter.cs",
               "RelativeDocumentMoniker": "PriceAlerter.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\10\\demos\\m09-01 before\\EventsDemo\\PriceAlerter.cs",
               "RelativeToolTip": "PriceAlerter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:11:09.004Z",
               "EditorCaption": ""
@@ -77,8 +77,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:11:09.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:11:09.006Z"
             }
           ]
         },
