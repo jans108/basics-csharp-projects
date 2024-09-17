@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\bin\Debug\net8.0\ExamResults.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\bin\Debug\net8.0\ExamResults.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\bin\Debug\net8.0\ExamResults.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\bin\Debug\net8.0\ExamResults.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\bin\Debug\net8.0\ExamResults.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\refint\ExamResults.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ExamResults.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\11\demos\ExamResults - 1 - Before\obj\Debug\net8.0\ref\ExamResults.dll

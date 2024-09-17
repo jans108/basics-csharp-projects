@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:13:23.293Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "ResultsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:13:23.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:13:23.295Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "ExamResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:13:23.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:13:23.297Z"
             }
           ]
         },

@@ -1,20 +1,24 @@
 ﻿using Pluralsight.CShPlaybook.LinqDemos;
 
-var resultDistinct = ResultsRepository.EnumResults().Distinct(ExamResultEqualityComparer.Instance);
+var resultsByStudent = GroupByStudent();
 
-var resultsByStudent =
-    from result in resultDistinct
-    group result by result.StudentId;
+var flatResults = from grouping in resultsByStudent
+                  from result in grouping
+                  orderby result.StudentId, result.Subject
+                  select result;
 
-//Fluent syntax:
-//var resultsByStudentFluent = resultDistinct.GroupBy(s => s.StudentId);
 
-foreach (IGrouping<int, ExamResult> resultGroup in resultsByStudent)
-{
-    Console.WriteLine($"Student {resultGroup.Key}:");
-    foreach (var result in resultGroup)
-        Console.WriteLine($@"   {result.Mark:##}% in {result.Subject}");
-}
+foreach (var result in flatResults)
+    Console.WriteLine(result);
 
 Console.ReadLine();
 
+static IEnumerable<IGrouping<int, ExamResult>> GroupByStudent()
+{
+    var resultDistinct = ResultsRepository.EnumResults().Distinct(ExamResultEqualityComparer.Instance);
+
+    var resultsByStudent =
+        from result in resultDistinct
+        group result by result.StudentId;
+    return resultsByStudent;
+}
