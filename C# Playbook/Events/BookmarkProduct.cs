@@ -14,12 +14,13 @@ public class BookmarkProduct
 		{
 			if (value != _price)
 			{
+				var eventArgs = new PriceChangedEventArgs(_price);
 				_price = value;
-				PriceChanged?.Invoke(this, EventArgs.Empty);
+				PriceChanged?.Invoke(this, eventArgs);
 			}
 		}
 	}
-    public event EventHandler? PriceChanged;
+	public event PriceChangedEventHandler? PriceChanged;
 	public BookmarkProduct(string id, string name, decimal price)
 	{
 		if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(name) || price < 0.01m)

@@ -3,7 +3,7 @@ namespace Pluralsight.CShPlaybook.EventsDemo;
 
 public class PriceAlerter
 {
-	public static void AlertPriceChanged(object? sender, EventArgs e)
+	public static void AlertPriceChanged(object? sender, PriceChangedEventArgs e)
 	{
 		BookmarkProduct product = (BookmarkProduct)sender!;
 		if (product.Price < 0)
@@ -13,7 +13,7 @@ public class PriceAlerter
 		}
 		else
 		{
-			Console.WriteLine($"{product.Name} changed to {product.Price}");
+			Console.WriteLine($"{product.Name} changed from {e.OldPrice} to {product.Price}");
 			product.PriceChanged += AlertPriceChanged;
 		}
 	}
