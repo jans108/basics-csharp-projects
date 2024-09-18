@@ -2,6 +2,15 @@
 
 public class ResultsRepository
 {
+	public static IEnumerable<Student> EnumStudents()
+	{
+		yield return new Student("Henrietta Swan Leavitt", 1);
+		yield return new Student("Subrahmanyan Chandrasekhar", 2);
+		yield return new Student("Rachel Carson", 3);
+		yield return new Student("Svante Arrhenius", 5);
+		yield return new Student("William Shakespeare", 4);
+	}
+
 	public static IEnumerable<ExamResult> EnumResults()
 	{
 		yield return new ExamResult(5, "Biology", 55);
