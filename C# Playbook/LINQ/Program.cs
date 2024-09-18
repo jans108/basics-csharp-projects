@@ -2,30 +2,27 @@
 
 var students = ResultsRepository.EnumStudents();
 var results = ResultsRepository.EnumResults()
-    .Distinct(ExamResultEqualityComparer.Instance)
-    .OrderBy(result => result.Subject);
+    .Distinct(ExamResultEqualityComparer.Instance);
 
-IEnumerable<(Student student, IEnumerable<ExamResult>)> studentResults =
-    from Student student in students
-    orderby student.Name
-    join ExamResult result in results on student.AnonymousId equals result.StudentId
+IEnumerable<(Student, double)> studentAverages =
+    from student in students
+    join result in results on student.AnonymousId equals result.StudentId
     into resultsByStudent
-    select (student, resultsByStudent);
+    let avg = resultsByStudent.Average(x => x.Mark)
+    orderby avg descending
+    select (student, avg);
 
-var studentResultsFluent = students
-    .GroupJoin(results,
+var studentAveragesFluent = students
+    .GroupJoin(
+    results,
     student => student.AnonymousId,
-    result => result.StudentId,
-    (student, result) => (student, result))
-    .OrderBy(tuple => tuple.student.Name);
+    r => r.StudentId,
+    (s, r) => (s, r.Average(r => r.Mark)))
+    .OrderBy(t => t.s.Name);
 
+foreach ((Student student, double avg) in studentAverages)
+    Console.WriteLine($"{student.Name.PadRight(10)}: {avg:##.#}%");
 
-foreach ((Student student, IEnumerable<ExamResult> resultsForStudent) in studentResults) 
-{
-    Console.WriteLine(student.Name);
-    foreach (ExamResult result in resultsForStudent)
-        Console.WriteLine($"  {result.Mark:##}% in {result.Subject}");
-}
 
 
 
