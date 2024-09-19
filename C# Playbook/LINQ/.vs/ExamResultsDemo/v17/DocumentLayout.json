@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\linqextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:linqextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\resultsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:resultsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\examresultequalitycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:examresultequalitycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\examresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:examresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\examresultequalitycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:examresultequalitycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\11\\demos\\examresults - 1 - before\\resultsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B34F347-5D39-4146-B9DE-6BC086283D18}|ExamResults.csproj|solutionrelative:resultsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LinqExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\LinqExtensions.cs",
+              "RelativeDocumentMoniker": "LinqExtensions.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\LinqExtensions.cs",
+              "RelativeToolTip": "LinqExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T20:05:40.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\Student.cs",
               "RelativeDocumentMoniker": "Student.cs",
@@ -42,11 +59,12 @@
               "RelativeToolTip": "Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T14:11:29.752Z"
+              "WhenOpened": "2024-09-18T14:11:29.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ExamResultEqualityComparer.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\ExamResultEqualityComparer.cs",
               "RelativeDocumentMoniker": "ExamResultEqualityComparer.cs",
@@ -54,7 +72,8 @@
               "RelativeToolTip": "ExamResultEqualityComparer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:01:42.696Z"
+              "WhenOpened": "2024-09-17T14:01:42.696Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,14 +83,14 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:13:23.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ResultsRepository.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\ResultsRepository.cs",
               "RelativeDocumentMoniker": "ResultsRepository.cs",
@@ -79,11 +98,12 @@
               "RelativeToolTip": "ResultsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:13:23.295Z"
+              "WhenOpened": "2024-05-06T18:13:23.295Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ExamResult.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\11\\demos\\ExamResults - 1 - Before\\ExamResult.cs",
               "RelativeDocumentMoniker": "ExamResult.cs",
@@ -91,7 +111,8 @@
               "RelativeToolTip": "ExamResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:13:23.297Z"
+              "WhenOpened": "2024-05-06T18:13:23.297Z",
+              "EditorCaption": ""
             }
           ]
         },
