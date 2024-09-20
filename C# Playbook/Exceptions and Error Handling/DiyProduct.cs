@@ -10,7 +10,7 @@ public class DiyProduct
         Id = id;
         Name = name;
         CheckValid();
-    }
+    } 
 	private void CheckValid()
 	{
 		if (string.IsNullOrWhiteSpace(Name))

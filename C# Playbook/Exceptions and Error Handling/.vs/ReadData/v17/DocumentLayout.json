@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,15 +46,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DiyProduct.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\DiyProduct.cs",
               "RelativeDocumentMoniker": "DiyProduct.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\DiyProduct.cs",
               "RelativeToolTip": "DiyProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:18:28.494Z"
+              "WhenOpened": "2024-05-06T18:18:28.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,15 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ProductJsonReader.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\ProductJsonReader.cs",
               "RelativeDocumentMoniker": "ProductJsonReader.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\ProductJsonReader.cs",
               "RelativeToolTip": "ProductJsonReader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:18:28.497Z"
+              "WhenOpened": "2024-05-06T18:18:28.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,7 +90,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:18:28.498Z",
               "EditorCaption": ""

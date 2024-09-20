@@ -13,6 +13,18 @@ try
     foreach (var product in products)
         Console.WriteLine(product.ToString()! + (product.IsSpecialProduct ? " (Special product)" : null));
 }
+catch (FileNotFoundException)
+{
+    Console.WriteLine($"Error! The file {chosenFile.FilePath} was not found");
+}
+catch(IOException)
+{
+    Console.WriteLine($"Error! Cannot read file {chosenFile.FileName}");
+}
+catch (UnauthorizedAccessException)
+{
+    Console.WriteLine($"Error! Permission was denied to read the file {chosenFile.FileName}");
+}
 catch (Exception ex)
 {
     Console.WriteLine(@$"Error! Something went wrong!
