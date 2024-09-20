@@ -13,6 +13,10 @@ try
     foreach (var product in products)
         Console.WriteLine(product.ToString()! + (product.IsSpecialProduct ? " (Special product)" : null));
 }
+catch (InvalidProductException ex) when (ex.PropName == nameof(DiyProduct.Name))
+{
+    Console.WriteLine($"Error! One of the products has a blank name: {ex.Product}");
+}
 catch (InvalidProductException ex)
 {
     Console.WriteLine($"Error! One of the products is invalid: {ex.Product}");
@@ -21,7 +25,7 @@ catch (FileNotFoundException)
 {
     Console.WriteLine($"Error! The file {chosenFile.FilePath} was not found");
 }
-catch(IOException)
+catch (IOException)
 {
     Console.WriteLine($"Error! Cannot read file {chosenFile.FileName}");
 }
