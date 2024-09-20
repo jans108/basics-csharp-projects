@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m12 exceptions\\code\\readdata - 1- before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m12 exceptions\\code\\readdata - 1- before\\diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m12 exceptions\\code\\readdata - 1- before\\productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m12 exceptions\\code\\readdata - 1- before\\demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m12 exceptions\\code\\readdata - 1- before\\invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DemoDataFileSet.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\DemoDataFileSet.cs",
+              "RelativeDocumentMoniker": "DemoDataFileSet.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\DemoDataFileSet.cs",
+              "RelativeToolTip": "DemoDataFileSet.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:18:28.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DiyProduct.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\DiyProduct.cs",
+              "RelativeDocumentMoniker": "DiyProduct.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\DiyProduct.cs",
+              "RelativeToolTip": "DiyProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:18:28.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvalidProductException.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\InvalidProductException.cs",
+              "RelativeDocumentMoniker": "InvalidProductException.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\InvalidProductException.cs",
+              "RelativeToolTip": "InvalidProductException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:18:28.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductJsonReader.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\ProductJsonReader.cs",
+              "RelativeDocumentMoniker": "ProductJsonReader.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\ProductJsonReader.cs",
+              "RelativeToolTip": "ProductJsonReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:18:28.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m12 exceptions\\Code\\ReadData - 1- Before\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:18:28.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
