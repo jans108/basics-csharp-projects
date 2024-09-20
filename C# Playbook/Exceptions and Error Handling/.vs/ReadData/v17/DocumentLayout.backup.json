@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:diyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:productjsonreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:invalidproductexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\12\\demos\\readdata - 1- before\\demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691732E2-C00C-4FBD-812A-CD3028A125AE}|ReadData.csproj|solutionrelative:demodatafileset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +34,16 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DemoDataFileSet.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\DemoDataFileSet.cs",
               "RelativeDocumentMoniker": "DemoDataFileSet.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\DemoDataFileSet.cs",
               "RelativeToolTip": "DemoDataFileSet.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABkAAAADAAAA",
+              "ViewState": "AgIAABcAAAAAAAAAAAAnwBoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:18:28.487Z"
+              "WhenOpened": "2024-05-06T18:18:28.487Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,26 +53,27 @@
               "RelativeDocumentMoniker": "DiyProduct.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\DiyProduct.cs",
               "RelativeToolTip": "DiyProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:18:28.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "InvalidProductException.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\InvalidProductException.cs",
               "RelativeDocumentMoniker": "InvalidProductException.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\InvalidProductException.cs",
               "RelativeToolTip": "InvalidProductException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:18:28.496Z"
+              "WhenOpened": "2024-05-06T18:18:28.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductJsonReader.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\ProductJsonReader.cs",
               "RelativeDocumentMoniker": "ProductJsonReader.cs",
@@ -90,7 +92,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\12\\demos\\ReadData - 1- Before\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:18:28.498Z",
               "EditorCaption": ""

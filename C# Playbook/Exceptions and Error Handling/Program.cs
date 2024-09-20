@@ -13,6 +13,10 @@ try
     foreach (var product in products)
         Console.WriteLine(product.ToString()! + (product.IsSpecialProduct ? " (Special product)" : null));
 }
+catch (InvalidProductException ex)
+{
+    Console.WriteLine($"Error! One of the products is invalid: {ex.Product}");
+}
 catch (FileNotFoundException)
 {
     Console.WriteLine($"Error! The file {chosenFile.FilePath} was not found");

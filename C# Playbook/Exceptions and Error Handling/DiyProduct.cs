@@ -14,9 +14,9 @@ public class DiyProduct
 	private void CheckValid()
 	{
 		if (string.IsNullOrWhiteSpace(Name))
-			throw new Exception("Name cannot be null or whitespace");
+			throw new InvalidProductException(this, "Name cannot be null or whitespace", nameof(Name));
 		if (Id <= 0)
-			throw new Exception("Id must be positive number > 0");
+			throw new InvalidProductException(this, "Id must be positive number > 0", nameof(Id));
 	}
 	public override string ToString() => $"Id={Id}, Name={Name}";
 	public bool IsSpecialProduct
