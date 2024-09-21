@@ -6,7 +6,7 @@ try
 {
     chosenFile = dataFileSet.AskUserChooseFilePathToRead();
 
-    var products = ProductJsonReader.ReadProducts(chosenFile.FilePath);
+    var products = await ProductJsonReader.ReadProductsAsync(chosenFile.FilePath);
 
     Console.WriteLine(@"The products are:");
     Console.WriteLine("-----------------");
