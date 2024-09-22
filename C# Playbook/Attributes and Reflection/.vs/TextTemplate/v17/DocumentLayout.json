@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\texttemplate.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:texttemplate.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\data\\productpromo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:data\\productpromo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\computerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:computerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m13 reflection\\code\\texttemplates - 1 - before\\data\\productpromov2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:data\\productpromov2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TextTemplate",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\TextTemplate.csproj",
+              "RelativeDocumentMoniker": "TextTemplate.csproj",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\TextTemplate.csproj",
+              "RelativeToolTip": "TextTemplate.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T18:24:38.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductStatus.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\ProductStatus.cs",
+              "RelativeDocumentMoniker": "ProductStatus.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\ProductStatus.cs",
+              "RelativeToolTip": "ProductStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:24:34.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComputerProduct.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\ComputerProduct.cs",
+              "RelativeDocumentMoniker": "ComputerProduct.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\ComputerProduct.cs",
+              "RelativeToolTip": "ComputerProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:24:34.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductPromoV2.txt",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Data\\ProductPromoV2.txt",
+              "RelativeDocumentMoniker": "Data\\ProductPromoV2.txt",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Data\\ProductPromoV2.txt",
+              "RelativeToolTip": "Data\\ProductPromoV2.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-06T18:24:34.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductPromo.txt",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Data\\ProductPromo.txt",
+              "RelativeDocumentMoniker": "Data\\ProductPromo.txt",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Data\\ProductPromo.txt",
+              "RelativeToolTip": "Data\\ProductPromo.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-06T18:24:34.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TextGenerator.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\TextGenerator.cs",
+              "RelativeDocumentMoniker": "TextGenerator.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\TextGenerator.cs",
+              "RelativeToolTip": "TextGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:24:34.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:24:34.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Product.cs",
+              "RelativeDocumentMoniker": "Product.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m13 reflection\\Code\\TextTemplates - 1 - Before\\Product.cs",
+              "RelativeToolTip": "Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:24:34.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
