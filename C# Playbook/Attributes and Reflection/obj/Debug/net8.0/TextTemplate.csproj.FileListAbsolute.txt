@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\bin\Debug\net8.0\TextTemplate.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\bin\Debug\net8.0\TextTemplate.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\bin\Debug\net8.0\TextTemplate.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\bin\Debug\net8.0\TextTemplate.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\bin\Debug\net8.0\TextTemplate.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\refint\TextTemplate.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\TextTemplate.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\13\demos\TextTemplates - 1 - Before\obj\Debug\net8.0\ref\TextTemplate.dll
