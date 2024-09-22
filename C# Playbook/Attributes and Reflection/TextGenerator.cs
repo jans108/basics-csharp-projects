@@ -11,6 +11,9 @@ public class TextGenerator
 
 	public string GenerateTextV2(Product product)
 	{
+		if (!TextGenHelper.CanDisplayProduct(product))
+			throw new ArgumentException($"{product.GetType().Name} is not able to use in text template.");
+
 		return _template
             .Replace("[[Name]]", product.Name)
             .Replace("[[Status]]", product.Status.ToString())
