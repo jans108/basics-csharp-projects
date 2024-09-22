@@ -1,5 +1,6 @@
 ﻿namespace Pluralsight.CShPlaybook.AttribsReflection;
 
+[ActualProduct(CanUseInTemplate = true)]
 public class ComputerProduct : Product
 {
 	public ComputerProduct(string name, ProductStatus status, decimal price, string ram, int processorCount)
