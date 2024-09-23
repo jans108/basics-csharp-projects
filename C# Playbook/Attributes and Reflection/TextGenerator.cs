@@ -16,7 +16,7 @@ public class TextGenerator
 
 		return _template
             .Replace("[[Name]]", product.Name)
-            .Replace("[[Status]]", product.Status.ToString())
+            .Replace("[[Status]]", TextGenHelper.GetFriendlyText(product.Status))
             .Replace("[[Price]]", $"${product.Price:#.00}")
             .Replace("[[FeatureList]]", "Please enquire for details");
     }

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\textgenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:textgenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:textgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\textgenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|solutionrelative:textgenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5CC6D04-0B21-4811-903E-DFACBDBC95DB}|TextTemplate.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\13\\demos\\texttemplates - 1 - before\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,49 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "TextGenHelper.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\TextGenHelper.cs",
               "RelativeDocumentMoniker": "TextGenHelper.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\TextGenHelper.cs",
               "RelativeToolTip": "TextGenHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:22:42.876Z"
+              "WhenOpened": "2024-09-22T18:22:42.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Attributes.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\Attributes.cs",
               "RelativeDocumentMoniker": "Attributes.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\Attributes.cs",
               "RelativeToolTip": "Attributes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T11:59:53.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProductStatus.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\ProductStatus.cs",
               "RelativeDocumentMoniker": "ProductStatus.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\ProductStatus.cs",
               "RelativeToolTip": "ProductStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:24:34.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ComputerProduct.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\ComputerProduct.cs",
               "RelativeDocumentMoniker": "ComputerProduct.cs",
@@ -88,25 +89,24 @@
               "RelativeToolTip": "ComputerProduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:24:34.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:24:34.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "TextGenerator.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\TextGenerator.cs",
               "RelativeDocumentMoniker": "TextGenerator.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\TextGenerator.cs",
               "RelativeToolTip": "TextGenerator.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:24:34.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\13\\demos\\TextTemplates - 1 - Before\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -114,8 +114,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:24:34.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:24:34.782Z"
             },
             {
               "$type": "Document",
