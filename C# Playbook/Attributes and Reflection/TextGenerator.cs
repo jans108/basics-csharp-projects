@@ -18,7 +18,7 @@ public class TextGenerator
             .Replace("[[Name]]", product.Name)
             .Replace("[[Status]]", TextGenHelper.GetFriendlyText(product.Status))
             .Replace("[[Price]]", $"${product.Price:#.00}")
-            .Replace("[[FeatureList]]", "Please enquire for details");
+            .Replace("[[FeatureList]]", TextGenHelper.GetPropertyValueList(product));
     }
 
 	[Obsolete(@"Please use GenerateTextV2, which uses ""[[...]]"" instead of ""(...)"" to delimit text substitutions")]

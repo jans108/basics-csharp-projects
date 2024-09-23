@@ -6,6 +6,20 @@ namespace Pluralsight.CShPlaybook.AttribsReflection;
 
 internal static class TextGenHelper
 {
+    internal static string GetPropertyValueList(object instanceToCheck)
+    {
+        Type type = instanceToCheck.GetType();
+        PropertyInfo[] props = type.GetProperties(
+            BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly);
+
+        StringBuilder sb = new StringBuilder();
+        foreach (PropertyInfo prop in props)
+            sb.AppendLine($"{prop.Name}: {prop.GetValue(instanceToCheck)?.ToString()}");
+
+        return sb.ToString();
+
+    }
+
     internal static string GetFriendlyText<T>(T value) where T : Enum
     {
         Type type = value.GetType();
