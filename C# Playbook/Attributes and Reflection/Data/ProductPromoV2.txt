@@ -2,6 +2,7 @@
 
 Availability: [[Status]]
 Price: [[Price]]
+(Diagnostic info: Contains mutable fields: [[ContainsMutableFields]])
 
 This amazing [[Name]] has the following features:
 

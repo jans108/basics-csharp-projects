@@ -6,6 +6,21 @@ namespace Pluralsight.CShPlaybook.AttribsReflection;
 
 internal static class TextGenHelper
 {
+    internal static bool ContainsMutableFields(Type type)
+    {
+        FieldInfo[] fields = type.GetFields(
+            BindingFlags.NonPublic | BindingFlags.Static
+            | BindingFlags.Public | BindingFlags.Instance);
+
+        foreach (FieldInfo field in fields)
+        {
+            if (!field.IsInitOnly)
+                return true;
+        }
+        Type? baseType = type.BaseType;
+        return baseType == null ? false : ContainsMutableFields(baseType);
+    }
+
     internal static string GetPropertyValueList(object instanceToCheck)
     {
         Type type = instanceToCheck.GetType();

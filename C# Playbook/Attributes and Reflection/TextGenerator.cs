@@ -15,10 +15,11 @@ public class TextGenerator
 			throw new ArgumentException($"{product.GetType().Name} is not able to use in text template.");
 
 		return _template
-            .Replace("[[Name]]", product.Name)
-            .Replace("[[Status]]", TextGenHelper.GetFriendlyText(product.Status))
-            .Replace("[[Price]]", $"${product.Price:#.00}")
-            .Replace("[[FeatureList]]", TextGenHelper.GetPropertyValueList(product));
+			.Replace("[[Name]]", product.Name)
+			.Replace("[[Status]]", TextGenHelper.GetFriendlyText(product.Status))
+			.Replace("[[Price]]", $"${product.Price:#.00}")
+			.Replace("[[FeatureList]]", TextGenHelper.GetPropertyValueList(product))
+			.Replace("[[ContainsMutableFields]]", TextGenHelper.ContainsMutableFields(product.GetType()).ToString());
     }
 
 	[Obsolete(@"Please use GenerateTextV2, which uses ""[[...]]"" instead of ""(...)"" to delimit text substitutions")]
