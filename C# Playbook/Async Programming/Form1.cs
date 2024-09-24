@@ -20,8 +20,16 @@ public partial class Form1 : Form
 			List<PsCourseInfo> courseList = PsCourseInfoParser.LoadCourseInfoDataFromFileName("courses.txt");
 			CourseSearcher searcher = new CourseSearcher();
 
-			SearchResult result = await searcher.LoadAndSearchPageAsync(courseList[0]);
-			DisplaySearchResult(result);
+			List<Task<SearchResult>> tasks = new();
+			foreach (var course in courseList)
+			{
+				Task<SearchResult> task = searcher.LoadAndSearchPageAsync(course);
+				tasks.Add(task);
+			}
+			await Task.WhenAll(tasks);
+
+			foreach (var task in tasks) 
+				DisplaySearchResult(task.Result);
 		}
 		catch (Exception ex)
 		{
