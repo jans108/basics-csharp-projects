@@ -23,13 +23,11 @@ public partial class Form1 : Form
 			List<Task<SearchResult>> tasks = new();
 			foreach (var course in courseList)
 			{
-				Task<SearchResult> task = searcher.LoadAndSearchPageAsync(course);
+				Task<SearchResult> task = searcher.LoadAndSearchPageAsync(course, this);
 				tasks.Add(task);
 			}
 			await Task.WhenAll(tasks);
 
-			foreach (var task in tasks) 
-				DisplaySearchResult(task.Result);
 		}
 		catch (Exception ex)
 		{

@@ -1,0 +1,16 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\bin\Debug\net8.0-windows7.0\AsyncDemos.exe
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\bin\Debug\net8.0-windows7.0\AsyncDemos.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\bin\Debug\net8.0-windows7.0\AsyncDemos.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\bin\Debug\net8.0-windows7.0\AsyncDemos.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\bin\Debug\net8.0-windows7.0\AsyncDemos.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\Pluralsight.CShPlaybook.AsyncDemo.Form1.resources
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.csproj.GenerateResource.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\refint\AsyncDemos.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\AsyncDemos.genruntimeconfig.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\14\demos\AsyncDemos - 1 - Before\obj\Debug\net8.0-windows7.0\ref\AsyncDemos.dll
