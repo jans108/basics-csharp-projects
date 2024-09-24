@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\datafilefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:datafilefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\coursesearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:coursesearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\slowfilereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:slowfilereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\searchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:searchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\pscourseinfoparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:pscourseinfoparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|d:\\g_work\\pluralsight\\courses-current\\csh playbook 2024\\m14 async\\code\\asyncdemos - 1 - before\\pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.979Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PsCourseInfoParser.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\PsCourseInfoParser.cs",
+              "RelativeDocumentMoniker": "PsCourseInfoParser.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\PsCourseInfoParser.cs",
+              "RelativeToolTip": "PsCourseInfoParser.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchResult.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\SearchResult.cs",
+              "RelativeDocumentMoniker": "SearchResult.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\SearchResult.cs",
+              "RelativeToolTip": "SearchResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PsCourseInfo.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\PsCourseInfo.cs",
+              "RelativeDocumentMoniker": "PsCourseInfo.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\PsCourseInfo.cs",
+              "RelativeToolTip": "PsCourseInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataFileFinder.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\DataFileFinder.cs",
+              "RelativeDocumentMoniker": "DataFileFinder.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\DataFileFinder.cs",
+              "RelativeToolTip": "DataFileFinder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseSearcher.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\CourseSearcher.cs",
+              "RelativeDocumentMoniker": "CourseSearcher.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\CourseSearcher.cs",
+              "RelativeToolTip": "CourseSearcher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SlowFileReader.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\SlowFileReader.cs",
+              "RelativeDocumentMoniker": "SlowFileReader.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\SlowFileReader.cs",
+              "RelativeToolTip": "SlowFileReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\G_Work\\Pluralsight\\Courses-current\\CSh Playbook 2024\\m14 async\\Code\\AsyncDemos - 1 - Before\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:27:26.988Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
