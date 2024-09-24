@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\downloadedpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:downloadedpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\coursesearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:coursesearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\pscourseinfoparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:pscourseinfoparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\14\\demos\\asyncdemos - 1 - before\\pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08B9340F-FA04-4185-AA77-39F23BC17BB4}|AsyncDemos.csproj|solutionrelative:pscourseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "DownloadedPages.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\DownloadedPages.cs",
+              "RelativeDocumentMoniker": "DownloadedPages.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\DownloadedPages.cs",
+              "RelativeToolTip": "DownloadedPages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T19:02:39.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -62,12 +79,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:50:20.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T17:50:20.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -75,12 +91,11 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:19:05.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T16:19:05.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -92,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PsCourseInfoParser.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\PsCourseInfoParser.cs",
               "RelativeDocumentMoniker": "PsCourseInfoParser.cs",
@@ -104,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SearchResult.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\SearchResult.cs",
               "RelativeDocumentMoniker": "SearchResult.cs",
@@ -116,19 +131,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "PsCourseInfo.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\PsCourseInfo.cs",
               "RelativeDocumentMoniker": "PsCourseInfo.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\PsCourseInfo.cs",
               "RelativeToolTip": "PsCourseInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:27:26.983Z"
+              "WhenOpened": "2024-05-06T18:27:26.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DataFileFinder.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\DataFileFinder.cs",
               "RelativeDocumentMoniker": "DataFileFinder.cs",
@@ -146,14 +162,14 @@
               "RelativeDocumentMoniker": "CourseSearcher.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\CourseSearcher.cs",
               "RelativeToolTip": "CourseSearcher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:27:26.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "SlowFileReader.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\SlowFileReader.cs",
               "RelativeDocumentMoniker": "SlowFileReader.cs",
@@ -165,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\14\\demos\\AsyncDemos - 1 - Before\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

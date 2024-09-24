@@ -4,6 +4,7 @@ public class CourseSearcher
 {
     private static readonly HttpClient _client = new HttpClient();
     private static Random rnd = new Random();
+    DownloadedPages _downloadedPages = new();
 
     public async Task<SearchResult> LoadAndSearchPageAsync(
         PsCourseInfo course, IProgress<SearchResult> progress)
@@ -14,7 +15,7 @@ public class CourseSearcher
             string pageBody = await _client.GetStringAsync(course.Url);
 
             // figure out if the downloaded text contains LINQ. This is a cpu-bound task
-            bool containsLinq = await Task.Run(()=>SearchForLinq(pageBody));
+            bool containsLinq = await Task.Run(()=>SearchForLinq(course.Name ,pageBody));
 
             var result = new SearchResult(course, containsLinq, true);
             progress.Report(result);
@@ -26,11 +27,12 @@ public class CourseSearcher
         }
     }
 
-    public bool SearchForLinq(string pageBody)
+    public bool SearchForLinq(string courseName, string pageBody)
 	{
+        _downloadedPages.Add(courseName, pageBody);
         // simulate it taking lots of CPU time to process each result
         // (random time up to 10 seconds)
         Thread.Sleep(rnd.Next(10000));
         return pageBody.Contains("LINQ");
     }
-}
+} 
