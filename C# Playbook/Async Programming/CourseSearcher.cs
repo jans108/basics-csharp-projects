@@ -5,7 +5,8 @@ public class CourseSearcher
     private static readonly HttpClient _client = new HttpClient();
     private static Random rnd = new Random();
 
-    public async Task<SearchResult> LoadAndSearchPageAsync(PsCourseInfo course, Form1 mainForm)
+    public async Task<SearchResult> LoadAndSearchPageAsync(
+        PsCourseInfo course, IProgress<SearchResult> progress)
     {
         try
         {
@@ -16,7 +17,7 @@ public class CourseSearcher
             bool containsLinq = await Task.Run(()=>SearchForLinq(pageBody));
 
             var result = new SearchResult(course, containsLinq, true);
-            mainForm.DisplaySearchResult(result);
+            progress.Report(result);
             return result;
         }
         catch (Exception)

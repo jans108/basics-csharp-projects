@@ -18,12 +18,13 @@ public partial class Form1 : Form
 			this.lblSearchStatus.Text = "Searching for courses...";
 
 			List<PsCourseInfo> courseList = PsCourseInfoParser.LoadCourseInfoDataFromFileName("courses.txt");
+			Progress<SearchResult> progress = new((result) => DisplaySearchResult(result));
 			CourseSearcher searcher = new CourseSearcher();
 
 			List<Task<SearchResult>> tasks = new();
 			foreach (var course in courseList)
 			{
-				Task<SearchResult> task = searcher.LoadAndSearchPageAsync(course, this);
+				Task<SearchResult> task = searcher.LoadAndSearchPageAsync(course, progress);
 				tasks.Add(task);
 			}
 			await Task.WhenAll(tasks);
