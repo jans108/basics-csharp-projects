@@ -22,4 +22,18 @@ public class OfficeHours
             result += t;
         return result;
     }
+
+    public TimeSpan GetTimeUntilNextOpen(ITimeNowProvider timeNowProvider)
+    {
+        TimeOnly now = timeNowProvider.GetTimeNow();
+
+        foreach (OpenPeriod openPeriod in OpenHoursToday)
+        {
+            if (now < openPeriod.OpenTime)
+                return openPeriod.OpenTime - now;
+            else if (now < openPeriod.ClosedTime)
+                return TimeSpan.Zero;
+        }
+        return TimeSpan.Zero; //wrong line
+    }
 }

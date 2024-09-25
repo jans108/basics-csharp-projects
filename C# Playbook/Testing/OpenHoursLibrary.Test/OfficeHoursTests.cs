@@ -19,4 +19,20 @@ public class OfficeHoursTests
 		// assert
 		Assert.That(totalHoursOpen, Is.EqualTo(expectedAnswer));
 	}
-}
+
+	[Test]
+	public void GetTimeUntilNextOpen_IsCorrect()
+	{
+		// arrange
+		TimeSpan expectedAnswer = new TimeSpan(1, 30, 0);
+		HoursRepository_TestDouble repository = new();
+		OfficeHours officeHours = new OfficeHours(repository);
+		TimeNowProvider_TestDouble timeNowProvider = new(new TimeOnly(7, 0));
+
+		// act 
+		TimeSpan howLongUntilOpen = officeHours.GetTimeUntilNextOpen(timeNowProvider);
+
+		// assert
+		Assert.That(howLongUntilOpen, Is.EqualTo(expectedAnswer));
+	}
+} 
