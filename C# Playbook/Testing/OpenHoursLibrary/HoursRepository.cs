@@ -1,6 +1,12 @@
 ﻿namespace Pluralsight.CShPlaybook.OpenHoursLibrary;
 
-public class HoursRepository
+public interface IHoursRepository
+{
+	IReadOnlyList<OpenPeriod> GetTodayOpenHours();
+	IReadOnlyList<OpenPeriod> GetTomorrowOpenHours();
+}
+
+public class HoursRepository : IHoursRepository
 {
 	public IReadOnlyList<OpenPeriod> GetTodayOpenHours()
 	{
