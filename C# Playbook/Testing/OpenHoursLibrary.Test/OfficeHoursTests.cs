@@ -5,34 +5,42 @@ using OpenHoursLibrary.Test;
 namespace Pluralsight.CShPlaybook.OpenHoursLibrary.Test;
 public class OfficeHoursTests
 {
-	[Test]
-	public void GetTotalOpenHoursToday_IsCorrect()
-	{
-		// arrange
-		TimeSpan expectedAnswer = new TimeSpan(8, 0, 0);
-		var repository = new HoursRepository_TestDouble();
-		OfficeHours sut = new OfficeHours(repository);
+    [Test]
+    public void GetTotalOpenHoursToday_IsCorrect()
+    {
+        // arrange
+        TimeSpan expectedAnswer = new TimeSpan(8, 0, 0);
+        var repository = new HoursRepository_TestDouble();
+        OfficeHours sut = new OfficeHours(repository);
 
-		// act
-		TimeSpan totalHoursOpen = sut.GetTotalOpenHoursToday();
+        // act
+        TimeSpan totalHoursOpen = sut.GetTotalOpenHoursToday();
 
-		// assert
-		Assert.That(totalHoursOpen, Is.EqualTo(expectedAnswer));
-	}
+        // assert
+        Assert.That(totalHoursOpen, Is.EqualTo(expectedAnswer));
+    }
 
-	[Test]
-	public void GetTimeUntilNextOpen_IsCorrect()
-	{
-		// arrange
-		TimeSpan expectedAnswer = new TimeSpan(1, 30, 0);
-		HoursRepository_TestDouble repository = new();
-		OfficeHours officeHours = new OfficeHours(repository);
-		TimeNowProvider_TestDouble timeNowProvider = new(new TimeOnly(7, 0));
+    [Test]
+    [TestCase(7, 0, 1, 30)]
+    [TestCase(8, 30, 0, 0)]
+    [TestCase(10, 37, 0, 0)]
+    [TestCase(12, 00, 1, 0)]
+    [TestCase(12, 22, 0, 38)]
+    [TestCase(17, 45, 14, 45)]
+    public void GetTimeUntilNextOpen_IsCorrect(int timeNowHours, int timeNowMinutes, int expectedAnswerHours, int expectedAnswerMinutes)
+    {
+        // arrange
+        TimeOnly timeNow = new TimeOnly(timeNowHours, timeNowMinutes);
+        TimeSpan expectedAnswer = new TimeSpan(expectedAnswerHours, expectedAnswerMinutes, 0);
+        HoursRepository_TestDouble repository = new();
+        TimeNowProvider_TestDouble timeNowProvider = new(timeNow);
+        OfficeHours officeHours = new OfficeHours(repository);
 
-		// act 
-		TimeSpan howLongUntilOpen = officeHours.GetTimeUntilNextOpen(timeNowProvider);
+        // act
+        TimeSpan howLongUntilOpen = officeHours.GetTimeUntilNextOpen(timeNowProvider);
 
-		// assert
-		Assert.That(howLongUntilOpen, Is.EqualTo(expectedAnswer));
-	}
-} 
+        // assert
+        Assert.That(howLongUntilOpen, Is.EqualTo(expectedAnswer));
+    }
+
+}

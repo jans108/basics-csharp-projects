@@ -34,6 +34,8 @@ public class OfficeHours
             else if (now < openPeriod.ClosedTime)
                 return TimeSpan.Zero;
         }
-        return TimeSpan.Zero; //wrong line
+
+        TimeSpan timeRemainingToday = (new TimeOnly(23, 59) - now) + new TimeSpan(0, 1, 0);
+        return this.OpenHoursTomorrow[0].OpenTime.ToTimeSpan() + timeRemainingToday;
     }
 }
