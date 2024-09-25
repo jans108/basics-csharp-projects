@@ -4,20 +4,13 @@ namespace Pluralsight.CShPlaybook.AsyncDemo;
 
 public class DownloadedPages
 {
-    //public readonly object SyncLock = new object();
+    public Dictionary<string, string> PageTexts { get; } = new();
 
-    public ConcurrentDictionary<string, string> PageTexts { get; } = new();
-
-    private int _nPagesLoaded;
-    public int NPagesLoaded
-    {
-        get => _nPagesLoaded;
-        private set => _nPagesLoaded = value;
-    }
+    public int NPagesLoaded { get; set; }
 
     public void Add(string courseName, string pageBody)
     {
-        PageTexts.TryAdd(courseName, pageBody);
-        Interlocked.Increment(ref _nPagesLoaded);
+        PageTexts.Add(courseName, pageBody);
+        ++NPagesLoaded;
     }
 }
