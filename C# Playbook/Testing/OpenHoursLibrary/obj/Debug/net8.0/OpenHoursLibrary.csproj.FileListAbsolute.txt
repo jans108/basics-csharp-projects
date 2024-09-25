@@ -1,0 +1,11 @@
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\bin\Debug\net8.0\OpenHoursLibrary.deps.json
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\bin\Debug\net8.0\OpenHoursLibrary.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\bin\Debug\net8.0\OpenHoursLibrary.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\refint\OpenHoursLibrary.dll
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\OpenHoursLibrary.pdb
+C:\Users\macie\OneDrive\Pulpit\Playbook\15\demos\OpenHours - 1 - Before\OpenHoursLibrary\obj\Debug\net8.0\ref\OpenHoursLibrary.dll

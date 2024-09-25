@@ -1,5 +1,6 @@
 using System;
 using NUnit.Framework;
+using OpenHoursLibrary.Test;
 
 namespace Pluralsight.CShPlaybook.OpenHoursLibrary.Test;
 public class OfficeHoursTests
@@ -9,7 +10,8 @@ public class OfficeHoursTests
 	{
 		// arrange
 		TimeSpan expectedAnswer = new TimeSpan(8, 0, 0);
-		OfficeHours sut = new OfficeHours();
+		var repository = new HoursRepository_TestDouble();
+		OfficeHours sut = new OfficeHours(repository);
 
 		// act
 		TimeSpan totalHoursOpen = sut.GetTotalOpenHoursToday();

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary.test\\officehourstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|solutionrelative:openhourslibrary.test\\officehourstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary.test\\hoursrepository_testdouble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|solutionrelative:openhourslibrary.test\\hoursrepository_testdouble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E8226C5-1DD2-4DDC-BCB4-2D0CA5EFB5BA}|OpenHoursLibrary\\OpenHoursLibrary.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary\\officehours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E8226C5-1DD2-4DDC-BCB4-2D0CA5EFB5BA}|OpenHoursLibrary\\OpenHoursLibrary.csproj|solutionrelative:openhourslibrary\\officehours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E8226C5-1DD2-4DDC-BCB4-2D0CA5EFB5BA}|OpenHoursLibrary\\OpenHoursLibrary.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary\\hoursrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E8226C5-1DD2-4DDC-BCB4-2D0CA5EFB5BA}|OpenHoursLibrary\\OpenHoursLibrary.csproj|solutionrelative:openhourslibrary\\hoursrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary.test\\officehourstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFEDC66D-47C0-4493-A598-44B5F053A02F}|OpenHoursLibrary.Test\\OpenHoursLibrary.Test.csproj|solutionrelative:openhourslibrary.test\\officehourstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E8226C5-1DD2-4DDC-BCB4-2D0CA5EFB5BA}|OpenHoursLibrary\\OpenHoursLibrary.csproj|c:\\users\\macie\\onedrive\\pulpit\\playbook\\15\\demos\\openhours - 1 - before\\openhourslibrary\\openperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "HoursRepository_TestDouble.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary.Test\\HoursRepository_TestDouble.cs",
+              "RelativeDocumentMoniker": "OpenHoursLibrary.Test\\HoursRepository_TestDouble.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary.Test\\HoursRepository_TestDouble.cs",
+              "RelativeToolTip": "OpenHoursLibrary.Test\\HoursRepository_TestDouble.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T14:36:51.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OfficeHoursTests.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary.Test\\OfficeHoursTests.cs",
               "RelativeDocumentMoniker": "OpenHoursLibrary.Test\\OfficeHoursTests.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary.Test\\OfficeHoursTests.cs",
               "RelativeToolTip": "OpenHoursLibrary.Test\\OfficeHoursTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T13:44:16.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OpenPeriod.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary\\OpenPeriod.cs",
               "RelativeDocumentMoniker": "OpenHoursLibrary\\OpenPeriod.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "OpenHoursLibrary\\OpenPeriod.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:34:55.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:34:55.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HoursRepository.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary\\HoursRepository.cs",
               "RelativeDocumentMoniker": "OpenHoursLibrary\\HoursRepository.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "OpenHoursLibrary\\HoursRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:34:55.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T18:34:55.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "OfficeHours.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Playbook\\15\\demos\\OpenHours - 1 - Before\\OpenHoursLibrary\\OfficeHours.cs",
               "RelativeDocumentMoniker": "OpenHoursLibrary\\OfficeHours.cs",
