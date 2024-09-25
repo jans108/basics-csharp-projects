@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2e8226c5-1dd2-4ddc-bcb4-2d0ca5efb5ba": {
+      "ProjectGuid": "2e8226c5-1dd2-4ddc-bcb4-2d0ca5efb5ba",
+      "DisplayName": "OpenHoursLibrary",
+      "ColorIndex": 0
+    },
+    "afedc66d-47c0-4493-a598-44b5f053a02f": {
+      "ProjectGuid": "afedc66d-47c0-4493-a598-44b5f053a02f",
+      "DisplayName": "OpenHoursLibrary.Test",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
