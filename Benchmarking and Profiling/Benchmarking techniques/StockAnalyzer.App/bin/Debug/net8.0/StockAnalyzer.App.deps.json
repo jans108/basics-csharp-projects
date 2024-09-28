@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StockAnalyzer.App/1.0.0": {
+        "dependencies": {
+          "StockAnalyzer.Processor": "1.0.0"
+        },
+        "runtime": {
+          "StockAnalyzer.App.dll": {}
+        }
+      },
+      "StockAnalyzer.Processor/1.0.0": {
+        "runtime": {
+          "StockAnalyzer.Processor.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StockAnalyzer.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockAnalyzer.Processor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
