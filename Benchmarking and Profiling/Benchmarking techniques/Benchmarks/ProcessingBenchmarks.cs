@@ -1,17 +1,20 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
 
 namespace Benchmarks;
 
-[SimpleJob(RuntimeMoniker.Net80, baseline:true)]
-[SimpleJob(RuntimeMoniker.Net472)]
+[SimpleJob(RunStrategy.ColdStart, RuntimeMoniker.Net80, iterationCount: 10)]
+[MemoryDiagnoser]
 public class ProcessingBenchmarks
 {
-    [Benchmark]
+
+    [Benchmark(Baseline = true)]
     public string Calculate()
     {
-        Thread.Sleep(500);
+        Thread.Sleep(Random.Shared.Next(500, 1000));
 
         return "Avoid JIT elimination";
     }
+
 }
