@@ -44,6 +44,8 @@ void Deadlock()
 
 void RunProcessor()
 {
+    processor = new Processor();
+
     var result = string.Empty;
 
     Console.WriteLine("Starting..");

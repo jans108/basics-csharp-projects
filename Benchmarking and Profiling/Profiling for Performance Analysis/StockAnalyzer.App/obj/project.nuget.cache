@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZAsoGiFL1QM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Performance\\03\\demos\\Start_Here\\StockAnalyzer.App\\StockAnalyzer.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\macie\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\system.drawing.common\\8.0.8\\system.drawing.common.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
