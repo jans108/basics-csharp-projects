@@ -17,14 +17,14 @@ public class Processor(string dataPath = "Data")
             foreach (var line in lines[1..]) // Skip the first line
             {
                 var csv = line.Split(',');
-                
+
                 if (csv.Length < 8) continue;
 
                 var trade = new Trade(DateTime.Parse(csv[1], CultureInfo.InvariantCulture),
                     decimal.Parse(csv[6], CultureInfo.InvariantCulture),
                     decimal.Parse(csv[7], CultureInfo.InvariantCulture),
                     decimal.Parse(csv[8], CultureInfo.InvariantCulture));
-                
+
                 if (!Stocks.ContainsKey(csv[0]))
                 {
                     Stocks[csv[0]] = new Stock(csv[0]);
@@ -39,11 +39,30 @@ public class Processor(string dataPath = "Data")
         }
     }
 
+    public (decimal min, decimal max, decimal avarage) GetReport(string ticker)
+    {
+        var min = decimal.MinValue;
+        var max = decimal.MaxValue;
+        var total = 0;
+        var count = 0;
+
+        foreach (var trade in Stocks[ticker].Trades)
+        {
+            if (trade.Change < min) min = trade.Change;
+            if (trade.Change > max) max = trade.Change;
+
+            count += 1;
+        }
+        var avarage = total / count;
+
+        return (min, max, avarage);
+    }
+
     public decimal Min(string ticker)
     {
         decimal min = decimal.MaxValue;
 
-        foreach(var trade in Stocks[ticker].Trades)
+        foreach (var trade in Stocks[ticker].Trades)
         {
             if (trade.Change < min) min = trade.Change;
         }

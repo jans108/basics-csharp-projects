@@ -9,10 +9,13 @@ namespace Benchmarks;
 [MemoryDiagnoser]
 public class ProcessingBenchmarks
 {
+    Processor processor;
+
     [GlobalSetup]
     public void Setup()
     {
-        // we can do some methods without benchmarking. Depends on our goal.
+        processor = new();
+        processor.Initialize();
     }
 
     [Benchmark]
@@ -39,6 +42,15 @@ public class ProcessingBenchmarks
     [Benchmark]
     public List<string> ProcessorFaster()
     {
-        return [];
+        var result = new List<string>();
+
+        foreach(var stock in processor.Stocks)
+        {
+            var (min, max, avarage) = processor.GetReport(stock.Key);
+
+            result.Add($"{min} {max} {avarage}");
+        }
+
+        return result;
     }
 }

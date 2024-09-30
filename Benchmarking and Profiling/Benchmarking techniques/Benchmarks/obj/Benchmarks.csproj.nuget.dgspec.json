@@ -58,6 +58,10 @@
             "BenchmarkDotNet": {
               "target": "Package",
               "version": "[0.14.0, )"
+            },
+            "BenchmarkDotNet.TestAdapter": {
+              "target": "Package",
+              "version": "[0.14.0, )"
             }
           },
           "imports": [
