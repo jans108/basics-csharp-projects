@@ -1,7 +1,7 @@
 ﻿using StockAnalyzer.Processor;
 using System.Diagnostics;
 
-var processor = new Processor();
+var processor = new ProcessorFaster();
 var watch = new Stopwatch();
 
 while (true)
@@ -44,7 +44,7 @@ void Deadlock()
 
 void RunProcessor()
 {
-    processor = new Processor();
+    processor = new ProcessorFaster();
 
     var result = string.Empty;
 
