@@ -59,9 +59,7 @@ public IEnumerable<string> Compute()
 
         foreach(var stock in processor.Stocks)
         {
-            var (min, max, average) = processor.GetReport(stock.Key);
-
-            result.Add($"{min} {max} {average}");
+            result.Add($"{stock.Value.Min} {stock.Value.Max} {stock.Value.Average}");
         }
         return result;
     }

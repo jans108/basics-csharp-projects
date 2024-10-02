@@ -6,8 +6,8 @@ namespace StockAnalyzer.Processor;
 
 public class ProcessorFaster(string dataPath = "Data")
 {
-    public Dictionary<string, Stock> Stocks { get; } 
-        = new Dictionary<string, Stock>();
+    public Dictionary<string, (int Count, decimal Min, decimal Max, decimal Avarage, decimal Total)> Stocks { get; }
+        = new Dictionary<string, (int Count, decimal Min, decimal Max, decimal Avarage, decimal Total)>();
 
     public void Initialize()
     {
@@ -31,7 +31,7 @@ public class ProcessorFaster(string dataPath = "Data")
                 int endIndex = 0;
                 string name = string.Empty;
                 string value = string.Empty;
-                
+
                 // We know the CSV contains 8 columns
                 for (int column = 0; column < 8; column++)
                 {
@@ -50,77 +50,80 @@ public class ProcessorFaster(string dataPath = "Data")
                     startIndex = endIndex + 1;
                 }
 
-                // Remove unused values from parsing
-                var trade = new Trade(DateTime.MinValue,
-                    decimal.MinValue,
-                    decimal.Parse(value, CultureInfo.InvariantCulture),
-                    decimal.MinValue);
+                var change = decimal.Parse(value, CultureInfo.InvariantCulture);
 
                 if (!Stocks.ContainsKey(name))
                 {
-                    Stocks[name] = new Stock(name);
+                    Stocks[name] = (1, change, change, change, change);
+                }
+                else
+                {
+                    var trade = Stocks[name];
+                    var min = change < trade.Min ? change : trade.Min;
+                    var max = change > trade.Max ? change : trade.Max;
+                    var total = trade.Total + change;
+                    var count = trade.Count + 1;
+                    var average = total / count;
+
+                    Stocks[name] = (count, min, max, average, total);
                 }
 
-                for (int a = 0; a < 10; a++)
-                {
-                    Stocks[name].Trades.Add(trade);
-                }
             }
         }
     }
 
-    public (decimal min, decimal max, decimal average) GetReport(string ticker)
-    {
-        var min = decimal.MinValue;
-        var max = decimal.MinValue;
-        var total = 0;
-        var count = 0;
+    //public (decimal min, decimal max, decimal average) GetReport(string ticker)
+    //{
+    //    var min = decimal.MinValue;
+    //    var max = decimal.MinValue;
+    //    var total = 0;
+    //    var count = 0;
 
-        foreach (var trade in Stocks[ticker].Trades)
-        {
-            if (trade.Change < min) min = trade.Change;
-            if (trade.Change > max) max = trade.Change;
+    //    foreach (var trade in Stocks[ticker].Trades)
+    //    {
+    //        if (trade.Change < min) min = trade.Change;
+    //        if (trade.Change > max) max = trade.Change;
 
-            count += 1;
-        }
-        var average = total / count;
+    //        count += 1;
+    //    }
+    //    var average = total / count;
 
-        return (min, max, average);
-    }
+    //    return (min, max, average);
+    //}
 
-    public decimal Min(string ticker)
-    {
-        decimal min = decimal.MaxValue;
+    //public decimal Min(string ticker)
+    //{
+    //    decimal min = decimal.MaxValue;
 
-        foreach(var trade in Stocks[ticker].Trades)
-        {
-            if (trade.Change < min) min = trade.Change;
-        }
+    //    foreach (var trade in Stocks[ticker].Trades)
+    //    {
+    //        if (trade.Change < min) min = trade.Change;
+    //    }
 
-        return min;
-    }
+    //    return min;
+    //}
 
-    public decimal Max(string ticker)
-    {
-        decimal max = decimal.MinValue;
+    //public decimal Max(string ticker)
+    //{
+    //    decimal max = decimal.MinValue;
 
-        foreach (var trade in Stocks[ticker].Trades)
-        {
-            if (trade.Change > max) max = trade.Change;
-        }
+    //    foreach (var trade in Stocks[ticker].Trades)
+    //    {
+    //        if (trade.Change > max) max = trade.Change;
+    //    }
 
-        return max;
-    }
+    //    return max;
+    //}
 
-    public decimal Average(string ticker)
-    {
-        decimal total = 0;
+    //public decimal Average(string ticker)
+    //{
+    //    decimal total = 0;
 
-        foreach (var trade in Stocks[ticker].Trades)
-        {
-            total += trade.Change;
-        }
+    //    foreach (var trade in Stocks[ticker].Trades)
+    //    {
+    //        total += trade.Change;
+    //    }
 
-        return total / Stocks[ticker].Trades.Count;
-    }
+    //    return total / Stocks[ticker].Count;
+    //}
 }
