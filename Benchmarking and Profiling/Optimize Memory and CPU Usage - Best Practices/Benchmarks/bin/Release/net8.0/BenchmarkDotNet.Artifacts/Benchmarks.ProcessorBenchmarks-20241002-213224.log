@@ -1,0 +1,62 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 5 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\obj\Release\net8.0/" /p:OutDir="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0/" /p:OutputPath="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0/" in C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6
+// command took 0.92 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\obj\Release\net8.0/" /p:OutDir="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0/" /p:OutputPath="C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0/" --output "C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0/" in C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6
+// command took 5.38 sec and exited with 0
+// ***** Done, took 00:00:06 (6.39 sec)   *****
+// Found 5 benchmarks:
+//   ProcessorBenchmarks.Process: DefaultJob
+//   ProcessorBenchmarks.Processor: DefaultJob
+//   ProcessorBenchmarks.ProcessorFaster: DefaultJob
+//   ProcessorBenchmarks.ProcessorFasterAsync: DefaultJob
+//   ProcessorBenchmarks.ProcessorFasterAsync_V2: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Wysoka wydajność)
+// **************************
+// Benchmark: ProcessorBenchmarks.Process: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 9de9df3b-3297-499c-a398-d110d0d338d6.dll --anonymousPipes 1576 1572 --benchmarkName Benchmarks.ProcessorBenchmarks.Process --job Default --benchmarkId 0 in C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\Benchmarks\bin\Release\net8.0\9de9df3b-3297-499c-a398-d110d0d338d6\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.8 (8.0.824.36612), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 232100.00 ns, 232.1000 us/op
+WorkloadJitting  1: 1 op, 648100.00 ns, 648.1000 us/op
+
+OverheadJitting  2: 16 op, 206000.00 ns, 12.8750 us/op
+WorkloadJitting  2: 16 op, 232900.00 ns, 14.5563 us/op
+
+WorkloadPilot    1: 16 op, 13700.00 ns, 856.2500 ns/op
+WorkloadPilot    2: 32 op, 10000.00 ns, 312.5000 ns/op
+WorkloadPilot    3: 64 op, 15600.00 ns, 243.7500 ns/op
+WorkloadPilot    4: 128 op, 13500.00 ns, 105.4688 ns/op
+WorkloadPilot    5: 256 op, 20600.00 ns, 80.4688 ns/op
+WorkloadPilot    6: 512 op, 45400.00 ns, 88.6719 ns/op
+WorkloadPilot    7: 1024 op, 69700.00 ns, 68.0664 ns/op
+WorkloadPilot    8: 2048 op, 125100.00 ns, 61.0840 ns/op
+WorkloadPilot    9: 4096 op, 290500.00 ns, 70.9229 ns/op
+WorkloadPilot   10: 8192 op, 784800.00 ns, 95.8008 ns/op
+WorkloadPilot   11: 16384 op, 1470900.00 ns, 89.7766 ns/op
+WorkloadPilot   12: 32768 op, 2974200.00 ns, 90.7654 ns/op
+WorkloadPilot   13: 65536 op, 6308500.00 ns, 96.2601 ns/op
+WorkloadPilot   14: 131072 op, 9930600.00 ns, 75.7645 ns/op
+WorkloadPilot   15: 262144 op, 5370200.00 ns, 20.4857 ns/op
+WorkloadPilot   16: 524288 op, 12967100.00 ns, 24.7328 ns/op
+WorkloadPilot   17: 1048576 op, 15066800.00 ns, 14.3688 ns/op
+WorkloadPilot   18: 2097152 op, 28771300.00 ns, 13.7192 ns/op
+WorkloadPilot   19: 4194304 op, 55239000.00 ns, 13.1700 ns/op
+WorkloadPilot   20: 8388608 op, 109661300.00 ns, 13.0726 ns/op
+WorkloadPilot   21: 16777216 op, 225033600.00 ns, 13.4130 ns/op
+WorkloadPilot   22: 33554432 op, 464079700.00 ns, 13.8307 ns/op
+WorkloadPilot   23: 67108864 op, 875234600.00 ns, 13.0420 ns/op
+
+OverheadWarmup   1: 67108864 op, 107543800.00 ns, 1.6025 ns/op

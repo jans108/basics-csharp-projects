@@ -1,0 +1,14 @@
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\bin\Release\net8.0\Data\Stocks.csv
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\bin\Release\net8.0\image.jpg
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\bin\Release\net8.0\StockAnalyzer.Processor.deps.json
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\bin\Release\net8.0\StockAnalyzer.Processor.dll
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\bin\Release\net8.0\StockAnalyzer.Processor.pdb
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.csproj.AssemblyReference.cache
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.dll
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\refint\StockAnalyzer.Processor.dll
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\StockAnalyzer.Processor.pdb
+C:\Users\macie\OneDrive\Pulpit\Performance\04\demos\Start_Here\StockAnalyzer.Processor\obj\Release\net8.0\ref\StockAnalyzer.Processor.dll
