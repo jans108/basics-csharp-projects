@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Drawing;
+using System.Globalization;
 
 namespace StockAnalyzer.Processor;
 
@@ -16,6 +17,8 @@ public class ProcessorFaster(string dataPath = "Data")
             //foreach (var line in lines[1..]) // Skip the first line
             for (int i = 1; i < lines.Length; i++)
             {
+                using var bitmap = new Bitmap("image.jpg");
+
                 var line = lines[i];
 
                 //var csv = line.Split(',');
