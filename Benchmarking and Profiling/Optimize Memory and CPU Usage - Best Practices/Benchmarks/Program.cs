@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 using Benchmarks;
 
-// BenchmarkRunner.Run<ProcessorBenchmarks>();
+BenchmarkRunner.Run<StringBenchmarker>();
 
-BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run();
+// BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run();
