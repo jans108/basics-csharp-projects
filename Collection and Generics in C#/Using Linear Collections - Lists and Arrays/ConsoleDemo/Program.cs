@@ -1,6 +1,8 @@
-﻿try
-{
+﻿using ConsoleDemo;
 
+try
+{
+    Workers.TestData.ToGrid(120, 2).WriteLines();
 }
 catch (Exception e)
 {

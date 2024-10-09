@@ -18,13 +18,37 @@ public class GridFormatter<T>
     private int GetRowsCount(int columnsCount) =>
         (this.Data.Count + columnsCount - 1) / columnsCount;
 
-    private int GetColumnsCount(int width, int gap) =>
-        throw new NotImplementedException();
+    private int GetColumnsCount(int width, int gap)
+    {
+        int columnsCount = this.GetColumnsCountUpperBound(width, gap);
+        while (columnsCount > 1 && this.GetTotalWidth(columnsCount, width, gap) > width)
+        {
+            columnsCount--;
+        }
+        return columnsCount;
+    }
+
+    private int GetTotalWidth(int columnsCount, int width, int gap) =>
+        this.GetColumns(columnsCount, width, gap, true).totalWidth;
+
+    private int GetColumnsCountUpperBound(int width, int gap)
+    {
+        int currentWidth = this.Data.Count > 0 ? this.Data[0].Length : 0;
+        int columnsCount = 1;
+        foreach (string item in this.Data.Skip(1))
+        {
+            int nextWidth = currentWidth + gap + item.Length;
+            if (nextWidth > width) break;
+            currentWidth = nextWidth;
+            columnsCount++;
+        }
+        return columnsCount;
+    }
 
 
     private IEnumerable<string> FormatRows(int columnsCount, int gap) =>
        this.FormatRows(this.GetColumnWidths(columnsCount), gap);
-    
+
 
     private IEnumerable<string> FormatRows(int[] columnWidths, string gap)
     {
@@ -48,5 +72,20 @@ public class GridFormatter<T>
     private int GetColumnWidths(int columnsCount) =>
         throw new NotImplementedException();
 
-
+    private (int[] columnWidths, int totalWidth) GetColumns(
+        int columnsCount, int width, int gap, bool preempt)
+    {
+        int[] columnWidths = new int[columnsCount];
+        int totalWidth = (Math.Min(columnsCount, this.Data.Count) - 1) * gap;
+        int columnIndex = 0;
+        foreach (string item in this.Data)
+        {
+            int increase = Math.Max(item.Length - columnWidths[columnIndex], 0);
+            columnWidths[columnIndex] += increase;
+            totalWidth += increase;
+            if (preempt && totalWidth > width) return (columnWidths, totalWidth);
+            columnIndex = (columnIndex + 1) % columnsCount;
+        }
+        return (columnWidths, totalWidth);
+    }
 }
