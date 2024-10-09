@@ -1,0 +1,11 @@
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\bin\Debug\net8.0\Models.deps.json
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\bin\Debug\net8.0\Models.dll
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\bin\Debug\net8.0\Models.pdb
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.dll
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\refint\Models.dll
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\Models.pdb
+C:\Users\macie\OneDrive\Pulpit\Collection\03\demos\C01-Initial\Models\obj\Debug\net8.0\ref\Models.dll
