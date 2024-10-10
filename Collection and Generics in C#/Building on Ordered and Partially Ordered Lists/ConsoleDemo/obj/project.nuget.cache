@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G7Qe1x14J3g=",
+  "dgSpecHash": "jXTpRNcFYDs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Collection\\03\\demos\\C01-Initial\\ConsoleDemo\\ConsoleDemo.csproj",
+  "projectFilePath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Collection\\04\\demos\\C04-Final\\ConsoleDemo\\ConsoleDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\macie\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

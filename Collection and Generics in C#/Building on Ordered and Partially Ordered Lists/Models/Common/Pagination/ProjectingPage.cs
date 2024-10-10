@@ -1,16 +1,15 @@
-﻿
 namespace Models.Common.Pagination;
 
 internal class ProjectingPage<T> : IPage<T>
 {
-    private IReadOnlyList<T> Items { get; }
-
     public ProjectingPage(IReadOnlyList<T> items, int ordinal, int pageSize)
     {
         this.Items = items;
         this.Ordinal = ordinal;
         this.PageSize = pageSize;
     }
+
+    private IReadOnlyList<T> Items { get; }
 
     public int Ordinal { get; }
 
@@ -28,8 +27,5 @@ internal class ProjectingPage<T> : IPage<T>
             yield return this.Items[i];
     }
 
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
+    IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
 }

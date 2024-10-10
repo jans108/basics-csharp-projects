@@ -11,9 +11,12 @@ public class Worker
     public string Name { get; }
     public PayRate Rate { get; }
 
-    public override string ToString() =>
-        $"{this.Name} ({this.HourlyRate}/h)";
+    public static IComparer<Worker> RateComparer =>
+        Comparer<Worker>.Create((a, b) => a.Rate.CompareTo(b.Rate));
 
-    private Money HourlyRate =>
-        this.Rate.In(TimeSpan.FromHours(1));
+    public override string ToString() =>
+        $"{this.Name} ({this.Rate})";
+
+    public Worker ScalePayRate(decimal factor) =>
+        new(this.Name, this.Rate with { Pay = this.Rate.Pay.Multiply(factor) });
 }

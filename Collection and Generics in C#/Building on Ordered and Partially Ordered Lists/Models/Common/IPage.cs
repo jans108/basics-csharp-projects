@@ -1,4 +1,4 @@
-﻿namespace Models.Common;
+namespace Models.Common;
 
 public interface IPage<T> : IEnumerable<T>
 {

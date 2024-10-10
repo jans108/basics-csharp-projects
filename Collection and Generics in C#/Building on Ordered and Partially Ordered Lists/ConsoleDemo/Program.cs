@@ -1,20 +1,23 @@
-﻿using ConsoleDemo;
+﻿using System.Diagnostics;
 
 try
 {
-    Workers.TestData.ToGrid(120, 2).WriteLines();
-    Console.WriteLine();
-
-    using IEnumerator<Worker> shuffler = Workers.TestData.BeginShuffle();
-
-    for (int i = 0; i < 5;  i++)
+    IPaginated<Worker> pages =
+        Workers.TestData.Replicate(50_000, .05F).Paginate(Worker.RateComparer, 112_000);
+    
+    Stopwatch pageTimer = Stopwatch.StartNew();
+    IEnumerator<IPage<Worker>> enumerator = pages.GetEnumerator();
+    
+    while (enumerator.MoveNext())
     {
-        shuffler.Iterate().Take(3).ToGrid(120, 3).WriteLines();
-        shuffler.Reset();
+        IPage<Worker> page = enumerator.Current;
+        PayRate rate = page.AveragePayRate();
+        Console.WriteLine($"Page #{page.Ordinal}: {page.Count}x{rate} [{pageTimer.Elapsed}]");
+        pageTimer.Restart();
+        break;
     }
 }
 catch (Exception e)
 {
     Console.WriteLine($"ERROR: {e.Message}");
 }
-

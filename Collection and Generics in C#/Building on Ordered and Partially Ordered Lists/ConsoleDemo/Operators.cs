@@ -1,4 +1,4 @@
-﻿namespace ConsoleDemo;
+namespace ConsoleDemo;
 
 internal static class Operators
 {

@@ -1,26 +1,48 @@
-﻿namespace Models.Common.Formatting;
+namespace Models.Common.Formatting;
 
-public class GridFormatter<T>
+internal class GridFormatter<T>
 {
     public GridFormatter(IEnumerable<T> data)
     {
-        Data = new List<string>();
+        this.Data = new List<string>();
         foreach (T item in data)
-            Data.Add(item?.ToString() ?? string.Empty);
+            this.Data.Add(item?.ToString() ?? string.Empty);
     }
 
     private IList<string> Data { get; }
 
     public IEnumerable<string> Format(int width, int gap) =>
-        FormatRows(GetColumnsCount(width, gap), gap);
+        this.FormatRows(this.GetColumnsCount(width, gap), gap);
+
+    private IEnumerable<string> FormatRows(int columnsCount, int gap) =>
+        this.FormatRows(this.GetColumnWidths(columnsCount), new string(' ', gap));
+
+    private IEnumerable<string> FormatRows(int[] columnWidths, string gap)
+    {
+        int rowsCount = this.GetRowsCount(columnWidths.Length);
+        for (int rowIndex = 0; rowIndex < rowsCount; rowIndex++)
+        {
+            yield return string.Join(gap, this.GetCells(rowIndex, columnWidths)).Trim();
+        }
+    }
+
+    private IEnumerable<string> GetCells(int rowIndex, int[] columnWidths)
+    {
+        int index = rowIndex * columnWidths.Length;
+        int count = Math.Min(columnWidths.Length, this.Data.Count - index);
+        for (int i = 0; i < count; i++)
+        {
+            yield return this.Data[index + i].PadRight(columnWidths[i]);
+        }
+    }
 
     private int GetRowsCount(int columnsCount) =>
-        (Data.Count + columnsCount - 1) / columnsCount;
+        (this.Data.Count + columnsCount - 1) / columnsCount;
 
     private int GetColumnsCount(int width, int gap)
     {
-        int columnsCount = GetColumnsCountUpperBound(width, gap);
-        while (columnsCount > 1 && GetTotalWidth(columnsCount, width, gap) > width)
+        int columnsCount = this.GetColumnsCountUpperBound(width, gap);
+        while (columnsCount > 1 && this.GetTotalWidth(columnsCount, width, gap) > width)
         {
             columnsCount--;
         }
@@ -28,13 +50,13 @@ public class GridFormatter<T>
     }
 
     private int GetTotalWidth(int columnsCount, int width, int gap) =>
-        GetColumns(columnsCount, width, gap, true).totalWidth;
+        this.GetColumns(columnsCount, width, gap, true).totalWidth;
 
     private int GetColumnsCountUpperBound(int width, int gap)
     {
-        int currentWidth = Data.Count > 0 ? Data[0].Length : 0;
+        int currentWidth = this.Data.Count > 0 ? this.Data[0].Length : 0;
         int columnsCount = 1;
-        foreach (string item in Data.Skip(1))
+        foreach (string item in this.Data.Skip(1))
         {
             int nextWidth = currentWidth + gap + item.Length;
             if (nextWidth > width) break;
@@ -44,40 +66,16 @@ public class GridFormatter<T>
         return columnsCount;
     }
 
-
-    private IEnumerable<string> FormatRows(int columnsCount, int gap) =>
-       FormatRows(GetColumnWidths(columnsCount), gap);
-
-
-    private IEnumerable<string> FormatRows(int[] columnWidths, string gap)
-    {
-        int rowsCount = GetRowsCount(columnWidths.Length);
-        for (int rowIndex = 0; rowIndex < rowsCount; rowIndex++)
-        {
-            yield return string.Join(gap, GetCells(rowIndex, columnWidths)).Trim();
-        }
-    }
-
-    private IEnumerable<string> GetCells(int rowIndex, int[] columnWidths)
-    {
-        int index = rowIndex * columnWidths.Length;
-        int count = Math.Min(columnWidths.Length, Data.Count - index);
-        for (int i = 0; i < count; i++)
-        {
-            yield return Data[index + i].PadRight(columnWidths[i]);
-        }
-    }
-
-    private int GetColumnWidths(int columnsCount) =>
-        throw new NotImplementedException();
+    private int[] GetColumnWidths(int columnsCount) =>
+        this.GetColumns(columnsCount, 0, 0, false).columnWidths;
 
     private (int[] columnWidths, int totalWidth) GetColumns(
         int columnsCount, int width, int gap, bool preempt)
     {
         int[] columnWidths = new int[columnsCount];
-        int totalWidth = (Math.Min(columnsCount, Data.Count) - 1) * gap;
+        int totalWidth = (Math.Min(columnsCount, this.Data.Count) - 1) * gap;
         int columnIndex = 0;
-        foreach (string item in Data)
+        foreach (string item in this.Data)
         {
             int increase = Math.Max(item.Length - columnWidths[columnIndex], 0);
             columnWidths[columnIndex] += increase;
