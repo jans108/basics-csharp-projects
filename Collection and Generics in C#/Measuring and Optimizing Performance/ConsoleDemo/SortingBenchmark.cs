@@ -22,4 +22,6 @@ public class SortingBenchmark
     [Benchmark]
     public List<Worker> SequenceOrderBy() =>
         Workers.GetWorkers(this.SequenceLength).OrderBy(worker => worker.Rate).ToList();
+
+ 
 }
