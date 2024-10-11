@@ -1,5 +1,9 @@
-﻿try
+﻿using BenchmarkDotNet.Running;
+using ConsoleDemo;
+
+try
 {
+    BenchmarkRunner.Run<SortingBenchmark>();
 }
 catch (Exception e)
 {
