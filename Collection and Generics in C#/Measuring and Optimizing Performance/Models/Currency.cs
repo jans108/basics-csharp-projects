@@ -1,8 +1,8 @@
 namespace Models;
 
-public record Currency
+public readonly record struct Currency
 {
-    private string _code = null!;
+    private readonly string _code = null!;
 
     public Currency(string code)
     {

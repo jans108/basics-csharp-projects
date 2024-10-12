@@ -6,13 +6,15 @@ public class Worker
     {
         this.Name = name.NonEmpty(nameof(name));
         this.Rate = rate;
+        this.HourlyRate = rate.In(TimeSpan.FromHours(1));
     }
 
     public string Name { get; }
     public PayRate Rate { get; }
+    public Money HourlyRate { get; }
 
     public static IComparer<Worker> RateComparer =>
-        Comparer<Worker>.Create((a, b) => a.Rate.CompareTo(b.Rate));
+        Comparer<Worker>.Create((a, b) => a.HourlyRate.CompareTo(b.HourlyRate));
 
     public override string ToString() =>
         $"{this.Name} ({this.Rate})";

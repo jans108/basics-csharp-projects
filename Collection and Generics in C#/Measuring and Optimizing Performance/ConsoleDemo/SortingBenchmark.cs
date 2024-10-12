@@ -7,7 +7,7 @@ public class SortingBenchmark
     [Params(100, 1_000, 10_000, 100_000)]
     public int SequenceLength { get; set; }
 
-    [Benchmark(Baseline = true)]
+    [Benchmark]
     public List<Worker> ToList() =>
         new List<Worker>(Workers.GetWorkers(this.SequenceLength));
 
@@ -19,9 +19,12 @@ public class SortingBenchmark
         return list;
     }
 
-    [Benchmark]
-    public List<Worker> SequenceOrderBy() =>
-        Workers.GetWorkers(this.SequenceLength).OrderBy(worker => worker.Rate).ToList();
-
+    [Benchmark(Baseline = true)]
+    public List<Worker> FullOrderByHourlyRate()
+    {
+        List<Worker> list = Workers.GetWorkers(this.SequenceLength).ToList();
+        list.Sort(Comparer<Worker>.Create((a, b) => a.HourlyRate.CompareTo(b.HourlyRate)));
+        return list;
+    }
  
 }
