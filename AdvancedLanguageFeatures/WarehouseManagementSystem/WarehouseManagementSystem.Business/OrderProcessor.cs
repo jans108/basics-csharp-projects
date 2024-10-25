@@ -4,8 +4,8 @@ namespace WarehouseManagementSystem.Business
 {
     public class OrderProcessor
     {
-        public delegate void OrderInitialized();
-        public delegate void ProcessCompleted();
+        public delegate bool OrderInitialized(Order order);
+        public delegate void ProcessCompleted(Order order);
 
         public OrderInitialized OnOrderInitialized { get; set; }
 
@@ -13,7 +13,10 @@ namespace WarehouseManagementSystem.Business
         {
             ArgumentNullException.ThrowIfNull(order);
 
-            OnOrderInitialized?.Invoke();
+            if (OnOrderInitialized?.Invoke(order) == false)
+            {
+                throw new Exception($"Couldn't initialize {order.OrderNumber}");
+            }    
         }
 
         public void Process(Order order,
@@ -21,7 +24,7 @@ namespace WarehouseManagementSystem.Business
         {
             Initialize(order);
 
-            onCompleted?.Invoke();
+            onCompleted?.Invoke(order);
         }
     }
 }
