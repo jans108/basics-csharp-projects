@@ -15,17 +15,18 @@ var order = new Order
 
 var processor = new OrderProcessor()
 {
-    OnOrderInitialized = SendMessageToWarehouse
+    OnOrderInitialized = (order) => order.IsReadyForShipment
 };
 
-OrderProcessor.ProcessCompleted chain = (OrderProcessor.ProcessCompleted)One + Two + Three;
+var processdOrders = new List<Guid>();
 
+OrderProcessor.ProcessCompleted onCompleted = (order) =>
+{
+    processdOrders.Add(order.OrderNumber);
+    Console.WriteLine($"Processed {order.OrderNumber}");
+};
 
-processor.Process(order, chain);
-
-chain -= Two;
-
-processor.Process(order, chain);
+processor.Process(order, onCompleted);
 
 bool SendMessageToWarehouse(Order order)
 {
@@ -38,7 +39,3 @@ void SendConfirmationEmail(Order order)
 {
     Console.WriteLine($"Order Confirmation Email for {order.OrderNumber}");
 }
-
-void One(Order order) => Console.WriteLine("One");
-void Two(Order order) => Console.WriteLine("Two");
-void Three(Order order) => Console.WriteLine("Three");
