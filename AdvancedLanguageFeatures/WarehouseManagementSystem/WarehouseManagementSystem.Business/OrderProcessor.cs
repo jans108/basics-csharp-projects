@@ -4,12 +4,12 @@ namespace WarehouseManagementSystem.Business
 {
     public class OrderProcessor
     {
-        public delegate bool OrderInitialized(Order order);
-        public delegate void ProcessCompleted(Order order);
+       // public delegate bool OrderInitialized(Order order);
+       // public delegate void ProcessCompleted(Order order);
 
-        public OrderInitialized OnOrderInitialized { get; set; }
+        public Func<Order,bool> OnOrderInitialized { get; set; }
 
-        private void Initialize(Order order)
+        private void Initialize(Order order) 
         {
             ArgumentNullException.ThrowIfNull(order);
 
@@ -20,7 +20,7 @@ namespace WarehouseManagementSystem.Business
         }
 
         public void Process(Order order,
-            ProcessCompleted onCompleted = default)
+            Action<Order> onCompleted = default)
         {
             Initialize(order);
 

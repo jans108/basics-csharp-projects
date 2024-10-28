@@ -13,20 +13,28 @@ var order = new Order
     }
 };
 
+Func<Order, bool> isReadyForShipment = (order) =>
+{
+    return order.IsReadyForShipment;
+};
+
 var processor = new OrderProcessor()
 {
-    OnOrderInitialized = (order) => order.IsReadyForShipment
+    OnOrderInitialized = isReadyForShipment
 };
 
 var processdOrders = new List<Guid>();
 
-OrderProcessor.ProcessCompleted onCompleted = (order) =>
+Action<Order> onCompleted = (order) =>
 {
     processdOrders.Add(order.OrderNumber);
     Console.WriteLine($"Processed {order.OrderNumber}");
 };
 
+onCompleted += (order) => { };
+
 processor.Process(order, onCompleted);
+
 
 bool SendMessageToWarehouse(Order order)
 {
