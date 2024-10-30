@@ -33,6 +33,24 @@ Action<Order> onCompleted = (order) =>
 
 onCompleted += (order) => { };
 
+processor.OrderCreated += (sender, args) =>
+{
+    Thread.Sleep(1000);
+    Console.WriteLine("1");
+};
+
+processor.OrderCreated += (sender, args) =>
+{
+    Thread.Sleep(1000);
+    Console.WriteLine("2");
+};
+
+processor.OrderCreated += (sender, args) =>
+{
+    Thread.Sleep(1000);
+    Console.WriteLine("3");
+};
+
 processor.Process(order, onCompleted);
 
 
