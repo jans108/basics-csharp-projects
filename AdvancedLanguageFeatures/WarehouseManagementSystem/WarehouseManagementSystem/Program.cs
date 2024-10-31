@@ -35,24 +35,18 @@ onCompleted += (order) => { };
 
 processor.OrderCreated += (sender, args) =>
 {
-    Thread.Sleep(1000);
-    Console.WriteLine("1");
+    
 };
 
-processor.OrderCreated += (sender, args) =>
-{
-    Thread.Sleep(1000);
-    Console.WriteLine("2");
-};
-
-processor.OrderCreated += (sender, args) =>
-{
-    Thread.Sleep(1000);
-    Console.WriteLine("3");
-};
+processor.OrderCreated += Log;
 
 processor.Process(order, onCompleted);
 
+
+void Log(object sender, EventArgs args)
+{
+    Console.WriteLine("Order created");
+}
 
 bool SendMessageToWarehouse(Order order)
 {

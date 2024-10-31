@@ -9,11 +9,17 @@ namespace WarehouseManagementSystem.Business
 
         public Func<Order,bool> OnOrderInitialized { get; set; }
 
-        public event EventHandler OrderCreated;
+        public event EventHandler<OrderCreatedEventArgs> OrderCreated;
+        public event EventHandler<OrderProcessCompletedEventArgs> OrderProcessCompleted;
 
-        protected virtual void OnOrderCreated()
+        protected virtual void OnOrderCreated(OrderCreatedEventArgs args)
         {
-            OrderCreated?.Invoke(this, EventArgs.Empty);
+            OrderCreated?.Invoke(this, args);
+        }
+
+        protected virtual void OnOrderProcessCompleted(OrderProcessCompletedEventArgs args)
+        {
+            OrderProcessCompleted?.Invoke(this, args);
         }
 
         private void Initialize(Order order) 
@@ -26,12 +32,16 @@ namespace WarehouseManagementSystem.Business
             }    
         }
 
-        public void Process(Order order,
-            Action<Order> onCompleted = default)
+        public void Process(Order order)
         {
             Initialize(order);
 
-            OnOrderCreated();
+            OnOrderCreated(new()
+            {
+                Order = order,
+                OldTotal = 100,
+                NewTotal = 80
+            });
 
             onCompleted?.Invoke(order);
         }
