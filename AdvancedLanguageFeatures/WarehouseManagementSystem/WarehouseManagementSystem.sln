@@ -9,11 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Domain", "WarehouseManagementSystem.Domain\WarehouseManagementSystem.Domain.csproj", "{875B6985-A7F5-47B1-969D-7E6F03A034F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Domain.Extensions", "WarehouseManagementSystem.Domain.Extensions\WarehouseManagementSystem.Domain.Extensions.csproj", "{E0759E1E-0267-48C9-91A7-1895BE4A7AD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystem.Domain.Extensions", "WarehouseManagementSystem.Domain.Extensions\WarehouseManagementSystem.Domain.Extensions.csproj", "{E0759E1E-0267-48C9-91A7-1895BE4A7AD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseManagementSystem.Windows", "WarehouseManagementSystem.Windows\WarehouseManagementSystem.Windows.csproj", "{882403E1-5876-4DC7-A0BF-D65B48F95E27}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI", "MinimalAPI\MinimalAPI.csproj", "{CB4CAEB8-0C34-45D4-B6A1-05B24EAD46AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagementSystem.Windows", "WarehouseManagementSystem.Windows\WarehouseManagementSystem.Windows.csproj", "{882403E1-5876-4DC7-A0BF-D65B48F95E27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{882403E1-5876-4DC7-A0BF-D65B48F95E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882403E1-5876-4DC7-A0BF-D65B48F95E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882403E1-5876-4DC7-A0BF-D65B48F95E27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB4CAEB8-0C34-45D4-B6A1-05B24EAD46AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB4CAEB8-0C34-45D4-B6A1-05B24EAD46AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB4CAEB8-0C34-45D4-B6A1-05B24EAD46AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB4CAEB8-0C34-45D4-B6A1-05B24EAD46AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj",
+      "projectUniqueName": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj",
       "projectName": "WarehouseManagementSystem.Domain.Extensions",
-      "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj",
+      "projectPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\03\\demos\\Start_Here\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\obj\\",
+      "outputPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

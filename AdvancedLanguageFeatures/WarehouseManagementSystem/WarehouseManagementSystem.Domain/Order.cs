@@ -4,7 +4,7 @@
     {
         public Guid OrderNumber { get; init; }
         public ShippingProvider ShippingProvider { get; init; }
-        public int Total { get; }
+        public int Total { get; set; }
         public bool IsReadyForShipment { get; set; } = true;
         public IEnumerable<Item> LineItems { get; set; }
 
