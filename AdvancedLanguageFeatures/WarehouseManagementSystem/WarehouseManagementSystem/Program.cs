@@ -31,13 +31,6 @@ processor.Process(order);
 
 
 
-
-
-
-
-
-
-
 void Log(object sender, EventArgs args)
 {
     Console.WriteLine("Log method call");

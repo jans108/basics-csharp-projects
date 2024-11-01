@@ -38,5 +38,18 @@ namespace WarehouseManagementSystem.Business
 
             OnOrderProcessCompleted(new() { Order = order });
         }
+        public void Process(Order order, decimal discount)
+        {
+            Initialize(order);
+
+            OnOrderCreated(new()
+            {
+                Order = order,
+                OldTotal = 100,
+                NewTotal = 80 - discount
+            });
+
+            OnOrderProcessCompleted(new() { Order = order });
+        }
     }
 }
