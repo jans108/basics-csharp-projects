@@ -1,5 +1,6 @@
 ﻿using WarehouseManagementSystem.Business;
 using WarehouseManagementSystem.Domain;
+using WarehouseManagementSystem.Domain.Extensions;
 
 var order = new Order
 {
@@ -11,6 +12,12 @@ var order = new Order
         new Item { Name = "PS5", Price = 80 }
     }
 };
+
+foreach (var item in
+    order.LineItems.Find(item => item.Price > 60))
+{
+    Console.WriteLine(item.Price);
+}
 
 var isReadyForShipment = (Order order) =>
 {

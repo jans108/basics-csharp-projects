@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{875B6985-A7F5-47B1-969D-7E6F03A034F9}|WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{875B6985-A7F5-47B1-969D-7E6F03A034F9}|WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj|solutionrelative:warehousemanagementsystem.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem\\orderlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\orderlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0759E1E-0267-48C9-91A7-1895BE4A7AD9}|WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.domain.extensions\\ienumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0759E1E-0267-48C9-91A7-1895BE4A7AD9}|WarehouseManagementSystem.Domain.Extensions\\WarehouseManagementSystem.Domain.Extensions.csproj|solutionrelative:warehousemanagementsystem.domain.extensions\\ienumerableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{875B6985-A7F5-47B1-969D-7E6F03A034F9}|WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{875B6985-A7F5-47B1-969D-7E6F03A034F9}|WarehouseManagementSystem.Domain\\WarehouseManagementSystem.Domain.csproj|solutionrelative:warehousemanagementsystem.domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65200AB7-9DC4-48BF-8109-6CE918419285}|WarehouseManagementSystem.Business\\WarehouseManagementSystem.Business.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.business\\orderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{882403E1-5876-4DC7-A0BF-D65B48F95E27}|WarehouseManagementSystem.Windows\\WarehouseManagementSystem.Windows.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem.windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882403E1-5876-4DC7-A0BF-D65B48F95E27}|WarehouseManagementSystem.Windows\\WarehouseManagementSystem.Windows.csproj|solutionrelative:warehousemanagementsystem.windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|c:\\users\\macie\\onedrive\\pulpit\\adanced langueage features\\04\\demos\\completed\\warehousemanagementsystem\\warehousemanagementsystem\\orderlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6A4A2D5-A6BF-4B33-AA11-B6E50F564372}|WarehouseManagementSystem\\WarehouseManagementSystem.csproj|solutionrelative:warehousemanagementsystem\\orderlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,41 +34,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\Order.cs",
-              "RelativeDocumentMoniker": "WarehouseManagementSystem.Domain\\Order.cs",
-              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\Order.cs",
-              "RelativeToolTip": "WarehouseManagementSystem.Domain\\Order.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAuwAMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T11:04:56.032Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "IEnumerableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\IEnumerableExtensions.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem.Domain.Extensions\\IEnumerableExtensions.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain.Extensions\\IEnumerableExtensions.cs",
+              "RelativeToolTip": "WarehouseManagementSystem.Domain.Extensions\\IEnumerableExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:59:18.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\Order.cs",
+              "RelativeDocumentMoniker": "WarehouseManagementSystem.Domain\\Order.cs",
+              "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Domain\\Order.cs",
+              "RelativeToolTip": "WarehouseManagementSystem.Domain\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:04:56.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem\\Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeToolTip": "WarehouseManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T22:09:04.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OrderProcessor.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Business\\OrderProcessor.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Business\\OrderProcessor.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem.Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem.Windows\\MainWindow.xaml.cs",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "OrderLogger.cs",
               "DocumentMoniker": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\04\\demos\\Completed\\WarehouseManagementSystem\\WarehouseManagementSystem\\OrderLogger.cs",
               "RelativeDocumentMoniker": "WarehouseManagementSystem\\OrderLogger.cs",
@@ -96,7 +113,8 @@
               "RelativeToolTip": "WarehouseManagementSystem\\OrderLogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T18:12:01.593Z"
+              "WhenOpened": "2024-10-31T18:12:01.593Z",
+              "EditorCaption": ""
             }
           ]
         }
