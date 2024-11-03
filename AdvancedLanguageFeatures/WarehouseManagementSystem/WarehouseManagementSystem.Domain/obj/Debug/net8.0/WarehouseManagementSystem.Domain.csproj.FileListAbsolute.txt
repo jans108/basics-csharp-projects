@@ -1,0 +1,11 @@
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.AssemblyInfo.cs
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net8.0\WarehouseManagementSystem.Domain.deps.json
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net8.0\WarehouseManagementSystem.Domain.dll
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\bin\Debug\net8.0\WarehouseManagementSystem.Domain.pdb
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.dll
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\refint\WarehouseManagementSystem.Domain.dll
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\WarehouseManagementSystem.Domain.pdb
+C:\Users\macie\OneDrive\Pulpit\Adanced Langueage Features\01aa\WarehouseManagementSystem\WarehouseManagementSystem.Domain\obj\Debug\net8.0\ref\WarehouseManagementSystem.Domain.dll

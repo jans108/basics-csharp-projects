@@ -14,6 +14,11 @@ namespace WarehouseManagementSystem.Domain
             OrderNumber = Guid.NewGuid();
         }
 
+        public string GenerateReport(string email)
+        {
+            throw new NotImplementedException();
+        }
+
         public override bool Equals(object? obj)
         {
             return Equals(obj as Order);

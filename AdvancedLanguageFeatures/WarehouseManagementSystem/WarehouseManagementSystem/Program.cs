@@ -13,30 +13,8 @@ var order = new Order
     }
 };
 
-foreach (var item in
-    order.LineItems.Find(item => item.Price > 60))
-{
-    Console.WriteLine(item.Price);
-}
-
-var isReadyForShipment = (Order order) =>
-{
-    return order.IsReadyForShipment;
-};
-
-var processor = new OrderProcessor
-{
-    OnOrderInitialized = isReadyForShipment
-};
-
-processor.OrderCreated += (sender, args) =>
-{
-
-};
-
-processor.Process(order);
-
-
+var report = order.GenerateReport(recipient: "Maciej Broda");
+Console.WriteLine(report);
 
 void Log(object sender, EventArgs args)
 {
