@@ -17,6 +17,14 @@ var avg = order.LineItems.Average(item => item.Price);
 
 var result = order.LineItems.Where(item => item.Price > avg);
 
+var subset = new
+{
+    order.OrderNumber,
+    order.Total,
+    AveragePrice = avg
+};
+
+Console.WriteLine($"Average Price is: {subset.AveragePrice}");
 
 void Log(object sender, EventArgs args)
 {
