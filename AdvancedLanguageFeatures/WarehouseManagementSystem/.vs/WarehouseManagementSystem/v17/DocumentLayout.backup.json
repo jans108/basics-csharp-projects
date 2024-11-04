@@ -54,8 +54,7 @@
               "RelativeToolTip": "WarehouseManagementSystem.Domain.Extensions\\OrderExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T21:43:20.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T21:43:20.401Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "WarehouseManagementSystem.Domain\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T11:04:56.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T11:04:56.032Z"
             },
             {
               "$type": "Document",
@@ -90,7 +88,7 @@
               "RelativeDocumentMoniker": "WarehouseManagementSystem\\Program.cs",
               "ToolTip": "C:\\Users\\macie\\OneDrive\\Pulpit\\Adanced Langueage Features\\01aa\\WarehouseManagementSystem\\WarehouseManagementSystem\\Program.cs",
               "RelativeToolTip": "WarehouseManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T22:09:04.722Z",
               "EditorCaption": ""
@@ -105,8 +103,7 @@
               "RelativeToolTip": "WarehouseManagementSystem.Business\\OrderProcessor.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADgvzYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T22:07:53.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T22:07:53.706Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "WarehouseManagementSystem.Windows\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T18:12:14.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T18:12:14.795Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "WarehouseManagementSystem\\OrderLogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T18:12:01.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T18:12:01.593Z"
             }
           ]
         }

@@ -13,8 +13,10 @@ var order = new Order
     }
 };
 
-var report = order.GenerateReport(recipient: "Maciej Broda");
-Console.WriteLine(report);
+var avg = order.LineItems.Average(item => item.Price);
+
+var result = order.LineItems.Where(item => item.Price > avg);
+
 
 void Log(object sender, EventArgs args)
 {
