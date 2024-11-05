@@ -51,5 +51,25 @@ namespace WarehouseManagementSystem.Business
 
             OnOrderProcessCompleted(new() { Order = order });
         }
+        public void Process(IEnumerable<Order> orders)
+        {
+            var summaries = orders.Select(order =>
+            {
+                return new
+                {
+                    Order = order.OrderNumber,
+                    Items = order.LineItems.Count(),
+                    Total = order.LineItems.Sum(item => item.Price)
+                };
+            });
+
+            var orderedSummaries =
+                summaries.OrderBy(summary => summary.Total);
+
+            foreach(var summary in orderedSummaries)
+            {
+                Console.WriteLine(summary.Total);
+            }
+        }
     }
 }

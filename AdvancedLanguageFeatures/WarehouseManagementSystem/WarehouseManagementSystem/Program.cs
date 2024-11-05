@@ -1,4 +1,6 @@
-﻿using WarehouseManagementSystem.Business;
+﻿using System.Text.Json;
+using System.Text.Json.Nodes;
+using WarehouseManagementSystem.Business;
 using WarehouseManagementSystem.Domain;
 using WarehouseManagementSystem.Domain.Extensions;
 
@@ -13,6 +15,8 @@ var order = new Order
     }
 };
 
+var processor = new OrderProcessor();
+
 var avg = order.LineItems.Average(item => item.Price);
 
 var result = order.LineItems.Where(item => item.Price > avg);
@@ -24,7 +28,12 @@ var subset = new
     AveragePrice = avg
 };
 
-Console.WriteLine($"Average Price is: {subset.AveragePrice}");
+IEnumerable<Order>? orders =
+    JsonSerializer.Deserialize<Order[]>(
+        File.ReadAllText("orders.json")
+        );
+
+processor.Process(orders);
 
 void Log(object sender, EventArgs args)
 {
