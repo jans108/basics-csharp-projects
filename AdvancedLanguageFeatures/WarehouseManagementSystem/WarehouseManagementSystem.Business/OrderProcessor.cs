@@ -51,7 +51,7 @@ namespace WarehouseManagementSystem.Business
 
             OnOrderProcessCompleted(new() { Order = order });
         }
-        public void Process(IEnumerable<Order> orders)
+        public object Process(IEnumerable<Order> orders)
         {
             var summaries = orders.Select(order =>
             {
@@ -66,10 +66,13 @@ namespace WarehouseManagementSystem.Business
             var orderedSummaries =
                 summaries.OrderBy(summary => summary.Total);
 
-            foreach(var summary in orderedSummaries)
+            var summary = orderedSummaries.First();
+            var summaryWithTax = summary with
             {
-                Console.WriteLine(summary.Total);
-            }
+                Total = summary.Total * 1.25m
+            };
+
+            return summaryWithTax;
         }
     }
 }

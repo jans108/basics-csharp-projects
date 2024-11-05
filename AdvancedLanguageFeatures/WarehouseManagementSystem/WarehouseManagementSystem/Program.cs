@@ -17,23 +17,22 @@ var order = new Order
 
 var processor = new OrderProcessor();
 
-var avg = order.LineItems.Average(item => item.Price);
-
-var result = order.LineItems.Where(item => item.Price > avg);
-
-var subset = new
-{
-    order.OrderNumber,
-    order.Total,
-    AveragePrice = avg
-};
 
 IEnumerable<Order>? orders =
     JsonSerializer.Deserialize<Order[]>(
         File.ReadAllText("orders.json")
         );
 
-processor.Process(orders);
+var result = processor.Process(orders);
+
+var type = result.GetType();
+var properties = type.GetProperties();
+
+foreach (var property in properties)
+{
+    Console.WriteLine($"Property: {property.Name}");
+    Console.WriteLine($"Value: {property.GetValue(result)}");
+}
 
 void Log(object sender, EventArgs args)
 {
