@@ -28,11 +28,19 @@ var result = processor.Process(orders);
 var type = result.GetType();
 var properties = type.GetProperties();
 
-foreach (var property in properties)
+var group = (order.OrderNumber,
+    order.LineItems,
+    Sum: order.LineItems.Sum(item => item.Price));
+
+var groupAsAnonymousType = new
 {
-    Console.WriteLine($"Property: {property.Name}");
-    Console.WriteLine($"Value: {property.GetValue(result)}");
-}
+    order.OrderNumber,
+    order.LineItems,
+    Sum = order.LineItems.Sum(item => item.Price)
+};
+
+var json = JsonSerializer.Serialize(group, options: new() { IncludeFields = true});
+Console.WriteLine(json);
 
 void Log(object sender, EventArgs args)
 {
