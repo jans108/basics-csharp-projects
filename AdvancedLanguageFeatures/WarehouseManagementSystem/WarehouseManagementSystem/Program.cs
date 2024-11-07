@@ -25,12 +25,22 @@ IEnumerable<Order>? orders =
 
 var result = processor.Process(orders);
 
+foreach (var summary in result)
+{
+    Console.WriteLine(summary.GenerateReport());
+}
+
 var type = result.GetType();
 var properties = type.GetProperties();
 
-var group = (order.OrderNumber,
+Guid orderNumber;
+decimal sum;
+
+
+(orderNumber, _, sum)  = (
+    order.OrderNumber,
     order.LineItems,
-    Sum: order.LineItems.Sum(item => item.Price));
+    order.LineItems.Sum(item => item.Price));
 
 var groupAsAnonymousType = new
 {
@@ -39,7 +49,7 @@ var groupAsAnonymousType = new
     Sum = order.LineItems.Sum(item => item.Price)
 };
 
-var json = JsonSerializer.Serialize(group, options: new() { IncludeFields = true});
+var json = JsonSerializer.Serialize((orderNumber, sum), options: new() { IncludeFields = true });
 Console.WriteLine(json);
 
 void Log(object sender, EventArgs args)

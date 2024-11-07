@@ -51,28 +51,31 @@ namespace WarehouseManagementSystem.Business
 
             OnOrderProcessCompleted(new() { Order = order });
         }
-        public object Process(IEnumerable<Order> orders)
+        public IEnumerable<(Guid orderNumber, int amountOfItems, decimal total)> Process(IEnumerable<Order> orders)
         {
             var summaries = orders.Select(order =>
             {
-                return new
-                {
-                    Order = order.OrderNumber,
-                    Items = order.LineItems.Count(),
-                    Total = order.LineItems.Sum(item => item.Price)
-                };
+                return 
+                (
+                    Order : order.OrderNumber,
+                    Items : order.LineItems.Count(),
+                    Total : order.LineItems.Sum(item => item.Price)
+                );
             });
 
             var orderedSummaries =
                 summaries.OrderBy(summary => summary.Total);
 
-            var summary = orderedSummaries.First();
-            var summaryWithTax = summary with
-            {
-                Total = summary.Total * 1.25m
-            };
+            return orderedSummaries;
 
-            return summaryWithTax;
+            //var summary = orderedSummaries.First();
+
+            //var summaryWithTax = summary with
+            //{
+            //    Total = summary.Total * 1.25m
+            //};
+
+            //return summaryWithTax;
         }
     }
 }
