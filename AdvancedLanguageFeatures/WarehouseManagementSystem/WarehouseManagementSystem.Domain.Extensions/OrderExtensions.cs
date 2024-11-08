@@ -37,5 +37,17 @@ namespace WarehouseManagementSystem.Domain.Extensions
                  $"Total: {order.Item3}" +
                  $"{Environment.NewLine}";
         }
+
+        public static void Deconstruct(this Order order,
+            out Guid orderNumber,
+            out decimal totalNumberOfItems,
+            out IEnumerable<Item> items,
+            out decimal averagePrice)
+        {
+            orderNumber = order.OrderNumber;
+            totalNumberOfItems = order.LineItems.Count();
+            items = order.LineItems;
+            averagePrice = order.LineItems.Average(item => item.Price);
+        }
     }
 }

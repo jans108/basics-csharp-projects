@@ -17,40 +17,10 @@ var order = new Order
 
 var processor = new OrderProcessor();
 
-
-IEnumerable<Order>? orders =
-    JsonSerializer.Deserialize<Order[]>(
-        File.ReadAllText("orders.json")
-        );
-
-var result = processor.Process(orders);
-
-foreach (var summary in result)
-{
-    Console.WriteLine(summary.GenerateReport());
-}
-
-var type = result.GetType();
-var properties = type.GetProperties();
-
-Guid orderNumber;
-decimal sum;
+var (orderNumber, total, items, averagePrice) = order;
 
 
-(orderNumber, _, sum)  = (
-    order.OrderNumber,
-    order.LineItems,
-    order.LineItems.Sum(item => item.Price));
 
-var groupAsAnonymousType = new
-{
-    order.OrderNumber,
-    order.LineItems,
-    Sum = order.LineItems.Sum(item => item.Price)
-};
-
-var json = JsonSerializer.Serialize((orderNumber, sum), options: new() { IncludeFields = true });
-Console.WriteLine(json);
 
 void Log(object sender, EventArgs args)
 {
