@@ -55,11 +55,11 @@ namespace WarehouseManagementSystem.Business
         {
             var summaries = orders.Select(order =>
             {
-                return 
+                return
                 (
-                    Order : order.OrderNumber,
-                    Items : order.LineItems.Count(),
-                    Total : order.LineItems.Sum(item => item.Price)
+                    Order: order.OrderNumber,
+                    Items: order.LineItems.Count(),
+                    Total: order.LineItems.Sum(item => item.Price)
                 );
             });
 
@@ -76,6 +76,17 @@ namespace WarehouseManagementSystem.Business
             //};
 
             //return summaryWithTax;
+        }
+
+        private decimal CalculateFreightCost(Order order)
+        {
+            return order.ShippingProvider switch
+            {
+                SwedishPostalServiceShippingProvider { DeliverNextDay: true } => 100m,
+                SwedishPostalServiceShippingProvider => 0m,
+
+                _ => 50m
+            };
         }
     }
 }
