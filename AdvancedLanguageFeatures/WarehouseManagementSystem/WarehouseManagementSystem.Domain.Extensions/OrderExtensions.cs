@@ -7,12 +7,40 @@ namespace WarehouseManagementSystem.Domain.Extensions
         public static string GenerateReport
             (this Order order)
         {
+            var status = order switch
+            {
+                ( > 100, true) => "High Priority Order",
+
+                (_, true) => "Order is ready",
+
+                (_, false) => "Order is not ready",
+
+                _ => "Order is null!"
+            };
+
+            var shippingProviderStatus =
+                (order.ShippingProvider, order.LineItems.Count(), order.IsReadyForShipment)
+            switch
+                {
+                    (_, > 10, true) => "Multiple shipments!",
+
+                    (SwedishPostalServiceShippingProvider, 1, _) => "Manual pickup required",
+
+                    (_, _, true) => "Ready for shipment",
+
+                    (_, _, false) => "Not ready for shipment"
+                };
+
+
+
+
             return $"ORDER REPORT ({order.OrderNumber})" +
-                $"{Environment.NewLine}" +
-                $"Items: {order.LineItems.Count()}" +
-                $"{Environment.NewLine}" +
-                $"Total: {order.Total}" +
-                $"{Environment.NewLine}";
+                    $"{Environment.NewLine}" +
+                    $"Items: {order.LineItems.Count()}" +
+                    $"{Environment.NewLine}" +
+                    $"Total: {order.Total}" +
+                    $"{Environment.NewLine}" +
+                    $"{status} {shippingProviderStatus}";
         }
 
         public static string GenerateReport
