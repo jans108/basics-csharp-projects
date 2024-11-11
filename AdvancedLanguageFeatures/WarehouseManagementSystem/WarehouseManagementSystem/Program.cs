@@ -17,10 +17,20 @@ var order = new Order
 
 var processor = new OrderProcessor();
 
-var (orderNumber, total, items, averagePrice) = order;
+Order order1 = new PriorityOrder()
+{
+    ShippingProvider = new ShippingProvider() { FreightCost = 75 },
+    LineItems = new[]
+    {
+        new Item { Name = "PS1", Price = 50 },
+        new Item { Name = "PS2", Price = 60 },
+        new Item { Name = "PS4", Price = 70 },
+        new Item { Name = "PS5", Price = 80 }
+    },
+    Total = 101
+};
 
-
-
+Console.WriteLine(order1.GenerateReport());
 
 void Log(object sender, EventArgs args)
 {

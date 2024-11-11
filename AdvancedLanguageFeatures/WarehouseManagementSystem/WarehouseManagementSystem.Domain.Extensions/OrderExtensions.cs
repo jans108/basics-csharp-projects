@@ -9,7 +9,15 @@ namespace WarehouseManagementSystem.Domain.Extensions
         {
             var status = order switch
             {
-                ( > 100, true) => "High Priority Order",
+                ShippedOrder => "Already Shipped",
+
+                CancelledOrder => "Cancelled",
+
+                PriorityOrder or (( > 100, true) and not (ShippedOrder or CancelledOrder)) => "High Priority Order",
+
+                { Total: >= 50 and <= 100 and not 75 } => "Priority Order",
+
+                //  (>50 and <= 100, true) => "Priority Order",
 
                 (_, true) => "Order is ready",
 

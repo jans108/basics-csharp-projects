@@ -65,6 +65,18 @@ namespace WarehouseManagementSystem.Domain
 
     public class ProcessedOrder : Order { }
 
+    public class PriorityOrder : Order { }
+
+    public class ShippedOrder : Order
+    {
+        public DateTime ShippedDate { get; set; }
+    }
+
+    public class CancelledOrder : Order
+    {
+        public DateTime CanelledDate { get; set; }
+    }
+
     public class Item
     {
         public string Name { get; set; }
