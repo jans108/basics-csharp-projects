@@ -4,33 +4,10 @@ using WarehouseManagementSystem.Business;
 using WarehouseManagementSystem.Domain;
 using WarehouseManagementSystem.Domain.Extensions;
 
-var order = new Order
-{
-    LineItems = new[]
-    {
-        new Item { Name = "PS1", Price = 50 },
-        new Item { Name = "PS2", Price = 60 },
-        new Item { Name = "PS4", Price = 70 },
-        new Item { Name = "PS5", Price = 80 }
-    }
-};
+var first = new Customer("Maciej", "Broda");
+var second = new PriorityCustomer("Maciej", "Broda");
 
-var processor = new OrderProcessor();
-
-Order order1 = new PriorityOrder()
-{
-    ShippingProvider = new ShippingProvider() { FreightCost = 75 },
-    LineItems = new[]
-    {
-        new Item { Name = "PS1", Price = 50 },
-        new Item { Name = "PS2", Price = 60 },
-        new Item { Name = "PS4", Price = 70 },
-        new Item { Name = "PS5", Price = 80 }
-    },
-    Total = 101
-};
-
-Console.WriteLine(order1.GenerateReport());
+Console.WriteLine($"Is this values equal?: {first==second}");
 
 void Log(object sender, EventArgs args)
 {
