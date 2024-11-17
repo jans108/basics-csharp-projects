@@ -1,78 +1,67 @@
 ﻿
 namespace WarehouseManagementSystem.Domain
 {
-    public class Order : IEquatable<Order?>
+    public record Order(
+        decimal Total = 0m,
+        ShippingProvider ShippingProvider = default,
+        IEnumerable<Item> LineItems = default,
+        bool isReadyForShipment = true
+        )
     {
-        public Guid OrderNumber { get; init; }
-        public ShippingProvider ShippingProvider { get; init; }
-        public int Total { get; set; }
-        public bool IsReadyForShipment { get; set; } = true;
-        public IEnumerable<Item> LineItems { get; set; }
+        public Guid OrderNumber { get; init; } = Guid.NewGuid();
 
-        public Order()
-        {
-            OrderNumber = Guid.NewGuid();
-        }
+
+        //public Order()
+        //{
+        //    OrderNumber = Guid.NewGuid();
+        //}
 
         public string GenerateReport(string email)
         {
             throw new NotImplementedException();
         }
 
-        public override bool Equals(object? obj)
-        {
-            return Equals(obj as Order);
-        }
-
-        public bool Equals(Order? other)
-        {
-            return other is not null &&
-                   OrderNumber.Equals(other.OrderNumber) &&
-                   EqualityComparer<ShippingProvider>.Default.Equals(ShippingProvider, other.ShippingProvider) &&
-                   Total == other.Total &&
-                   IsReadyForShipment == other.IsReadyForShipment &&
-                   EqualityComparer<IEnumerable<Item>>.Default.Equals(LineItems, other.LineItems);
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(OrderNumber, ShippingProvider, Total, IsReadyForShipment, LineItems);
-        }
-
-        public static bool operator ==(Order? left, Order? right)
-        {
-            return EqualityComparer<Order>.Default.Equals(left, right);
-        }
-
-        public static bool operator !=(Order? left, Order? right)
-        {
-            return !(left == right);
-        }
 
         public void Deconstruct(out decimal total, out bool ready)
         {
             total = Total;
-            ready = IsReadyForShipment;
+            ready = isReadyForShipment;
         }
 
         public void Deconstruct(out decimal total, out bool ready, out IEnumerable<Item> items)
         {
             total = Total;
-            ready = IsReadyForShipment;
+            ready = isReadyForShipment;
             items = LineItems;
         }
     }
 
-    public class ProcessedOrder : Order { }
 
-    public class PriorityOrder : Order { }
+    public record PriorityOrder(
+        decimal Total,
+        ShippingProvider ShippingProvider,
+        IEnumerable<Item> LineItems,
+        bool isReadyForShipment = true
+        )
+        : Order(Total, ShippingProvider, LineItems, isReadyForShipment)
+    { }
 
-    public class ShippedOrder : Order
+    public record ShippedOrder(
+        decimal Total,
+        ShippingProvider ShippingProvider,
+        IEnumerable<Item> LineItems
+        )
+        : Order(Total, ShippingProvider, LineItems, false)
     {
         public DateTime ShippedDate { get; set; }
     }
 
-    public class CancelledOrder : Order
+    public record CancelledOrder(
+        decimal Total,
+        ShippingProvider ShippingProvider,
+        IEnumerable<Item> LineItems
+        )
+        : Order(Total, ShippingProvider, LineItems, false)
     {
         public DateTime CanelledDate { get; set; }
     }

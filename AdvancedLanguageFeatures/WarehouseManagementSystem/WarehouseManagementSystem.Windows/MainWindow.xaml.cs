@@ -26,7 +26,7 @@ namespace WarehouseManagementSystem.Windows
         private void ProcessOrder_Click(object sender, 
             RoutedEventArgs e)
         {
-            var order = Orders.SelectedItem as Order ?? new();
+            var order = Orders.SelectedItem as Order ?? new Order(0, new(), new[] { new Item { Name = "None", Price = 0 } }, true);
 
             var receipt = new ReceiptWindow(Processor);
             receipt.Owner = this;

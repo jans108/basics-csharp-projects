@@ -27,7 +27,7 @@ namespace WarehouseManagementSystem.Domain.Extensions
             };
 
             var shippingProviderStatus =
-                (order.ShippingProvider, order.LineItems.Count(), order.IsReadyForShipment)
+                (order.ShippingProvider, order.LineItems.Count(), order.isReadyForShipment)
             switch
                 {
                     (_, > 10, true) => "Multiple shipments!",
