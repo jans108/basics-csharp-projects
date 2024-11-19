@@ -4,10 +4,19 @@ using WarehouseManagementSystem.Business;
 using WarehouseManagementSystem.Domain;
 using WarehouseManagementSystem.Domain.Extensions;
 
-var first = new Customer("Maciej", "Broda");
-var second = new PriorityCustomer("Maciej", "Broda");
+var items = new List<Item>()
+{
+    new Item() {Name = "Pen", Price = 4},
+    new Item() {Name = "Book", Price = 15}
+};
 
-Console.WriteLine($"Is this values equal?: {first==second}");
+Order order = new Order(101, new(), items);
+
+var orderAsJson = JsonSerializer.Serialize(order, options: new() { WriteIndented = true });
+
+Console.WriteLine(orderAsJson);
+
+var instance = JsonSerializer.Deserialize<Order>(orderAsJson);
 
 void Log(object sender, EventArgs args)
 {

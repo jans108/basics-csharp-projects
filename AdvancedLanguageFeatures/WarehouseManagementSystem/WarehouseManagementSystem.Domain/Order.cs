@@ -1,8 +1,13 @@
 ﻿
+using System.Text.Json.Serialization;
+
 namespace WarehouseManagementSystem.Domain
 {
     public record Order(
+        [property: JsonPropertyName("total")]
         decimal Total = 0m,
+
+        [property: JsonIgnore]
         ShippingProvider ShippingProvider = default,
         IEnumerable<Item> LineItems = default,
         bool isReadyForShipment = true
