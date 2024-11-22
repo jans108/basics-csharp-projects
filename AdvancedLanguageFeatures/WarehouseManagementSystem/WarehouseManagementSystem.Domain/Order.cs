@@ -1,4 +1,5 @@
 ﻿
+using System.Text;
 using System.Text.Json.Serialization;
 
 namespace WarehouseManagementSystem.Domain
@@ -39,6 +40,14 @@ namespace WarehouseManagementSystem.Domain
             ready = isReadyForShipment;
             items = LineItems;
         }
+
+        protected virtual bool PrintMembers(StringBuilder builder)
+        {
+            builder.Append("A custom implementation");
+
+            return true;
+        }
+
     }
 
 

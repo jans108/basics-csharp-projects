@@ -12,11 +12,14 @@ var items = new List<Item>()
 
 Order order = new Order(101, new(), items);
 
-var orderAsJson = JsonSerializer.Serialize(order, options: new() { WriteIndented = true });
+CancelledOrder cancelledOrder = new(101, new(), items);
 
-Console.WriteLine(orderAsJson);
+Console.WriteLine(order);
 
-var instance = JsonSerializer.Deserialize<Order>(orderAsJson);
+Console.WriteLine();
+Console.WriteLine();
+
+Console.WriteLine(cancelledOrder);
 
 void Log(object sender, EventArgs args)
 {
