@@ -12,5 +12,10 @@ namespace WarehouseManagementSystem.Business
         public Order Order { get; set; }
         public decimal OldTotal { get; set; }
         public decimal NewTotal { get; set; }
+
+        public OrderCreatedEventArgs(Order order)
+        {
+            Order = order;
+        }
     }
 }

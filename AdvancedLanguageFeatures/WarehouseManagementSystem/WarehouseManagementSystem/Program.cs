@@ -14,12 +14,14 @@ Order order = new Order(101, new(), items);
 
 CancelledOrder cancelledOrder = new(101, new(), items);
 
-Console.WriteLine(order);
+var processor = new OrderProcessor();
 
-Console.WriteLine();
-Console.WriteLine();
+processor.OrderProcessCompleted += Processor_OrderProcessCompleted;
 
-Console.WriteLine(cancelledOrder);
+void Processor_OrderProcessCompleted(object? sender, OrderProcessCompletedEventArgs args)
+{
+    var orderNumber = args.Order.OrderNumber;
+}
 
 void Log(object sender, EventArgs args)
 {

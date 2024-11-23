@@ -4,9 +4,9 @@ namespace WarehouseManagementSystem.Business
 {
     public class OrderProcessor
     {
-        public Func<Order, bool> OnOrderInitialized { get; set; }
-        public event EventHandler<OrderCreatedEventArgs> OrderCreated;
-        public event EventHandler<OrderProcessCompletedEventArgs> OrderProcessCompleted;
+        public Func<Order, bool>? OnOrderInitialized { get; set; }
+        public event EventHandler<OrderCreatedEventArgs>? OrderCreated;
+        public event EventHandler<OrderProcessCompletedEventArgs>? OrderProcessCompleted;
         protected virtual void OnOrderCreated(OrderCreatedEventArgs args)
         {
             OrderCreated?.Invoke(this, args);
@@ -29,7 +29,7 @@ namespace WarehouseManagementSystem.Business
         {
             Initialize(order);
 
-            OnOrderCreated(new()
+            OnOrderCreated(new(order)
             {
                 Order = order,
                 OldTotal = 100,
@@ -42,7 +42,7 @@ namespace WarehouseManagementSystem.Business
         {
             Initialize(order);
 
-            OnOrderCreated(new()
+            OnOrderCreated(new(order)
             {
                 Order = order,
                 OldTotal = 100,
