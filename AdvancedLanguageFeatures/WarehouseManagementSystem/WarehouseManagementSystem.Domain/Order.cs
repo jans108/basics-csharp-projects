@@ -9,7 +9,7 @@ namespace WarehouseManagementSystem.Domain
         decimal Total = 0m,
 
         [property: JsonIgnore]
-        ShippingProvider ShippingProvider = default,
+        ShippingProvider? ShippingProvider = default,
         IEnumerable<Item> LineItems = default,
         bool isReadyForShipment = true
         )

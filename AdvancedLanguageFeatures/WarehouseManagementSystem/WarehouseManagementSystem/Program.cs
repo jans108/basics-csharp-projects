@@ -20,12 +20,25 @@ processor.OrderProcessCompleted += Processor_OrderProcessCompleted;
 
 void Processor_OrderProcessCompleted(object? sender, OrderProcessCompletedEventArgs args)
 {
-    if (args.Order is not null)
+    if (args.Order is  null)
     {
-        Guid orderNumber = args.Order.OrderNumber;
-
-        string orderNumberAsString = orderNumber.ToString();
+        return;
     }
+
+    Guid orderNumber = args.Order.OrderNumber;
+
+    string orderNumberAsString = orderNumber.ToString();
+
+    ShippingProvider? provider =
+        args.Order.ShippingProvider;
+
+    // provider ??= new();
+
+    if (ShippingProviderValidator.ValidateShippingProvider(provider))
+    {
+        var name = provider.Name;
+    }
+
 }
 
 void Log(object sender, EventArgs args)
