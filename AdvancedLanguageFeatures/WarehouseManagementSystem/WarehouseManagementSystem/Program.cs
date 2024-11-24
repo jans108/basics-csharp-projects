@@ -20,7 +20,12 @@ processor.OrderProcessCompleted += Processor_OrderProcessCompleted;
 
 void Processor_OrderProcessCompleted(object? sender, OrderProcessCompletedEventArgs args)
 {
-    var orderNumber = args.Order.OrderNumber;
+    if (args.Order is not null)
+    {
+        Guid orderNumber = args.Order.OrderNumber;
+
+        string orderNumberAsString = orderNumber.ToString();
+    }
 }
 
 void Log(object sender, EventArgs args)
