@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using System.Text.Json.Serialization;
 
@@ -8,12 +9,17 @@ namespace WarehouseManagementSystem.Domain
         [property: JsonPropertyName("total")]
         decimal Total = 0m,
 
+        [AllowNull]
+        ShippingProvider ShippingProvider = default,
+
         [property: JsonIgnore]
-        ShippingProvider? ShippingProvider = default,
         IEnumerable<Item> LineItems = default,
         bool isReadyForShipment = true
         )
     {
+        public ShippingProvider ShippingProvider
+        { get; init; } = ShippingProvider ?? new();
+
         public Guid OrderNumber { get; init; } = Guid.NewGuid();
 
 

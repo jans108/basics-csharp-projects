@@ -10,7 +10,7 @@ var items = new List<Item>()
     new Item() {Name = "Book", Price = 15}
 };
 
-Order order = new Order(101, new(), items);
+Order order = new Order(101, null, items);
 
 CancelledOrder cancelledOrder = new(101, new(), items);
 
