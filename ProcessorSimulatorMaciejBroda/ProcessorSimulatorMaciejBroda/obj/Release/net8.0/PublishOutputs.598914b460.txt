@@ -1,0 +1,7 @@
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\ProcessorSimulatorMaciejBroda.exe
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\ProcessorSimulatorMaciejBroda.dll
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\ProcessorSimulatorMaciejBroda.deps.json
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\ProcessorSimulatorMaciejBroda.runtimeconfig.json
+C:\Users\macie\OneDrive\Pulpit\SymulatorProcesoraMaciejBroda\ProcessorSimulatorMaciejBroda\ProcessorSimulatorMaciejBroda\obj\Release\net8.0\PubTmp\Out\ProcessorSimulatorMaciejBroda.pdb

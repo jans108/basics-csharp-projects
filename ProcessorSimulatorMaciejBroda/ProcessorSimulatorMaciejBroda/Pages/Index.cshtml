@@ -1,0 +1,262 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Symulator Rejestrów";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eafaf1; /* Zielone tło */
+        color: #333;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Główny nagłówek */
+    header {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #2f6e4e;
+        margin: 20px 0;
+    }
+
+    /* Główny kontener */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 50px auto; /* Symetryczny margines góra/dół */
+        max-width: 1000px;
+        width: 90%;
+        flex: 1;
+    }
+
+    /* Sekcja nagłówka nad wartościami */
+    .section-header {
+        text-align: center;
+        font-weight: bold;
+        color: #2f6e4e; /* Zielony kolor */
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    /* Sekcja rejestrów */
+    .registers-wrapper {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid #4caf50;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f0fff4;
+    }
+
+    .register-group label {
+        font-weight: bold;
+        color: #2f6e4e;
+        margin-bottom: 5px;
+    }
+
+    /* Pola formularza */
+    input, select, button {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px; /* Zwiększenie przestrzeni wewnętrznej przycisku */
+        margin-top: 15px; /* Odstęp od elementów powyżej */
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50; /* Zielony kolor */
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    /* Zielony nagłówek dla sekcji formularza */
+    fieldset {
+        border: 2px solid #4caf50;
+        border-radius: 8px;
+    }
+
+    legend {
+        font-weight: bold;
+        color: #4caf50; /* Zielony kolor */
+    }
+
+    /* Wyniki */
+    .results-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .results-section li {
+        background: #f0fff4;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 2px solid #4caf50;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #2f6e4e;
+    }
+
+    /* Stopka */
+    footer {
+        text-align: center;
+        background-color: #808080;
+        color: #fff;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+
+<header>Symulator Rejestrów</header>
+
+<div class="container">
+
+    <!-- Sekcja rejestrów -->
+    <form method="post" style="width:100%;" onsubmit="simulate(event)">
+        <!-- Sekcja nagłówka nad wartościami rejestrów -->
+        <div class="section-header">Wprowadź wartości rejestrów (HEX)</div>
+
+        <!-- Sekcja rejestrów -->
+        <div class="registers-wrapper">
+            <div class="register-group">
+                <label for="AX">AX:</label>
+                <input type="text" id="AX" name="AX" maxlength="4" value="0000" required pattern="[0-9A-Fa-f]{1,4}" title="Wprowadź wartość heksadecymalną (0-9, A-F, max 4 znaki)" oninput="validateInput(this)" />
+            </div>
+            <div class="register-group">
+                <label for="BX">BX:</label>
+                <input type="text" id="BX" name="BX" maxlength="4" value="0000" required pattern="[0-9A-Fa-f]{1,4}" title="Wprowadź wartość heksadecymalną (0-9, A-F, max 4 znaki)" oninput="validateInput(this)" />
+            </div>
+            <div class="register-group">
+                <label for="CX">CX:</label>
+                <input type="text" id="CX" name="CX" maxlength="4" value="0000" required pattern="[0-9A-Fa-f]{1,4}" title="Wprowadź wartość heksadecymalną (0-9, A-F, max 4 znaki)" oninput="validateInput(this)" />
+            </div>
+            <div class="register-group">
+                <label for="DX">DX:</label>
+                <input type="text" id="DX" name="DX" maxlength="4" value="0000" required pattern="[0-9A-Fa-f]{1,4}" title="Wprowadź wartość heksadecymalną (0-9, A-F, max 4 znaki)" oninput="validateInput(this)" />
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>Wybierz rozkaz i rejestry</legend>
+            <label for="Operation">Wybierz rozkaz:</label>
+            <select id="Operation" name="Operation">
+                <option value="MOV">MOV</option>
+                <option value="XCHG">XCHG</option>
+            </select>
+            <label for="Source">Źródło:</label>
+            <select id="Source" name="Source">
+                <option value="AX">AX</option>
+                <option value="BX">BX</option>
+                <option value="CX">CX</option>
+                <option value="DX">DX</option>
+            </select>
+            <label for="Destination">Cel:</label>
+            <select id="Destination" name="Destination">
+                <option value="AX">AX</option>
+                <option value="BX">BX</option>
+                <option value="CX">CX</option>
+                <option value="DX">DX</option>
+            </select>
+        </fieldset>
+
+        <!-- Przycisk Symuluj i Wyczyść -->
+        <button type="submit">Symuluj</button>
+        <button type="button" onclick="clearResults()">Wyczyść</button>
+
+        <!-- Sekcja wyników -->
+        <div class="results-section">
+            <h2>Wyniki</h2>
+            <ul>
+                <li id="resultAX">AX: 0000</li>
+                <li id="resultBX">BX: 0000</li>
+                <li id="resultCX">CX: 0000</li>
+                <li id="resultDX">DX: 0000</li>
+            </ul>
+        </div>
+    </form>
+
+    <footer>
+       Maciej Broda Symulator Rejestrów &copy; 2024. Wszystkie prawa zastrzeżone.
+    </footer>
+
+    <script>
+        function validateInput(inputField) {
+            // RegEx dla wartości HEX (0-9, A-F, maksymalnie 4 znaki)
+            const hexRegex = /^[0-9A-Fa-f]{0,4}$/;
+
+            // Sprawdzenie czy wartość jest poprawna
+            if (!hexRegex.test(inputField.value)) {
+                // Usuń niepoprawne znaki
+                inputField.value = inputField.value.replace(/[^0-9A-Fa-f]/g, '').substring(0, 4);
+            }
+        }
+
+        function updateResults() {
+            document.getElementById('resultAX').innerText = "AX: " + document.getElementById('AX').value;
+            document.getElementById('resultBX').innerText = "BX: " + document.getElementById('BX').value;
+            document.getElementById('resultCX').innerText = "CX: " + document.getElementById('CX').value;
+            document.getElementById('resultDX').innerText = "DX: " + document.getElementById('DX').value;
+        }
+
+        function clearResults() {
+            document.getElementById('AX').value = "0000";
+            document.getElementById('BX').value = "0000";
+            document.getElementById('CX').value = "0000";
+            document.getElementById('DX').value = "0000";
+            updateResults();
+        }
+
+        function simulate(event) {
+            event.preventDefault();
+
+            const operation = document.getElementById('Operation').value;
+            const source = document.getElementById('Source').value;
+            const destination = document.getElementById('Destination').value;
+
+            const registers = {
+                AX: document.getElementById('AX').value,
+                BX: document.getElementById('BX').value,
+                CX: document.getElementById('CX').value,
+                DX: document.getElementById('DX').value
+            };
+
+            // Symulacja operacji MOV i XCHG
+            if (operation === "MOV") {
+                registers[destination] = registers[source];
+            } else if (operation === "XCHG") {
+                const temp = registers[source];
+                registers[source] = registers[destination];
+                registers[destination] = temp;
+            }
+
+            // Aktualizacja pól formularza i wyników
+            document.getElementById('AX').value = registers.AX;
+            document.getElementById('BX').value = registers.BX;
+            document.getElementById('CX').value = registers.CX;
+            document.getElementById('DX').value = registers.DX;
+            updateResults();
+        }
+    </script>
